@@ -57,7 +57,7 @@ function positionGods(containerId, gods, radius) {
 }
 
 positionGods('firstborns', firstborns, 230);
-positionGods('ascended', ascended, 480);
+positionGods('ascended', ascended, 380);
 
 document.addEventListener('DOMContentLoaded', () => {
   let clickCount = 0;

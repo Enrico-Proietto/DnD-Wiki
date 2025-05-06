@@ -16,171 +16,176 @@ body {
 }
 
 .sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom, #2c1f17, #1a1410);
-    padding-top: 20px;
-    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
-  }
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #2c1f17, #1a1410);
+  padding-top: 20px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
 
-  .sidenav h2 {
-    font-family: 'Cinzel Decorative', cursive;
-    color: #f8e4b4;
-    font-size: 20px;
-    text-align: center;
-    padding: 0 15px 20px;
-    border-bottom: 1px solid #5a3e2b;
-    margin-bottom: 20px;
-  }
+.sidenav h2 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #f8e4b4;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid #5a3e2b;
+  margin-bottom: 20px;
+}
 
-  .sidenav a {
-    padding: 12px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #e2d8c3;
-    display: block;
-    transition: background 0.3s, color 0.3s;
-  }
+.sidenav a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #e2d8c3;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+  font-weight: bold;
+}
 
-  .sidenav a:hover {
-    background-color: #5a3e2b;
-    color: #fff2d8;
-  }
+.sidenav a.title {
+  font-size: 30px;
+}
 
-  .main {
-    margin-left: 260px;
-    padding: 20px;
-    background-color: #2d241b;
-    min-height: 100vh;
-  }
+.sidenav a:hover {
+  background-color: #5a3e2b;
+  color: #fff2d8;
+}
 
-  h1 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 2.5em;
-    color: #f8e4b4;
-  }
+.main {
+  margin-left: 260px;
+  padding: 20px;
+  background-color: #2d241b;
+  min-height: 100vh;
+}
 
-  p {
-    font-size: 1.2em;
-    line-height: 1.6;
-  }
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.5em;
+  color: #f8e4b4;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
 
 
-  .shop-nav {
-    grid-area: shop-nav;
-    background-color: #2d241b;
-    border-bottom: 2px solid #5a3e2b;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    font-family: 'Cinzel Decorative', cursive;
-  }
-  
-  .shop-nav a {
-    color: #f8e4b4;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: 0.3s ease;
-  }
-  
-  .shop-nav a:hover {
-    background-color: #5a3e2b;
-    color: #fff2d8;
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
-  }
+.shop-nav {
+  grid-area: shop-nav;
+  background-color: #2d241b;
+  border-bottom: 2px solid #5a3e2b;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-family: 'Cinzel Decorative', cursive;
+}
 
-  .item-card {
-    background-color: #3a2e24;
-    border: 1px solid #6c845f;
-    color: #f8e4b4;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 8px;
-    width: 200px;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-  }
-  
-  #shop-container {
-    grid-area: shop-container;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 20px;
-    background-color: #2d241b;
-    margin-right: 325px;
-  }
-  
-  /* Card styling base */
-  .item-card {
-    padding: 16px;
-    border-radius: 10px;
-    width: 200px;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .item-card:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Theme: Weapons */
-  .shop-content.weapons .item-card {
-    background-color: #3a2e24;
-    border: 2px solid #6c845f;
-    color: #f8e4b4;
-    box-shadow: 0 0 10px rgba(255, 255, 200, 0.2);
-  }
-  
-  /* Theme: Armor */
-  .shop-content.armor .item-card {
-    background-color: #2a2f35;
-    border: 2px solid #a0a0a0;
-    color: #dcdcdc;
-    box-shadow: 0 0 12px rgba(180, 180, 255, 0.3);
-  }
-  
-  /* Theme: Potions */
-  .shop-content.potions .item-card {
-    background-color: #263b2a;
-    border: 2px solid #4caf50;
-    color: #d8f8dc;
-    box-shadow: 0 0 10px rgba(102, 255, 178, 0.2);
-  }
-  
-  /* Theme: Scrolls */
-  .shop-content.scrolls .item-card {
-    background-color: #2f2533;
-    border: 2px solid #ba93ff;
-    color: #e7d9ff;
-    box-shadow: 0 0 10px rgba(200, 150, 255, 0.3);
-  }
-  
-  /* Theme: Artifacts */
-  .shop-content.artifacts .item-card {
-    background-color: #3d1f1f;
-    border: 2px solid #d4af37;
-    color: #f9e4b7;
-    box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
-  }
-  
-  /* Item image inside card */
-  .item-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    margin-bottom: 10px;
-  }
+.shop-nav a {
+  color: #f8e4b4;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
 
-    /* General shop container */
+.shop-nav a:hover {
+  background-color: #5a3e2b;
+  color: #fff2d8;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.item-card {
+  background-color: #3a2e24;
+  border: 1px solid #6c845f;
+  color: #f8e4b4;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 200px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+#shop-container {
+  grid-area: shop-container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background-color: #2d241b;
+  margin-right: 325px;
+}
+
+/* Card styling base */
+.item-card {
+  padding: 16px;
+  border-radius: 10px;
+  width: 200px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+/* Theme: Weapons */
+.shop-content.weapons .item-card {
+  background-color: #3a2e24;
+  border: 2px solid #6c845f;
+  color: #f8e4b4;
+  box-shadow: 0 0 10px rgba(255, 255, 200, 0.2);
+}
+
+/* Theme: Armor */
+.shop-content.armor .item-card {
+  background-color: #2a2f35;
+  border: 2px solid #a0a0a0;
+  color: #dcdcdc;
+  box-shadow: 0 0 12px rgba(180, 180, 255, 0.3);
+}
+
+/* Theme: Potions */
+.shop-content.potions .item-card {
+  background-color: #263b2a;
+  border: 2px solid #4caf50;
+  color: #d8f8dc;
+  box-shadow: 0 0 10px rgba(102, 255, 178, 0.2);
+}
+
+/* Theme: Scrolls */
+.shop-content.scrolls .item-card {
+  background-color: #2f2533;
+  border: 2px solid #ba93ff;
+  color: #e7d9ff;
+  box-shadow: 0 0 10px rgba(200, 150, 255, 0.3);
+}
+
+/* Theme: Artifacts */
+.shop-content.artifacts .item-card {
+  background-color: #3d1f1f;
+  border: 2px solid #d4af37;
+  color: #f9e4b7;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+}
+
+/* Item image inside card */
+.item-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* General shop container */
 #shop-container {
   display: flex;
   flex-wrap: wrap;
@@ -249,11 +254,22 @@ body {
   box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
 }
 
-.sidenav { grid-area: sidenav; }
-.shop-nav { grid-area: shop-nav; }
-#shop-container { grid-area: shop-container; }
+.sidenav {
+  grid-area: sidenav;
+}
 
-h1, h2, h3, .shop-nav a {
+.shop-nav {
+  grid-area: shop-nav;
+}
+
+#shop-container {
+  grid-area: shop-container;
+}
+
+h1,
+h2,
+h3,
+.shop-nav a {
   font-family: 'Cinzel Decorative', cursive;
 }
 
@@ -269,7 +285,7 @@ h1, h2, h3, .shop-nav a {
   text-transform: uppercase;
   font-family: 'Cinzel', serif;
   letter-spacing: 0.5px;
-  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Cart section */
@@ -285,7 +301,7 @@ h1, h2, h3, .shop-nav a {
   width: 240px;
   color: #f8e4b4;
   font-family: 'Cinzel', serif;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   z-index: 1000;
   overflow: auto;
 }
@@ -373,11 +389,11 @@ h1, h2, h3, .shop-nav a {
 
 /* Tag section */
 
-  /*Weapon tag section*/
+/*Weapon tag section*/
 
 
 
-  /*Potion tag section*/
+/*Potion tag section*/
 .tag-healing {
   background-color: #4caf50;
 }
@@ -390,7 +406,7 @@ h1, h2, h3, .shop-nav a {
   background-color: #da1c1c;
 }
 
- /*Enchantment tag section*/
+/*Enchantment tag section*/
 
 .tag-service {
   background-color: #2114dd;

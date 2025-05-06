@@ -48,6 +48,11 @@
     color: #e2d8c3;
     display: block;
     transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+  }
+  
+  .sidenav a.title {
+    font-size: 30px;
   }
 
   .sidenav a:hover {
