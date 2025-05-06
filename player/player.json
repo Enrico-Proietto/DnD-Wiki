@@ -1,0 +1,186 @@
+{
+    "belarus": [
+        {
+            "name": "Belarus Radowani",
+            "race": "Half-Elf Half-Orc",
+            "class": "Cleric",
+            "alignment": "Netrual-Good",
+            "hp": "34",
+            "ac": "16",
+            "gp": "90",
+            "level": "4",
+            "xp": "1325",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/belarus/belarus.html",
+            "imageSrc": "/images/characters/belarus.png",
+            "spellslotLvl1": "4",
+            "spellslotLvl2": "2",
+            "abilityScores": {
+                "strength": "14",
+                "dexterity": "12",
+                "constitution": "14",
+                "intelligence": "10",
+                "wisdom": "17",
+                "charisma": "9"
+            },
+            "skills": {
+                "athletics": "+4",
+                "insight": "+5",
+                "medicine": "+2",
+                "persuasion": "+4"
+            }
+        }
+    ],
+    "karwallo": [
+        {
+            "name": "Karwallo",
+            "race": "Tiefling",
+            "class": "Paladin",
+            "alignment": "Chaotic-Good",
+            "hp": "47",
+            "ac": "16",
+            "gp": "292",
+            "level": "4",
+            "xp": "1125",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/karwallo/karwallo.html",
+            "imageSrc": "/images/characters/karwallo.png",
+            "spellslotLvl1": "2",
+            "abilityScores": {
+                "strength": "16",
+                "dexterity": "12",
+                "constitution": "14",
+                "intelligence": "10",
+                "wisdom": "10",
+                "charisma": "14"
+            },
+            "skills": {
+                "insight": "+2",
+                "persuasion": "+4"
+            }
+        }
+    ],
+    "lein": [
+        {
+            "name": "Lein",
+            "race": "Elf",
+            "class": "Wizard",
+            "alignment": "Lawful-Evil",
+            "hp": "30",
+            "ac": "13",
+            "gp": "230",
+            "level": "4",
+            "xp": "675",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/lein/lein.html",
+            "imageSrc": "/images/characters/lein.png",
+            "spellslotLvl1": "4",
+            "spellslotLvl2": "2",
+            "abilityScores": {
+                "strength": "8",
+                "dexterity": "16",
+                "constitution": "13",
+                "intelligence": "16",
+                "wisdom": "12",
+                "charisma": "10"
+            },
+            "skills": {
+                "arcana": "+2",
+                "history": "+2"
+            }
+        }
+    ],
+    "willump": [
+        {
+            "name": "Willump Shinra",
+            "race": "Dragonborn",
+            "class": "Monk",
+            "alignment": "Lawful-Good",
+            "hp": "40",
+            "ac": "15",
+            "gp": "137",
+            "level": "4",
+            "xp": "1325",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/willump/willump.html",
+            "imageSrc": "/images/characters/willump.png",
+            "kiSlots": "3",
+            "spellslotLvl2": "1",
+            "abilityScores": {
+                "strength": "16",
+                "dexterity": "14",
+                "constitution": "14",
+                "intelligence": "8",
+                "wisdom": "14",
+                "charisma": "10"
+            },
+            "skills": {
+                "acrobatics": "+4",
+                "athletics": "+5",
+                "insight": "+4",
+                "medicine": "+2"
+            }
+        }
+    ],
+    "vergil": [
+        {
+            "name": "Vergil Aoden",
+            "race": "Tiefling Vampire",
+            "class": "Rogue",
+            "alignment": "Netural-Good",
+            "hp": "32",
+            "ac": "14",
+            "gp": "27",
+            "level": "4",
+            "xp": "1325",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/vergil/vergil.html",
+            "imageSrc": "/images/characters/vergil.png",
+            "abilityScores": {
+                "strength": "10",
+                "dexterity": "16",
+                "constitution": "12",
+                "intelligence": "14",
+                "wisdom": "10",
+                "charisma": "14"
+            },
+            "skills": {
+                "acrobatics": "+4",
+                "athletics": "+5",
+                "insight": "+4",
+                "medicine": "+2"
+            }
+        }
+    ],
+    "shimazu": [
+        {
+            "name": "Shimazu Tadakatsu",
+            "race": "Half-Orc Half-Dragonborn",
+            "class": "Fighter",
+            "alignment": "Chaotic-Good",
+            "hp": "31",
+            "ac": "10",
+            "gp": "302",
+            "level": "4",
+            "xp": "425",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/shimazu/shimazu.html",
+            "imageSrc": "/images/characters/shimazu.png",
+            "abilityScores": {
+                "strength": "17",
+                "dexterity": "13",
+                "constitution": "15",
+                "intelligence": "10",
+                "wisdom": "12",
+                "charisma": "8"
+            },
+            "skills": {
+                "athletics": "+5",
+                "intimidation": "+1",
+                "perception": "+3",
+                "survival": "+3",
+                "insight": "+3"
+            }
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "shimazu": [
+        {
+            "name": "Shimazu Tadakatsu",
+            "race": "Half-Orc Half-Dragonborn",
+            "class": "Fighter",
+            "alignment": "Chaotic-Neutral",
+            "hp": "31",
+            "ac": "10",
+            "gp": "90",
+            "level": "4",
+            "xp": "425",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/belarus.html",
+            "imageSrc": "/images/characters/shimazu.png",
+            "abilityScores": {
+                "strength": "17",
+                "dexterity": "13",
+                "constitution": "15",
+                "intelligence": "10",
+                "wisdom": "12",
+                "charisma": "8"
+            },
+            "skills": [
+                {
+                    "name": "Athletics",
+                    "amount": "+5"
+                },
+                {
+                    "name": "Intimidation",
+                    "amount": "+1"
+                },
+                {
+                    "name": "Perception",
+                    "amount": "+3"
+                },
+                {
+                    "name": "Survival",
+                    "amount": "+3"
+                },
+                {
+                    "name": "Insight",
+                    "amount": "+3"
+                }
+            ],
+            "gear": {
+                "leftGear": [
+                    {},
+                    {},
+                    {},
+                    {
+                        "name": "Vortex Gaunlets",
+                        "description": "Allows monks to pull a creature within 30 feet of them towards them once per short rest (DC 14 Strength save).",
+                        "imageSrc": ""
+                    },
+                    {}
+                ],
+                "meele": [
+                    {
+                        "name": "Staff of Healing",
+                        "description": "Adds a +2 to all healing actions.",
+                        "imageSrc": ""
+                    },
+                    {
+                        "name": "The Help Sword",
+                        "description": "Spawn a spirit that aids you.",
+                        "imageSrc": ""
+                    }
+                ],
+                "range": [
+                    {},
+                    {}
+                ],
+                "rightGear": [
+                    [],
+                    {},
+                    {},
+                    {},
+                    {}
+                ]
+            },
+            "items": {
+                "flameTouchedLantern": {
+                    "name": "Flame Touched Lantern",
+                    "imageSrc": "../images/gear/flame-touched_lantern.png",
+                    "imageAlt": "Picture of a Flame Touched Lantern",
+                    "description": "This magical lantern burns for 24 hours on a single flask of oil and emits light in a 60-foot radius.",
+                    "amount": "1"
+                },
+                "handySpicePouch": {
+                    "name": "Handy Spice Pouch",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "A small pouch that magically refills itself with a random spice each day, perfect for cooking on long journeys.",
+                    "amount": "1"
+                },
+                "featherlightTent": {
+                    "name": "Featherlight Tent",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "A magically reinforced tent that weighs only 5 pounds and can comfortably fit four people.",
+                    "amount": "1"
+                },
+                "mace": {
+                    "name": "Mace",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "A trusty old mace.",
+                    "amount": "1"
+                },
+                "lightCrossbow": {
+                    "name": "Light Crossbow",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "A simple crossbow.",
+                    "amount": "1"
+                },
+                "bolts": {
+                    "name": "Bolts",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "Normal shooting arrows.",
+                    "amount": "20"
+                }
+            }
+        }
+    ]
+}

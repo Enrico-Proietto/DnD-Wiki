@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #1e1a14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cinzel Decorative", cursive;
+  color: #ffd700;
+  font-size: 48px;
+  position: relative;
+}
+
+#goldTotal {
+  z-index: 2;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+}
+
+.coin {
+  position: absolute;
+  top: -50px;
+  font-size: 24px;
+  color: #ffd700;
+  animation: fall linear infinite;
+}
+
+.coin img {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    "sidenav main main"
+    "sidenav main main"
+    "sidenav main main";
+  grid-template-columns: 200px 1fr 300px;
+  grid-template-rows: 80px 1fr 100px;
+  height: 100vh;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #2c1f17, #1a1410);
+  padding-top: 20px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #f8e4b4;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid #5a3e2b;
+  margin-bottom: 20px;
+}
+
+.sidenav a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #e2d8c3;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #5a3e2b;
+  color: #fff2d8;
+}
+
+.main {
+  grid-area: main;
+}
+
+/*Navigation colors*/
+
+.sidenav a.player {
+  color: #60f560;
+}
+
+.sidenav a.calender {
+  color: #f8b12c;
+}
+
+.sidenav a.time {
+  color: #b1b0b0;
+}
+
+.sidenav a.lore {
+  color: #35c0f7;
+}
+
+.sidenav a.demon {
+  color: #ff3737;
+}
+
+.sidenav a.gp {
+  color: #ffd700;
+  background: #1a110d;
+}
+
+.sidenav a.shop {
+  color: #e746e7;
+}

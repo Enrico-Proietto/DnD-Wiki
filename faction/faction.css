@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at center, #120f0b, #080604);
+  font-family: "Cinzel", serif;
+  color: #e2d8c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.faction-hub {
+  max-width: 1000px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hub-title {
+  font-size: 3rem;
+  color: #d6c293;
+  text-shadow: 0 0 8px rgba(255, 240, 200, 0.2);
+}
+
+.hub-subtitle {
+  font-size: 1.1rem;
+  color: #a79882;
+  margin-bottom: 40px;
+}
+
+.faction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.faction-card {
+  background-color: rgba(30, 25, 20, 0.8);
+  border: 1px solid #5a4a36;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 12px rgba(220, 210, 180, 0.1);
+  cursor: pointer;
+  animation: sway 3s ease-in-out infinite;
+  transition: transform 0.3s;
+}
+
+.faction-card:hover {
+  background-color: rgba(50, 40, 30, 0.9);
+  box-shadow: 0 0 15px rgba(240, 230, 200, 0.3);
+  transform: translateY(-4px);
+}
+
+.faction-card h2 {
+  color: #eeddbb;
+  margin-bottom: 10px;
+}
+
+.faction-card p {
+  font-size: 0.9rem;
+  color: #cbbca6;
+}
+
+/* Optional: stagger timing for each card */
+.faction-card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.faction-card:nth-child(3) {
+  animation-delay: 1s;
+}
+.faction-card:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.faction-card:nth-child(5) {
+  animation-delay: 2s;
+}
+.faction-card:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: translateX(0)
+  }
+  50% {
+    transform: translateX(0.5px);
+  }
+}

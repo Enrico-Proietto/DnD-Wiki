@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at center, #0a0a1a, #000);
+  font-family: "Cinzel", serif;
+  color: #e2d8c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pantheon {
+  position: relative;
+  width: 800px;
+  height: 800px;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.inner-circle {
+  width: 800px;
+  height: 800px;
+  animation: rotateClockwise 30s linear infinite;
+}
+
+.outer-circle {
+  width: 1000px;
+  height: 1000px;
+  animation: rotateCounterClockwise 60s linear infinite;
+}
+
+.center-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #1e1a14;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.center-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: randomShimmer 6s infinite;
+}
+
+@keyframes randomShimmer {
+  0%,
+  100% {
+    left: -100%;
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    left: 100%;
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+}
+
+#firstborns {
+  z-index: 2; /* On top of ascended */
+}
+
+#ascended {
+  z-index: 1;
+}
+
+.god {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #c9b87c;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  z-index: 3;
+  box-shadow: 0 0 100px #ffffff80;
+  cursor: pointer;
+}
+
+.god img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.fs {
+  rotate: -1deg;
+  animation: rotateImg 30s linear infinite;
+}
+
+.ac {
+  animation: rotateReverseImg 60s linear infinite;
+}
+
+
+@keyframes rotateImg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateReverseImg {
+  from {
+    transform: rotate(-0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateClockwise {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotateCounterClockwise {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+.flash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 9999;
+  display: none;
+  animation: flashOut 5s forwards;
+}
+
+@keyframes flashOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.flash-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: #1e1a14;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  opacity: 0.7;
+  border-radius: 50%;
+  animation: floatUp linear infinite;
+  filter: blur(0.6px);
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #2c1f17, #1a1410);
+  padding-top: 20px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #f8e4b4;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid #5a3e2b;
+  margin-bottom: 20px;
+}
+
+.sidenav a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #e2d8c3;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #5a3e2b;
+  color: #fff2d8;
+}
+
+/*Navigation colors*/
+
+.sidenav a.player {
+  color: #60f560;
+}
+
+.sidenav a.calender {
+  color: #f8b12c;
+}
+
+.sidenav a.time {
+  color: #b1b0b0;
+}
+
+.sidenav a.lore {
+  color: #35c0f7;
+}
+
+.sidenav a.gods {
+  color: linear-gradient(to bottom, #ffffff, #f4f4f4);
+  background: #1a110d;
+}
+
+.sidenav a.demon {
+  color: #ff3737;
+}
+
+.sidenav a.gp {
+  color: #ffd700;
+}
+
+.sidenav a.shop {
+  color: #e746e7;
+}

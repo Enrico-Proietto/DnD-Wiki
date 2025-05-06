@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  background-color: #1e1a14;
+  color: #e2d8c3;
+  padding: 40px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: #5a3e2b;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-event {
+  padding: 20px;
+  position: relative;
+  background-color: #2d241b;
+  border: 2px solid #5a3e2b;
+  border-radius: 8px;
+  width: 40%;
+  margin: 20px 0;
+}
+
+.timeline-event.left {
+  left: 0%;
+}
+
+.timeline-event.right {
+  left: 55%;
+}
+
+.timeline-event::after {
+  content: " ";
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+}
+
+.timeline-event.left::after {
+  right: -20px;
+  border-left-color: #5a3e2b;
+}
+
+.timeline-event.right::after {
+  left: -20px;
+  border-right-color: #5a3e2b;
+}
+
+.event-title {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 22px;
+  color: #f8e4b4;
+  margin-bottom: 10px;
+}
+
+.event-date {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #2c1f17, #1a1410);
+  padding-top: 20px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #f8e4b4;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid #5a3e2b;
+  margin-bottom: 20px;
+}
+
+.sidenav a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #e2d8c3;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #5a3e2b;
+  color: #fff2d8;
+}
+
+/*Navigation colors*/
+
+.sidenav a.player {
+  color: #60f560;
+}
+
+.sidenav a.calender {
+  color: #f8b12c;
+}
+
+.sidenav a.time {
+  color: #b1b0b0;
+  background: #1a110d;
+}
+
+.sidenav a.lore {
+  color: #35c0f7;
+}
+
+.sidenav a.gods {
+  color: linear-gradient(to bottom, #ffffff, #f4f4f4);
+}
+
+.sidenav a.demon {
+  color: #ff3737;
+}
+
+.sidenav a.gp {
+  color: #ffd700;
+}
+
+.sidenav a.shop {
+  color: #e746e7;
+}

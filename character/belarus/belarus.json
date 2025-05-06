@@ -1,0 +1,180 @@
+{
+    "belarus": [
+        {
+            "name": "Belarus Radowani",
+            "race": "Half-Elf Half-Orc",
+            "class": "Cleric",
+            "alignment": "Netrual-Good",
+            "hp": "34",
+            "ac": "16",
+            "gp": "90",
+            "level": "4",
+            "xp": "1325",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/belarus.html",
+            "imageSrc": "/images/characters/belarus.png",
+            "spellslotLvl1": "4",
+            "spellslotLvl2": "2",
+            "abilityScores": {
+                "strength": "14",
+                "dexterity": "12",
+                "constitution": "14",
+                "intelligence": "10",
+                "wisdom": "17",
+                "charisma": "9"
+            },
+            "skills": [
+                {
+                    "name": "Athletics",
+                    "amount": "+4"
+                },
+                {
+                    "name": "Insight",
+                    "amount": "+5"
+                },
+                {
+                    "name": "Medicine",
+                    "amount": "+2"
+                },
+                {
+                    "name": "Persuasion",
+                    "amount": "+4"
+                }
+            ],
+            "spells": {
+                "guidance": {
+                    "name": "Guidance",
+                    "description": "You touch one willing creature. Once before the spell ends, the target can roll a D4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.",
+                    "imageSrc": "/images/spells/guidance.png",
+                    "imageAlt": "Picture of the spell Guidance"
+                },
+                "sacredFlame": {
+                    "name": "Sacred Flame",
+                    "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.",
+                    "imageSrc": "/images/spells/sacred-flame.png",
+                    "imageAlt": "Picture of the spell Sacred Flame"
+                },
+                "bless": {
+                    "name": "Bless",
+                    "description": "You bless up to three creatures within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.",
+                    "imageSrc": "/images/spells/bless.png",
+                    "imageAlt": "Picture of the spell Bless"
+                },
+                "cureWounds": {
+                    "name": "Cure Wounds",
+                    "description": "A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier.",
+                    "imageSrc": "/images/spells/cure-wounds.png",
+                    "imageAlt": "Picture of the spell Cure Wounds"
+                },
+                "healingWord": {
+                    "name": "Healing Word",
+                    "description": "A creature of your choice that you can see within range regains Hit Points equal to 2d4 plus your spellcasting ability modifier.",
+                    "imageSrc": "/images/spells/healing-word.png",
+                    "imageAlt": "Picture of the spell Healing Word"
+                },
+                "shieldOfFaith": {
+                    "name": "Shield of Faith",
+                    "description": "A shimmering field surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.",
+                    "imageSrc": "/images/spells/shield-of-faith.png",
+                    "imageAlt": "Picture of the spell Shield of Faith"
+                },
+                "command": {
+                    "name": "Command",
+                    "description": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. Choose the command from these options: <i>Approach</i><br>The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.<br><br> <i>Drop</i><br>The target drops whatever it is holding and then ends its turn.<br><br> <i>Flee</i><br>The target spends its turn moving away from you by the fastest available means.<br><br> <i>Grovel</i><br>The target has the Prone and then ends its turn.<br><br> <i>Halt</i><br>On its turn, the target doesn’t move and takes no action or Bonus Action.<br>",
+                    "imageSrc": "/images/spells/command.png",
+                    "imageAlt": "Picture of the spell Command"
+                },
+                "healingSpirit": {
+                    "name": "Healing Spirit",
+                    "description": "You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 5-foot cube you can see within range. Until the spell ends, whenever you or a creature you can see moves into the spirit's space for the first time on a turn or starts its turn there, you can cause the spirit to restore **1d6** hit points to that creature (no action required). The spirit can’t heal constructs or undead. As a bonus action on your turn, you can move the Spirit up to 30 feet to a space you can see. The spirit can heal a number of times equal to 1 + your spellcasting ability modifier (minimum of twice). After healing that number of times, the spirit disappears.",
+                    "imageSrc": "/images/spells/healing-spirit.png",
+                    "imageAlt": "Picture of the spell Healing Spirit"
+                },
+                "moonbeam": {
+                    "name": "Moonbeam",
+                    "description": "A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell’s area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one. A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can’t assume a different form until it leaves the spell’s light. On each of your turns after you cast this spell, you can use an action to move the beam 60 feet in any direction.",
+                    "imageSrc": "/images/spells/moonbeam.png",
+                    "imageAlt": "Picture of the spell Moonbeam"
+                }
+            },
+            "gear": {
+                "leftGear": [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                "meele": [
+                    {
+                        "name": "Staff of Healing",
+                        "description": "Adds a +2 to all healing actions.",
+                        "imageSrc": "/images/gear/healingStaff.png",
+                        "imageAlt": "Picture of the Staff of Healing"
+                    },
+                    {
+                        "name": "The Help Sword",
+                        "description": "Spawn a spirit that aids you.",
+                        "imageSrc": "/images/gear/helpSword.png",
+                        "imageAlt": "Picture of the Help Sword"
+                    }
+                ],
+                "range": [
+                    {},
+                    {}
+                ],
+                "rightGear": [
+                    [],
+                    {},
+                    {},
+                    {},
+                    {}
+                ]
+            },
+            "items": {
+                "flameTouchedLantern": {
+                    "name": "Flame Touched Lantern",
+                    "imageSrc": "/images/gear/flame-touched_lantern.png",
+                    "imageAlt": "Picture of a Flame Touched Lantern",
+                    "description": "This magical lantern burns for 24 hours on a single flask of oil and emits light in a 60-foot radius.",
+                    "amount": "1"
+                },
+                "handySpicePouch": {
+                    "name": "Handy Spice Pouch",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "A small pouch that magically refills itself with a random spice each day, perfect for cooking on long journeys.",
+                    "amount": "1"
+                },
+                "featherlightTent": {
+                    "name": "Featherlight Tent",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "A magically reinforced tent that weighs only 5 pounds and can comfortably fit four people.",
+                    "amount": "1"
+                },
+                "mace": {
+                    "name": "Mace",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "A trusty old mace.",
+                    "amount": "1"
+                },
+                "lightCrossbow": {
+                    "name": "Light Crossbow",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "A simple crossbow.",
+                    "amount": "1"
+                },
+                "bolts": {
+                    "name": "Bolts",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "Normal shooting arrows.",
+                    "amount": "20"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    background: radial-gradient(circle at center, #1a1410 30%, #0f0d0a 100%);
+    color: #f5e6d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .beastiary-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+    color: #d4b07c;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px rgba(255, 230, 180, 0.4);
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #a99988;
+    margin-bottom: 40px;
+  }
+  
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+  }
+  
+  .category-card {
+    background-color: rgba(40, 30, 20, 0.85);
+    border: 2px solid #6f4e37;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255, 225, 170, 0.1);
+    cursor: pointer;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 235, 200, 0.4);
+    background-color: rgba(60, 45, 30, 0.95);
+  }
+  
+  .category-card h2 {
+    margin-top: 0;
+    color: #ffdbac;
+  }
+  
+  .category-card p {
+    font-size: 0.9rem;
+    color: #c5b09e;
+  }
+  

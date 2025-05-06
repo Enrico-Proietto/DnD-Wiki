@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='shop.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="layout">
+        <div class="sidenav">
+            <h2><a href="/index.html">Whisper's from the Void</a></h2>
+            <a class="player" href="/player/player.html">Players</a>
+            <a class="calender" href="/calender/calender.html">Calender</a>
+            <a class="time" href="/timeline/timeline.html">Timeline</a>
+            <a class="lore" href="/lore/lore.html">Chronical</a>
+            <a class="demon" href="/demonomicon/demonomicon.html">Demonomicon</a>
+            <a class="gp" href="/gold/gold.html">Gold</a>
+            <a class="shop" href="/shop/shop.html">Shop</a>
+        </div>
+
+        <div class="shop-nav">
+            <a href="#" onclick="loadShop('weapons.json', 'weapons')">⚔️ Weapons</a>
+            <a href="#" onclick="loadShop('potions.json', 'potions')">🧪 Potions</a>
+            <a href="#" onclick="loadShop('enchanting.json', 'enchanting')">✨ Enchanting</a>
+        </div>
+        
+        <div id="shop-container" class="shop-content"></div>
+    </div>
+
+    <div id="cart-summary" class="cart">
+        <h2>🛍️ Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="sendCart()" class="send-button">📨 Send Order</button>
+    </div>
+
+    <script src="shop.js"></script>
+
+</body>
+</html>

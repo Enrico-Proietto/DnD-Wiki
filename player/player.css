@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  background-color: #1e1a14;
+  color: #e2d8c3;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2.5em;
+  color: #f8e4b4;
+  margin-bottom: 30px;
+}
+
+.player-card {
+  display: flex;
+  background-color: #2d241b;
+  border: 2px solid #5a3e2b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.player-card img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+  border: 2px solid #f8e4b4;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.player-info h2 {
+  font-family: "Cinzel Decorative", cursive;
+  margin: 0 0 10px;
+  color: #f8e4b4;
+}
+
+.player-info p {
+  margin: 4px 0;
+  font-size: 1.1em;
+}
+
+.status-bars {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.status {
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.status.hp {
+  background-color: #8b0000;
+  color: #ffeaea;
+  border: 2px solid #ff4c4c;
+  box-shadow: 0 0 15px #ff4c4c;
+}
+
+.status.ac {
+  background-color: #2f2f2f;
+  color: #dcdcdc;
+  border: 2px solid #c0c0c0;
+  box-shadow: 0 0 10px #a9a9a9;
+}
+
+.status.gp {
+  background-color: #daa520;
+  color: #ffeaea;
+  border: 0 0 10px #fdc538;
+  box-shadow: 0 0 15px #fdc538;
+}
+
+.emoji {
+  margin-right: 8px;
+}
+
+.level-bar {
+  margin-top: 30px;
+  width: 80%;
+  max-width: 500px;
+  margin-right: auto;
+}
+
+.level-label {
+  font-size: 22px;
+  color: #ffd700;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #444;
+  border: 2px solid #888;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #ffd700;
+}
+
+.progress-bar {
+  height: 24px;
+  background: linear-gradient(to right, #daa520, #ffd700);
+  width: 0%;
+  transition: width 0.6s ease;
+}
+
+.xp-label {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #2c1f17, #1a1410);
+  padding-top: 20px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #f8e4b4;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid #5a3e2b;
+  margin-bottom: 20px;
+}
+
+.sidenav a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #e2d8c3;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #5a3e2b;
+  color: #fff2d8;
+}
+
+.double-playerCard {
+  display: flex;
+}
+
+
+.main {
+  margin-left: 260px;
+  padding: 20px;
+  background-color: #2d241b;
+  min-height: 100vh;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #444;
+  border: 2px solid #888;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 24px;
+  box-shadow: 0 0 10px #ffd700;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #daa520, #ffd700);
+  width: 0%;
+  transition: width 0.8s ease;
+}
+
+.level-label,
+.xp-label {
+  text-align: center;
+}
+
+.gold {
+  width: 20px;
+  height: 20px;
+}
+
+/*Race section*/
+
+.race.orc {
+  color: #4a956fa5;
+}
+
+.race.elf {
+  color: #9ae2c3;
+}
+
+.race.tiefling {
+  color: #9b1f1f;
+}
+
+.race.dragonborn {
+  color: #bb2cd8;
+}
+
+.race.vampire {
+  color: crimson;
+}
+
+.divider {
+  color: #f2f2f2;
+}
+
+/*Alignment section*/
+
+.mainAlignment.netural {
+  color: #dee14b;
+}
+
+.mainAlignment.chaotic {
+  color: #b12323;
+}
+
+.mainAlignment.lawful {
+  color: rgb(51, 51, 255);
+}
+
+.sideAlignment.good {
+  color: #3cc360;
+}
+
+.sideAlignment.evil {
+  color: #f72b2b;
+}
+
+/*Navigation colors*/
+
+.sidenav a.player {
+  color: #60f560;
+  background: #1a110d;
+}
+
+.sidenav a.calender {
+  color: #f8b12c;
+}
+
+.sidenav a.time {
+  color: #b1b0b0;
+}
+
+.sidenav a.lore {
+  color: #35c0f7;
+}
+
+.sidenav a.gods {
+  color: #f4f4f4;
+}
+
+.sidenav a.pillar {
+  color: #ffffff;
+}
+
+.sidenav a.demon {
+  color: #ff3737;
+}
+
+.sidenav a.gp {
+  color: #ffd700;
+}
+
+.sidenav a.shop {
+  color: #e746e7;
+}

@@ -1,0 +1,64 @@
+{
+    "karwallo": [
+        {
+            "name": "Karwallo",
+            "race": "Tiefling",
+            "class": "Paladin",
+            "alignment": "Chaotic-Good",
+            "hp": "47",
+            "ac": "16",
+            "gp": "292",
+            "level": "4",
+            "xp": "1125",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "",
+            "imageSrc": "",
+            "spellslotLvl1": "2",
+            "abilityScores": {
+                "strength": "16",
+                "dexterity": "12",
+                "constitution": "14",
+                "intelligence": "10",
+                "wisdom": "10",
+                "charisma": "14"
+            },
+            "skills": {
+                "insight": "+2",
+                "persuasion": "+4"
+            },
+            "spells": {
+                "holySmite": {
+                    "name": "Holy Smite",
+                    "description": "You draw down holy power to smite your enemies. Only evil and neutral creatures are harmed by the spell; good creatures are unaffected. The spell deals 1d8 points of damage."
+                },
+                "huntersMark": {
+                    "name": "Hunter’s Mark",
+                    "description": "You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature."
+                },
+                "vowOfEnmity": {
+                    "name": "Vow of Enmity",
+                    "description": "Gain  Advantage on Attack Rolls against an enemy. This effect lingers for 10 turns."
+                }
+            },
+            "gear": {
+
+            },
+            "items": {
+                "tarotCard": {
+                    "name": "The Devil Tarot Card",
+                    "imageSrc": "",
+                    "imageAlt": "Taort Card with of the devil.",
+                    "description": "A magical tarot card with the devil on it. Can be used to communicate with Azarel.",
+                    "amount": "1"
+                },
+                "javelins": {
+                    "name": "Javelins",
+                    "imageSrc": "",
+                    "imageAlt": "Picture of a javelin.",
+                    "description": "Javelins that can be thrown.",
+                    "amount": "2"
+                }
+            }
+        }
+    ]
+}

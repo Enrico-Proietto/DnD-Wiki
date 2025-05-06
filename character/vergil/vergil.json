@@ -1,0 +1,77 @@
+{
+    "vergil": [
+        {
+            "name": "Vergil Aoden",
+            "race": "Tiefling Vampire",
+            "class": "Rogue",
+            "alignment": "Netrual-Good",
+            "hp": "32",
+            "ac": "14",
+            "gp": "90",
+            "level": "4",
+            "xp": "1325",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/vergil.html",
+            "imageSrc": "/images/characters/vergil.png",
+            "abilityScores": {
+                "strength": "10",
+                "dexterity": "16",
+                "constitution": "12",
+                "intelligence": "14",
+                "wisdom": "10",
+                "charisma": "14"
+            },
+            "skills": {
+                "acrobatics": "+4",
+                "athletics": "+5",
+                "insight": "+4",
+                "medicine": "+2"
+            },
+            "spells": {
+                "mageHand": {
+                    "name": "Mage Hand",
+                    "description": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.<br>When you cast the spell, you can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial.<br>As a Magic action on your later turns, you can control the hand thus again. As part of that action, you can move the hand up to 30 feet. The hand can’t attack, activate magic items, or carry more than 10 pounds."
+                },
+                "disguiseSelf": {
+                    "name": "Disguise Self",
+                    "description": "ou make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can’t change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.<br>The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.<br>To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC."
+                }
+            },
+            "gear": {
+                "handOne": {
+                    "name": "Staff of Healing",
+                    "description": "Adds a +2 to all healing actions.",
+                    "imageSrc": ""
+                },
+                "handTwo": {
+                    "name": "The Help Sword",
+                    "description": "After swinging this sword a wheele is being spinned. After that one of these spirits is summond.<br>- Butcher<br>",
+                    "imageSrc": ""
+                }
+            },
+            "items": {
+                "scrollOfFireBolt": {
+                    "name": "Scroll of Fire Bolt",
+                    "imageSrc": "../images/gear/scrollOfFireBolt.png",
+                    "imageAlt": "Picture of a Scroll of Fire Bolt",
+                    "description": "A scroll that holds the spell fire bolt in it.",
+                    "amount": "1"
+                },
+                "healingPotion": {
+                    "name": "Potion of Healing",
+                    "imageSrc": "../images/gear/healingPotion.png",
+                    "imageAlt": "Picture of a Healing Potion",
+                    "description": "Restores 2d4+2 HP.",
+                    "amount": "2"
+                },
+                "arrows": {
+                    "name": "Arrows",
+                    "imageSrc": "../images/gear/arrow.png",
+                    "imageAlt": "Picture of arrows",
+                    "description": "Arrows suitable for bows and crossbows.",
+                    "amount": "9"
+                }
+            }
+        }
+    ]
+}

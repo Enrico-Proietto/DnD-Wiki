@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Beastiary - Whispers from the Void</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="beastiary.css">
+</head>
+<body>
+  <div class="beastiary-container">
+    <h1 class="title">📖 The Beastiary</h1>
+    <p class="subtitle">Browse the horrors and wonders that roam the realms...</p>
+    <div class="category-grid">
+      <div class="category-card" onclick="goToCategory('beasts.html')">
+        <h2>🦁 Beasts</h2>
+        <p>Natural creatures of the world.</p>
+      </div>
+      <div class="category-card" onclick="goToCategory('undead.html')">
+        <h2>☠️ Undead</h2>
+        <p>Souls that defy death.</p>
+      </div>
+      <div class="category-card" onclick="goToCategory('aberrations.html')">
+        <h2>👁 Aberrations</h2>
+        <p>Born from madness beyond.</p>
+      </div>
+      <div class="category-card" onclick="goToCategory('elementals.html')">
+        <h2>🔥 Elementals</h2>
+        <p>Living forces of nature.</p>
+      </div>
+      <div class="category-card" onclick="goToCategory('fiends.html')">
+        <h2>😈 Fiends</h2>
+        <p>Dwellers of the Lower Planes.</p>
+      </div>
+      <div class="category-card" onclick="goToCategory('celestials.html')">
+        <h2>🌟 Celestials</h2>
+        <p>Holy beings of radiant power.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function goToCategory(page) {
+      window.location.href = `/beastiary/${page}`;
+    }
+  </script>
+</body>
+</html>

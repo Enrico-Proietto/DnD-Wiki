@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Censer of Serenity",
+        "description": "This ornate mace doubles as a swinging censer. Instead of striking enemies, it releases pulses of radiant mist that calm and heal. Designed for peacekeepers and support clerics.",
+        "tags": "Mace",
+        "stock": "1",
+        "price": "275 GP",
+        "image": "images/"
+    },
+    {
+        "name": "Bloodbite",
+        "description": "A brutal single-headed axe with jagged edges and a leather-wrapped handle still stained red from ancient hunts. It hums when near battle.",
+        "tags": "Battleaxe",
+        "stock": "1",
+        "price": "400 GP",
+        "image": "images/"
+    }
+]

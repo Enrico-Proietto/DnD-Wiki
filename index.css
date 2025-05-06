@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  background-color: #1e1a14;
+  color: #e2d8c3;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #2c1f17, #1a1410);
+  padding-top: 20px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #f8e4b4;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid #5a3e2b;
+  margin-bottom: 20px;
+}
+
+.sidenav a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #e2d8c3;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+.sidenav a.title {
+  font-size: 30px;
+}
+
+.sidenav a:hover {
+  background-color: #5a3e2b;
+  color: #fff2d8;
+}
+
+.main {
+  margin-left: 260px;
+  padding: 20px;
+  background-color: #2d241b;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2.5em;
+  color: #f8e4b4;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/*Navigation colors*/
+.sidenav a.player {
+  color: #60f560;
+}
+
+.sidenav a.calender {
+  color: #f8b12c;
+}
+
+.sidenav a.time {
+  color: #b1b0b0;
+}
+
+.sidenav a.lore {
+  color: #35c0f7;
+}
+
+.sidenav a.gods {
+  color: #f4f4f4;
+}
+
+.sidenav a.pillar {
+  color: #ffffff;
+}
+
+
+.sidenav a.demon {
+  color: #d62b2b;
+}
+
+.sidenav a.gp {
+  color: #ffd700;
+}
+
+.sidenav a.shop {
+  color: #e746e7;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whispers from the Void - Chronicle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lore.css">
+</head>
+<body>
+    
+    <div class="sidenav">
+      <h2><a href="/index.html">Whisper's from the Void</a></h2>
+      <a class="player" href="/player/player.html">Players</a>
+      <a class="calender" href="/calender/calender.html">Calender</a>
+      <a class="time" href="/timeline/timeline.html">Timeline</a>
+      <a class="lore" href="/lore/lore.html">Chronical</a>
+      <a class="demon" href="/demonomicon/demonomicon.html">Demonomicon</a>
+      <a class="gp" href="/gold/gold.html">Gold</a>
+      <a class="shop" href="/shop/shop.html">Shop</a>
+    </div>
+
+  <div class="book" id="book">
+    <div class="cover" id="cover">Whispers from the Void</div>
+  </div>
+
+  <div class="book-container" id="bookPages" style="display:none;">
+    <div class="page-content">
+      <div class="left-page" onclick="prevPage()">
+        <div id="leftContent"></div>
+        <div class="page-number" id="leftPageNum"></div>
+      </div>
+      <div class="right-page" onclick="nextPage()">
+        <div id="rightContent"></div>
+        <div class="page-number" id="rightPageNum"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="lore.js"></script>
+</body>
+</html>
+

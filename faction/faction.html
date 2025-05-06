@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Factions & Organizations - Whispers from the Void</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="faction.css">
+</head>
+
+<body>
+  <div class="faction-hub">
+    <h1 class="hub-title">📜 Factions & Organizations</h1>
+    <p class="hub-subtitle">Power moves in shadows and in halls. These are the hands that steer the world...</p>
+
+    <div class="faction-grid">
+      <div class="faction-card" onclick="navigateTo('council_of_nine.html')">
+        <h2>🕯 Council of Nine</h2>
+        <p>The elusive arcane rulers of the magical world, each tied to a lost school of power.</p>
+      </div>
+
+      <div class="faction-card" onclick="navigateTo('silver_eye.html')">
+        <h2>👁 The Silver Eye</h2>
+        <p>A spy network that sees all but is seen by none.</p>
+      </div>
+
+      <div class="faction-card" onclick="navigateTo('oakenshade_watch.html')">
+        <h2>🌲 Oakenshade Watch</h2>
+        <p>Guardians of the ancient forest who fight to keep its secrets buried.</p>
+      </div>
+
+      <div class="faction-card" onclick="navigateTo('order_of_embers.html')">
+        <h2>🔥 Order of Embers</h2>
+        <p>Witch-hunters wielding sacred flame to cleanse corruption.</p>
+      </div>
+
+      <div class="faction-card" onclick="navigateTo('guild_of_blood.html')">
+        <h2>🩸 Guild of Blood</h2>
+        <p>Mercenaries, assassins, and debt-collectors who answer only to coin.</p>
+      </div>
+
+      <div class="faction-card" onclick="navigateTo('church_of_the_void.html')">
+        <h2>⛪ Church of the Void</h2>
+        <p>A rising faith whispering that all things end... and should.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = `/factions/${page}`;
+    }
+  </script>
+</body>
+
+</html>
