@@ -27,17 +27,23 @@
                 "persuasion": "+4"
             },
             "spells": {
-                "holySmite": {
-                    "name": "Holy Smite",
-                    "description": "You draw down holy power to smite your enemies. Only evil and neutral creatures are harmed by the spell; good creatures are unaffected. The spell deals 1d8 points of damage."
+                "divineSmite": {
+                    "name": "Divine Smite",
+                    "description": "You draw down holy power to smite your enemies. Only evil and neutral creatures are harmed by the spell; good creatures are unaffected. The spell deals 1d8 points of damage.",
+                    "imageSrc": "/images/spells/divine-smite.png",
+                    "imageAlt": "Picture of a divine smite."
                 },
                 "huntersMark": {
                     "name": "Hunter’s Mark",
-                    "description": "You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature."
+                    "description": "You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature.",
+                    "imageSrc": "/images/spells/hunters-mark.png",
+                    "imageAlt": "Picture of a hunter's mark."
                 },
                 "vowOfEnmity": {
                     "name": "Vow of Enmity",
-                    "description": "Gain  Advantage on Attack Rolls against an enemy. This effect lingers for 10 turns."
+                    "description": "Gain  Advantage on Attack Rolls against an enemy. This effect lingers for 10 turns.",
+                    "imageSrc": "/images/spells/vow-of-enmity.png",
+                    "imageAlt": "Picture of a vow of enmity."
                 }
             },
             "gear": {

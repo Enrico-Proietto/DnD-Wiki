@@ -29,28 +29,40 @@
             },
             "spells": {
                 "firebolt": {
-                    "name": "Firebold",
-                    "description": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn’t being worn or carried."
+                    "name": "Firebolt",
+                    "description": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn’t being worn or carried.",
+                    "imageSrc": "/images/spells/firebolt.png",
+                    "imageAlt": "Firebolt"
                 },
                 "mageHand": {
                     "name": "Mage Hand",
-                    "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw."
+                    "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.",
+                    "imageSrc": "/images/spells/mage-hand.png",
+                    "imageAlt": "Mage Hand"
                 },
                 "prestidigitation": {
                     "name": "Prestidigitation",
-                    "description": "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.<br><br><i>Senory Effect</i><br>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.<br><br><i>Fire Play</i><br>You instantaneously light or snuff out a candle, a torch, or a small campfire.<br><br><i>Clean or Soil</i><br>You instantaneously clean or soil an object no larger than 1 cubic foot.<br><br><i>Minor Sensation</i><br>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.<br><br><i>Magic Mark</i><br>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.<br><br><i>Minor Creation</i><br>You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth."
+                    "description": "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.<br><br><i>Senory Effect</i><br>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.<br><br><i>Fire Play</i><br>You instantaneously light or snuff out a candle, a torch, or a small campfire.<br><br><i>Clean or Soil</i><br>You instantaneously clean or soil an object no larger than 1 cubic foot.<br><br><i>Minor Sensation</i><br>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.<br><br><i>Magic Mark</i><br>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.<br><br><i>Minor Creation</i><br>You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth.",
+                    "imageSrc": "/images/spells/prestidigitation.png",
+                    "imageAlt": "Prestidigitation"
                 },
                 "mageArmor": {
                     "name": "Mage Armor",
-                    "description": "You touch a willing creature who isn’t wearing armor. Until the spell ends, the target’s base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor."
+                    "description": "You touch a willing creature who isn’t wearing armor. Until the spell ends, the target’s base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.",
+                    "imageSrc": "/images/spells/mage-armor.png",
+                    "imageAlt": "Mage Armor"
                 },
                 "shield": {
                     "name": "Shield",
-                    "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from Magic Missile."
+                    "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from Magic Missile.",
+                    "imageSrc": "/images/spells/shield.png",
+                    "imageAlt": "Shield"
                 },
                 "magicMissile": {
                     "name": "Magic Missile",
-                    "description": "You create three glowing darts of magical force. Each dart strikes a creature of your choice that you can see within range. A dart deals 1d4 + 1 Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several."
+                    "description": "You create three glowing darts of magical force. Each dart strikes a creature of your choice that you can see within range. A dart deals 1d4 + 1 Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+                    "imageSrc": "/images/spells/magic-missile.png",
+                    "imageAlt": "Magic Missile"
                 }
             },
             "gear": {
@@ -59,8 +71,8 @@
             "items": {
                 "handySpicePouch": {
                     "name": "Handy Spice Pouch",
-                    "imageSrc": "",
-                    "imageAlt": "",
+                    "imageSrc": "/images/gear/handy-spice-pouch.png",
+                    "imageAlt": "Picture of a Handy Spice Pouch",
                     "description": "A small pouch that magically refills itself with a random spice each day, perfect for cooking on long journeys.",
                     "amount": "1"
                 },

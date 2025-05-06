@@ -53,6 +53,7 @@ async function loadCharacter() {
       gearSlot.setAttribute('onClick', 'toggleTooltipLeftGear(this)')
 
       gearSlot.innerHTML = `
+      <img class="leftGearImg" src="${gear.imageSrc}">
             <div class="leftGear-tooltip">
               <strong>${gear.name}</strong><br>
               ${gear.description}
@@ -110,6 +111,7 @@ async function loadCharacter() {
       spellSlot.setAttribute('onclick', 'toggleTooltip(this)');
 
       spellSlot.innerHTML = `
+        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
           <div class="spell-tooltip">
             <strong>${spell.name}</strong><br>
             ${spell.description}

@@ -141,15 +141,15 @@
                 },
                 "handySpicePouch": {
                     "name": "Handy Spice Pouch",
-                    "imageSrc": "",
-                    "imageAlt": "",
+                    "imageSrc": "/images/gear/handy-spice-pouch.png",
+                    "imageAlt": "Picture of a Handy Spice Pouch",
                     "description": "A small pouch that magically refills itself with a random spice each day, perfect for cooking on long journeys.",
                     "amount": "1"
                 },
                 "featherlightTent": {
                     "name": "Featherlight Tent",
-                    "imageSrc": "",
-                    "imageAlt": "",
+                    "imageSrc": "/images/gear/featherlight-tent.png",
+                    "imageAlt": "Picture of a Featherlight Tent",
                     "description": "A magically reinforced tent that weighs only 5 pounds and can comfortably fit four people.",
                     "amount": "1"
                 },

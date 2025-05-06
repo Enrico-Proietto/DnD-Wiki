@@ -47,6 +47,7 @@ async function loadCharacter() {
       spellSlot.setAttribute('onclick', 'toggleTooltip(this)');
 
       spellSlot.innerHTML = `
+        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
         <div class="spell-tooltip">
           <strong>${spell.name}</strong><br>
           ${spell.description}

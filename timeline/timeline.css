@@ -34,6 +34,17 @@ body {
   margin: 20px 0;
 }
 
+.timeline-event.era {
+  background-color: #3a2d20;
+  border-left: 5px solid #ffd700;
+  border-right: 5px solid #ffd700;
+}
+
+.timeline-event.era .event-title {
+  color: #ffd700;
+  text-shadow: 0 0 4px #ffef99;
+}
+
 .timeline-event.left {
   left: 0%;
 }
