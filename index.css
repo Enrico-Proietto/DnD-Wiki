@@ -64,39 +64,15 @@ p {
 }
 
 /*Navigation colors*/
-.sidenav a.player {
-  color: #60f560;
-}
-
-.sidenav a.calender {
-  color: #f8b12c;
-}
-
-.sidenav a.time {
-  color: #b1b0b0;
-}
-
-.sidenav a.lore {
-  color: #35c0f7;
-}
-
-.sidenav a.gods {
-  color: #f4f4f4;
-}
-
-.sidenav a.pillar {
-  color: #ffffff;
-}
-
-
-.sidenav a.demon {
-  color: #d62b2b;
-}
-
-.sidenav a.gp {
-  color: #ffd700;
-}
-
-.sidenav a.shop {
-  color: #e746e7;
-}
+.sidenav a.player { color: #60f560; }
+.sidenav a.calender { color: #f8b12c; }
+.sidenav a.time { color: #b1b0b0; }
+.sidenav a.lore { color: #35c0f7; }
+.sidenav a.gods { color: #f4f4f4; }
+.sidenav a.pillar { color: #ffffff; }
+.sidenav a.demon { color: #d62b2b; }
+.sidenav a.beastiary { color: #159115; }
+.sidenav a.faction { color: #0004ff; }
+.sidenav a.gp { color: #ffd700; }
+.sidenav a.shop { color: #e746e7; }
+.sidenav a.feedback { color: #e2d8c3; }

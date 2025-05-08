@@ -1,0 +1,129 @@
+body {
+  font-family: "Cinzel", serif;
+  background-color: #1e1a14;
+  color: #e2d8c3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+input,
+textarea {
+  background-color: #2d241b;
+  border: 1px solid #5a3e2b;
+  color: #f8e4b4;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-family: "Cinzel", serif;
+}
+
+button {
+  padding: 10px;
+  background-color: #5a3e2b;
+  color: #fff2d8;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #8b5c3c;
+}
+
+.response {
+  margin-top: 20px;
+  color: #aaffaa;
+}
+
+input[type="range"] {
+  margin-bottom: 5px;
+  appearance: none;
+  background: #5a3e2b;
+  height: 6px;
+  border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #f8e4b4;
+  border: 2px solid #e2d8c3;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -8px;
+  box-shadow: 0 0 2px #fff;
+}
+
+.slider-output {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Sidebar Navigation */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #2c1f17, #1a1410);
+  padding-top: 20px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #f8e4b4;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid #5a3e2b;
+  margin-bottom: 20px;
+}
+
+.sidenav a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #e2d8c3;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+.sidenav a.title {
+  font-size: 30px;
+}
+
+.sidenav a:hover {
+  background-color: #5a3e2b;
+  color: #fff2d8;
+}
+
+/* Sidebar Link Colors */
+.sidenav a.player { color: #60f560; }
+.sidenav a.calender { color: #f8b12c; }
+.sidenav a.time { color: #b1b0b0; }
+.sidenav a.lore { color: #35c0f7; }
+.sidenav a.gods { color: #f4f4f4; }
+.sidenav a.pillar { color: #ffffff; }
+.sidenav a.demon { color: #d62b2b; }
+.sidenav a.beastiary { color: #159115; }
+.sidenav a.faction { color: #0004ff; }
+.sidenav a.gp { color: #ffd700; }
+.sidenav a.shop { color: #e746e7; }
+.sidenav a.feedback { color: #e2d8c3; background: #1a110d;}

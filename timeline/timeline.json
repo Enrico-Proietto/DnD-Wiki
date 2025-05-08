@@ -1,57 +1,79 @@
 [
     {
-        "name": "The beginning",
-        "year": "0",
-        "description": "A cosmic force created the world of Masthothal and the gods that can shape it."
+        "name": "🌌 World Creation",
+        "direction": "left",
+        "type": "normalEvent",
+        "year": "0 BCE",
+        "description": "The gods shape Masthothal as a divine testing ground, beginning the cosmic cycle."
     },
     {
-        "name": "",
-        "year": "",
+        "name": "🌍 The Primordial Era",
+        "direction": "right",
+        "type": "era",
+        "year": "1 AC - 795 AC",
+        "description": "Gods experiment with creation, shaping landscapes and life. Mortals appear as unintended results, surviving the chaotic divine playground."
+    },
+    {
+        "name": "🏛️ The Age of Foundations",
+        "direction": "left",
+        "type": "era",
+        "year": "796 AC - 2451 AC",
+        "description": "Civilizations rise and fall, guided or opposed by gods. Mortals master magic and begin shaping their fate."
+    },
+    {
+        "name": "⚔️ The Great Rebellion",
+        "direction": "right",
+        "type": "normalEvent",
+        "year": "1200 AC - 1256 AC",
+        "description": "A major uprising shakes divine order as mortals fight back against godly oppression and ancient empires fracture."
+    },
+    {
+        "name": "⛓️ Kharath-Duum",
+        "direction": "left",
+        "type": "normalEvent",
+        "year": "1203 AC",
+        "description": "A legendary conflict or calamity that shifted the balance of power permanently. Details are shrouded in myth."
+    },
+    {
+        "name": "🔥 The Great War of Avernus & Celestara",
+        "direction": "right",
+        "type": "normalEvent",
+        "year": "1436 AC - 1486 AC",
+        "description": "Heaven and Hell collide. Divine realms scar the material plane in a 50-year-long celestial conflict."
+    },
+    {
+        "name": "🕳️ The Epoch of Malzarek",
+        "direction": "left",
+        "type": "era",
+        "year": "2451 AC - 2456 AC",
+        "description": "A short, devastating era marked by the rule of the Void Tyrant—Malzarek's corruption spreads through reality itself."
+    },
+    {
+        "name": "👑 The Reign of Malzarek",
+        "direction": "right",
+        "type": "normalEvent",
+        "year": "2451 AC - 2456 AC",
         "description": ""
     },
     {
-        "name": "",
-        "year": "",
-        "description": ""
+        "name": "🛡️ The Age of Warding",
+        "direction": "left",
+        "type": "era",
+        "year": "2456 AC - 2756 AC",
+        "description": "Barriers are erected across planes and realms. Magic is constrained, divine access is sealed, and reality stabilizes."
     },
     {
-        "name": "",
-        "year": "",
-        "description": ""
-    },
-    {
-        "name": "",
-        "year": "",
-        "description": ""
-    },
-    {
-        "name": "",
-        "year": "",
-        "description": ""
-    },
-    {
-        "name": "",
-        "year": "",
-        "description": ""
-    },
-    {
-        "name": "",
-        "year": "",
-        "description": ""
-    },
-    {
-        "name": "",
-        "year": "",
-        "description": ""
-    },
-    {
-        "name": "Malzareks returned",
-        "year": "2756",
+        "name": "🌒 Age of Shadows Reborn",
+        "direction": "right",
+        "type": "era",
+        "year": "2756 AC",
         "description": "The void tyrant Malzarek returned from his entombment."
     },
     {
-        "name": "Death of Vyras Sangrelis",
-        "year": "2756",
-        "description": "The party slayed the vampire novle Vyras Sangrelis in Eldergrove."
+        "name": "💀 Death of Vyras Sangrelis",
+        "direction": "left",
+        "type": "normalEvent",
+        "year": "15 Zentharios 2756",
+        "description": "The demise of the immortal blood seer marks a turning point in prophecy and balance."
     }
 ]

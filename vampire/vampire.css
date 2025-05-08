@@ -1,0 +1,178 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  font-family: "Cinzel", serif;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.raindrop {
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background: crimson;
+  opacity: 0.7;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 100vh;
+  }
+}
+
+#flash,
+#bolt {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.1s;
+  z-index: -2;
+}
+
+#flash {
+  left: 0;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.4);
+}
+
+#bolt {
+  width: 4px;
+  background: red;
+  box-shadow: 0 0 30px red;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  color: crimson;
+}
+
+h2 {
+  color: #c21638;
+}
+
+.glow-text {
+  text-align: center;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+.group-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.vampire-group {
+  background: rgba(20, 0, 0, 0.75);
+  border: 1px solid crimson;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 0 10px crimson;
+  color: white;
+}
+
+.vampire-group h2 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: crimson;
+}
+
+.vampire-types {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vampire-type-placeholder {
+  background: rgba(80, 0, 0, 0.5);
+  border: 1px solid crimson;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 0.9rem;
+  color: #ddd;
+  text-align: center;
+}
+
+#blood-moon {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(200, 0, 0, 0.8) 0%,
+    rgba(150, 0, 0, 0.6) 40%,
+    rgba(100, 0, 0, 0.4) 70%,
+    transparent 100%
+  );
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 60px rgba(255, 0, 0, 0.4);
+  animation: moonPulse 6s infinite ease-in-out;
+  z-index: -3;
+}
+
+@keyframes moonPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 60px rgba(255, 0, 0, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.9), 0 0 80px rgba(255, 0, 0, 0.5);
+  }
+}
+
+.back-button {
+  color: #ff0033;
+  text-decoration: none;
+  border: 1px solid crimson;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: 0.3s;
+  display: flex;
+  justify-self: center;
+}
+
+.back-button:hover {
+  background: crimson;
+  color: #1e1a14;
+}
+
+
+i {
+  color: #ffe577;
+  text-shadow: 0 0 15px #fff1b6;
+}

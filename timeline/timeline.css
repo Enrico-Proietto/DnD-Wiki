@@ -118,6 +118,11 @@ body {
   color: #e2d8c3;
   display: block;
   transition: background 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+.sidenav a.title {
+  font-size: 30px;
 }
 
 .sidenav a:hover {
@@ -126,36 +131,15 @@ body {
 }
 
 /*Navigation colors*/
-
-.sidenav a.player {
-  color: #60f560;
-}
-
-.sidenav a.calender {
-  color: #f8b12c;
-}
-
-.sidenav a.time {
-  color: #b1b0b0;
-  background: #1a110d;
-}
-
-.sidenav a.lore {
-  color: #35c0f7;
-}
-
-.sidenav a.gods {
-  color: linear-gradient(to bottom, #ffffff, #f4f4f4);
-}
-
-.sidenav a.demon {
-  color: #ff3737;
-}
-
-.sidenav a.gp {
-  color: #ffd700;
-}
-
-.sidenav a.shop {
-  color: #e746e7;
-}
+.sidenav a.player { color: #60f560; }
+.sidenav a.calender { color: #f8b12c; }
+.sidenav a.time { color: #b1b0b0; background: #1a110d; }
+.sidenav a.lore { color: #35c0f7; }
+.sidenav a.gods { color: #f4f4f4; }
+.sidenav a.pillar { color: #ffffff; }
+.sidenav a.demon { color: #d62b2b; }
+.sidenav a.beastiary { color: #159115; }
+.sidenav a.faction { color: #0004ff; }
+.sidenav a.gp { color: #ffd700; }
+.sidenav a.shop { color: #e746e7; }
+.sidenav a.feedback { color: #e2d8c3; }

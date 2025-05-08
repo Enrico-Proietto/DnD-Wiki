@@ -4,22 +4,22 @@ const firstborns = [
   { name: "Draconis", image: "/images/gods/draconis.png", link: "gods/draconis.html" },
   { name: "Thalyris", image: "/images/gods/thalyris.png", link: "/gods/thalyris/thalyris.html" },
   { name: "Vorathor", image: "/images/gods/vorathor.png", link: "/gods/vorathor/vorathor.html" },
-  { name: "Thaloria", image: "/images/gods/thaloria.png", link: "/gods/thaloria/thaloria.html" },
-  { name: "Somnara", image: "/images/gods/somnara.png", link: "/gods/somnara/somnara.html" },
-  { name: "Thoron", image: "/images/gods/thoron.png", link: "/gods/thoron/thoron.html" },
-  { name: "Isharion", image: "/images/gods/isharion.png", link: "/gods/isharion/isharion.html" },
-  { name: "Vorakthos", image: "/images/gods/vorakthos.png", link: "/gods/vorakthos/vorakthos.html" },
+  { name: "Thaloria", image: "/images/gods/thaloria.png", link: "" },
+  { name: "Somnara", image: "/images/gods/somnara.png", link: "" },
+  { name: "Thoron", image: "/images/gods/thoron.png", link: "" },
+  { name: "Isharion", image: "/images/gods/isharion.png", link: "" },
+  { name: "Vorakthos", image: "/images/gods/vorakthos.png", link: "" },
 ];
 
 const ascended = [
   { name: "Elendor", image: "/images/gods/elendor.png", link: "/gods//elendor.html" },
   { name: "Anos Voldigoad", image: "/images/gods/anos.png", link: "/gods/anos/anos.html" },
   { name: "Zurathis", image: "/images/gods/zurathis.png", link: "/gods/zurathis/zurathis.html" },
-  { name: "Tyrathar", image: "/images/gods/tyrathar.png", link: "/gods/tyrathar/tyrathar.html" },
+  { name: "Tyrathar", image: "/images/gods/tyrathar.png", link: "" },
   { name: "Elorthas", image: "/images/gods/elorthas.png", link: "/gods//elorthas/elorthas.html" },
-  { name: "Zarrak", image: "/images/gods/zarrak.png", link: "/gods/zarrak/zarrak.html" },
-  { name: "Eryndor", image: "/images/gods/eryndor.png", link: "/gods/eryndor/eryndor.html" },
-  { name: "Zarethiel", image: "/images/gods/zarethiel.png", link: "/gods/zarethiel/zarethiel.html" },
+  { name: "Zarrak", image: "/images/gods/zarrak.png", link: "" },
+  { name: "Eryndor", image: "/images/gods/eryndor.png", link: "" },
+  { name: "Zarethiel", image: "/images/gods/zarethiel.png", link: "" },
 ];
 function positionGods(containerId, gods, radius) {
   const container = document.getElementById(containerId);

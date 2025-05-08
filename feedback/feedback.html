@@ -4,86 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Feedback - Whispers from the Void</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="feedback.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Cinzel', serif;
-      background-color: #1e1a14;
-      color: #e2d8c3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 50px;
-    }
-
-    h1 {
-      margin-bottom: 30px;
-      font-size: 2.5em;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      width: 500px;
-    }
-
-    input,
-    textarea {
-      background-color: #2d241b;
-      border: 1px solid #5a3e2b;
-      color: #f8e4b4;
-      padding: 10px;
-      margin-bottom: 15px;
-      font-family: 'Cinzel', serif;
-    }
-
-    button {
-      padding: 10px;
-      background-color: #5a3e2b;
-      color: #fff2d8;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #8b5c3c;
-    }
-
-    .response {
-      margin-top: 20px;
-      color: #aaffaa;
-    }
-
-    input[type="range"] {
-      margin-bottom: 5px;
-      appearance: none;
-      background: #5a3e2b;
-      height: 6px;
-      border-radius: 4px;
-    }
-
-    input[type="range"]::-webkit-slider-thumb {
-      appearance: none;
-      height: 20px;
-      width: 20px;
-      background: #f8e4b4;
-      border: 2px solid #e2d8c3;
-      border-radius: 50%;
-      cursor: pointer;
-      margin-top: -8px;
-      box-shadow: 0 0 2px #fff;
-    }
-
-    .slider-output {
-      margin-left: 10px;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
+    
   </style>
 </head>
 
 <body>
+
+  <div class="sidenav">
+    <h2><a class="title" href="/index.html">Whisper's from the Void</a></h2>
+    <a class="player" href="/player/player.html">Players</a>
+    <a class="calender" href="/calender/calender.html">Calender</a>
+    <a class="time" href="/timeline/timeline.html">Timeline</a>
+    <a class="lore" href="/lore/lore.html">Chronical</a>
+    <a class="gods" href="/gods/pantheon.html">Pantheon</a>
+    <a class="pillar" href="/pillars/pillars.html">Mythical Powers</a>
+    <a class="demon" href="/demonomicon/demonomicon.html">Demonomicon</a>
+    <a class="beastiary" href="/beastiary/beastiary.html">Beastiary</a>
+    <a class="faction" href="/faction/faction.html">Faction</a>
+    <a class="gp" href="/gold/gold.html">Gold</a>
+    <a class="shop" href="/shop/shop.html">Shop</a>
+    <a class="feedback" href="/feedback/feedback.html">Feedback</a>
+  </div>
+
   <h1>Give Us Your Feedback</h1>
   <form id="feedbackForm">
     <input type="text" id="name" placeholder="Your Name (optional)">

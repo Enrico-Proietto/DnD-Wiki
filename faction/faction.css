@@ -63,6 +63,14 @@ body {
   color: #cbbca6;
 }
 
+.faction-card.religion {
+  background: radial-gradient(ellipse at center, #0a0a1a, #000);
+}
+
+.faction-card.infernal {
+  background: radial-gradient(ellipse at center, #0e0c0c, #000);
+}
+
 /* Optional: stagger timing for each card */
 .faction-card:nth-child(2) {
   animation-delay: 0.5s;
