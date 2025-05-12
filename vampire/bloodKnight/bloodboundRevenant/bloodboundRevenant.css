@@ -1,11 +1,13 @@
 html,
 body {
   margin: 0;
-  padding: 0;
-  height: 100%;
-  background: black;
-  overflow: hidden;
+  padding: 40px;
+  background-color: #0a0a0a;
+  color: #f0eaea;
   font-family: "Cinzel", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #background {
@@ -16,6 +18,74 @@ body {
   height: 100vh;
   z-index: 0;
   pointer-events: none;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  flex: 1;
+  min-width: 300px;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 3rem;
+  color: crimson;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #900;
+}
+
+.lore {
+  background: rgba(50, 0, 0, 0.85);
+  padding: 20px;
+  border-left: 5px solid crimson;
+  font-style: italic;
+  line-height: 1.6;
+  box-shadow: 0 0 12px crimson;
+}
+
+.stat-block {
+  background: rgba(25, 0, 0, 0.9);
+  padding: 20px;
+  border: 1px solid crimson;
+  box-shadow: 0 0 15px crimson;
+}
+
+.stat {
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+}
+
+.stat i {
+  margin-right: 8px;
+}
+
+h3 {
+  color: crimson;
+  margin-top: 25px;
+  font-family: "Cinzel Decorative", serif;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.footer-box {
+  background: #1a1a1a;
+  padding: 15px;
+  margin-top: 30px;
+  border-left: 4px solid crimson;
+  font-style: italic;
+  max-width: 800px;
+  box-shadow: 0 0 5px crimson;
 }
 
 .raindrop {
@@ -56,76 +126,6 @@ body {
   width: 4px;
   background: red;
   box-shadow: 0 0 30px red;
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-align: center;
-  padding-top: 50px;
-}
-
-h1 {
-  color: crimson;
-}
-
-h2 {
-  color: #c21638;
-}
-
-.glow-text {
-  text-align: center;
-  text-shadow: 0 0 5px #ff0000;
-}
-
-.group-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  padding: 20px;
-  z-index: 1;
-  position: relative;
-}
-
-.vampire-group {
-  background: rgba(20, 0, 0, 0.75);
-  border: 1px solid crimson;
-  border-radius: 12px;
-  padding: 20px;
-  width: 280px;
-  box-shadow: 0 0 10px crimson;
-  color: white;
-}
-
-.vampire-group h2 {
-  margin: 0 0 10px;
-  font-size: 1.4rem;
-  color: crimson;
-}
-
-.vampire-types {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.vampire-type-placeholder {
-  background: rgba(80, 0, 0, 0.5);
-  border: 1px solid crimson;
-  border-radius: 8px;
-  padding: 8px;
-  font-size: 0.9rem;
-  color: #ddd;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.vampire-type-placeholder:hover {
-  text-decoration: none
 }
 
 #blood-moon {
@@ -170,14 +170,10 @@ h2 {
   transition: 0.3s;
   display: flex;
   justify-self: center;
+  margin-top: 20px;
 }
 
 .back-button:hover {
   background: crimson;
   color: #1e1a14;
-}
-
-i {
-  color: #ffe577;
-  text-shadow: 0 0 15px #fff1b6;
 }

@@ -3,16 +3,144 @@
         "name": "Censer of Serenity",
         "description": "This ornate mace doubles as a swinging censer. Instead of striking enemies, it releases pulses of radiant mist that calm and heal. Designed for peacekeepers and support clerics.",
         "tags": "Mace",
+        "rarity": "Uncommon",
         "stock": "1",
         "price": "275 GP",
-        "image": "images/"
+        "image": "/images/"
     },
     {
         "name": "Bloodbite",
         "description": "A brutal single-headed axe with jagged edges and a leather-wrapped handle still stained red from ancient hunts. It hums when near battle.",
         "tags": "Battleaxe",
+        "rarity": "Uncommon",
         "stock": "1",
         "price": "400 GP",
-        "image": "images/"
+        "image": "/images/"
+    },
+    {
+        "name": "Dagger of the Last Breath",
+        "description": "A thin, blackened blade forged with cold iron. Its edge seems to disappear when held still.",
+        "tags": "Dagger",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "250 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Oathbound Shield",
+        "description": "A white and gold kite shield, etched with the symbol of a broken chain.",
+        "tags": "Shield",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "350 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Rime-Touched Sword",
+        "description": "A steel blade that leaves a brief trail of frost when swung.",
+        "tags": "Longsword",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "300 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Ghoststep Boots",
+        "description": "Boots made of gray leather and stitched with spectral sinew.",
+        "tags": "Boots",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "275 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Thunderjaw Maul",
+        "description": "This oversized hammer crackles with latent thunder magic.",
+        "tags": "Maul",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "400 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Chainmail of the Stalwart",
+        "description": "Forged by dwarves, reinforced with adamantine rivets.",
+        "tags": "Chestplate",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "325 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Twinfang Blades",
+        "description": "Forged to be used together. When both blades hit the same target, they empower each other.",
+        "tags": "Shortswords",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "350 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Verdant Thornbow",
+        "description": "Grown from living wood, this bow hums softly with druidic energy.",
+        "tags": "Shortbow",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "375 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Helm of Clear Thought",
+        "description": "A steel helm inlaid with blue crystals. It feels cool against the head.",
+        "tags": "Helmet",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "200 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Spitefang Spear",
+        "description": "A black iron spear tipped with fang-shaped obsidian. Favored by vengeful warriors.",
+        "tags": "Spear",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "300 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "The Gambler’s Dagger",
+        "description": "A sleek blade engraved with dice and cards. Slightly curved, made for duels and bluffs.",
+        "tags": "Dagger, Magical",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "300 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Stormfang Bolts (Bundle of 5)",
+        "description": "These steel bolts crackle faintly with static. When fired, they leave a faint trail of blue sparks.",
+        "tags": "Crossbow bolts, Consumable",
+        "rarity": "Uncommon",
+        "stock": "25",
+        "price": "125 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "The Barkskin Cloak",
+        "description": "Made of interwoven bark and moss from a treant’s grove. Offers living protection.",
+        "tags": "Cloak, Magical",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "350 GP",
+        "image": "/images/"
+    },
+    {
+        "name": "Shield of Echoing Steel",
+        "description": "A solid metal shield with a faint resonance when struck. Echoes aid in combat awareness.",
+        "tags": "Shield, Magical",
+        "rarity": "Uncommon",
+        "stock": "1",
+        "price": "250 GP",
+        "image": "/images/"
     }
 ]

@@ -1,137 +1,210 @@
 [
-    {
-        "name": "Potion of Healing",
-        "description": "Restores 2d4+2 HP",
-        "tags": "Positive, Healing",
-        "stock": "10",
-        "price": "50 GP",
-        "image": "/images/gear/healingPotion.png"
-        
-    },
-    {
+	{
+		"name": "Potion of Healing",
+		"description": "Restores 2d4+2 HP",
+		"tags": "Healing, Positive, Common",
+		"stock": "10",
+		"price": "50 GP",
+		"image": "/images/potions/healingPotion.png"
+	},
+	{
         "name": "Greater Healing Potion",
         "description": "Restores 4d4+4 HP",
-        "tags": "Positive, Healing",
+        "tags": "Healing, Positive, Rare",
         "stock": "5",
         "price": "150 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Elixir of Undead Warding",
-        "description": "Grants resistance to necrotic for 1 hour",
-        "tags": "Positive, Resistance",
-        "stock": "3",
-        "price": "250 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Potion of Ghoststep",
-        "description": "Grants Invisibility for 1 minute or until you attack",
-        "tags": "Positive",
-        "stock": "2",
-        "price": "500 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Plague Purge Tonic",
-        "description": "Cures poisoned condition & grants immunity for 1 hour",
-        "tags": "Positive",
-        "stock": "3",
-        "price": "300 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Berserkers Brew",
-        "description": "+2 melee dmg for 1 min, but -2 AC",
-        "tags": "Positive",
-        "stock": "2",
-        "price": "400 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Flametongue Draft",
-        "description": "Weapon attacks deal +1d6 fire damage for 1 min",
-        "tags": "Positive",
-        "stock": "1",
-        "price": "500 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Fungal Elixir of Foresight",
-        "description": "+1 to AC and initiative for 10 minutes",
-        "tags": "Positive",
-        "stock": "2",
-        "price": "350 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Potion of Lesser Restoration",
-        "description": "Cure one disease or condition",
-        "tags": "Positive",
-        "stock": "2",
-        "price": "300 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Nightshade Nectar",
-        "description": "Cast Sleep (DC 13) on target you touch",
-        "tags": "Negative",
-        "stock": "2",
-        "price": "200 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Mystery Brew",
-        "description": "Wild effect (roll d100)",
-        "tags": "Positive, Negative",
-        "stock": "5",
-        "price": "10 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Potion of Gravemist",
-        "description": "Gain 10 ft flight for 1 minute",
-        "tags": "Positive",
-        "stock": "1",
-        "price": "250 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Potion of Ethereal Drift",
-        "description": "Become incorporeal for 1 round (disengage/dodge freely)",
-        "tags": "Positive",
-        "stock": "2",
-        "price": "450 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Everclear Tonic",
-        "description": "Clears mind, grants advantage vs charm/fear for 1 hour",
-        "tags": "Positive",
-        "stock": "3",
-        "price": "200 GP",
-        "image": ""
-        
-    },
-    {
-        "name": "Mana Infusion Flask",
-        "description": "Recover 1 used spell slot (1st level only)",
-        "tags": "Positive",
-        "stock": "2",
-        "price": "299 GP",
-        "image": ""
-        
-    }
+        "image": "/images/potions/greaterHealingPotion.png"
+	},
+	{
+		"name": "Potion of Lesser Restoration",
+		"description": "Cures one disease or condition (blinded, deafened, paralyzed, poisoned).",
+		"tags": "Healing, Utility, Recovery",
+		"stock": "2",
+		"price": "300 GP",
+		"image": "/images/potions/lesserRestoration.png"
+	},
+	{
+		"name": "Elixir of Night Vision",
+		"description": "Grants darkvision out to 60 feet for 8 hours.",
+		"tags": "Utility, Exploration, Vision",
+		"stock": "3",
+		"price": "150 GP",
+		"image": "/images/potions/nightVisionPotion.png"
+	},
+	{
+		"name": "Potion of Speed",
+		"description": "Grants the effects of the Haste spell for 1 minute.",
+		"tags": "Buff, Combat, Movement",
+		"stock": "1",
+		"price": "600 GP",
+		"image": "/images/potions/speedPotion.png"
+	},
+	{
+		"name": "Potion of Fire Resistance",
+		"description": "Grants resistance to fire damage for 1 hour.",
+		"tags": "Defensive, Elemental, Utility",
+		"stock": "2",
+		"price": "300 GP",
+		"image": "/images/potions/fireResistancePotion.png"
+	},
+	{
+		"name": "Potion of Growth",
+		"description": "Grants the effect of the Enlarge/Reduce spell (enlarge only) for 1 minute.",
+		"tags": "Buff, Combat, Physical",
+		"stock": "2",
+		"price": "400 GP",
+		"image": "/images/potions/growthPotion.png"
+	},
+	{
+		"name": "Flametongue Draft",
+		"description": "Weapon attacks deal +1d6 fire damage for 1 min",
+		"tags": "Buff, Offensive, Elemental",
+		"stock": "1",
+		"price": "500 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Plague Purge Tonic",
+		"description": "Cures poisoned condition & grants immunity for 1 hour",
+		"tags": "Healing, Defensive, Anti-Poison",
+		"stock": "3",
+		"price": "300 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Potion of Invisibility",
+		"description": "Grants invisibility for 1 minute or until you attack or cast a spell.",
+		"tags": "Utility, Stealth, Buff",
+		"stock": "2",
+		"price": "500 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Potion of Water Breathing",
+		"description": "Allows the drinker to breathe underwater for 1 hour.",
+		"tags": "Utility, Exploration",
+		"stock": "3",
+		"price": "200 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Potion of Spider Climb",
+		"description": "Grants the ability to walk on walls and ceilings for 1 hour.",
+		"tags": "Utility, Exploration, Movement",
+		"stock": "2",
+		"price": "350 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Potion of Feather Fall",
+		"description": "Grants the effect of the Feather Fall spell for 1 hour.",
+		"tags": "Utility, Defensive, Movement",
+		"stock": "3",
+		"price": "100 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Potion of Gravemist",
+		"description": "Gain 10 ft flight for 1 minute",
+		"tags": "Utility, Movement, Exploration",
+		"stock": "1",
+		"price": "600 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Potion of Mind Shielding",
+		"description": "Grants advantage on saving throws against mind-affecting spells and abilities for 1 hour.",
+		"tags": "Defensive, Buff, Mental",
+		"stock": "2",
+		"price": "400 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Everclear Tonic",
+		"description": "Clears mind, grants advantage vs charm/fear for 1 hour",
+		"tags": "Defensive, Mental, Buff",
+		"stock": "2",
+		"price": "200 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Potion of Fey Luck",
+		"description": "Grants the drinker advantage on all saving throws for 1 minute, but has a 5% chance to summon a mischievous fey.",
+		"tags": "Buff, Defensive, Risky, Fey",
+		"stock": "2",
+		"price": "400 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Elixir of Undead Warding",
+		"description": "Grants resistance to necrotic for 1 hour",
+		"tags": "Defensive, Elemental, Anti-Necrotic",
+		"stock": "2",
+		"price": "250 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Mystery Brew",
+		"description": "A random potion effect occurs (roll a d100 for a wild magic effect).",
+		"tags": "Wild Magic, Risky, Fun",
+		"stock": "8",
+		"price": "100 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Love Draught",
+		"description": "Inflicts Charm Person on one creature (DC 14) for 1 hour, but there’s a 10% chance the potion backfires and affects the drinker.",
+		"tags": "RP/Flavor, Debuff, Risky",
+		"stock": "1",
+		"price": "200 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Potion of Ethereal Drift",
+		"description": "Become incorporeal for 1 round (disengage/dodge freely)",
+		"tags": "Utility, Escape, Stealth",
+		"stock": "2",
+		"price": "450 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Mana Infusion Flask",
+		"description": "Recover 1 used spell slot (1st level only)",
+		"tags": "Utility, Spellcasting, Recovery",
+		"stock": "2",
+		"price": "400 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Nightshade Nectar",
+		"description": "Cast Sleep (DC 13) on target you touch",
+		"tags": "Debuff, Stealth, Magic",
+		"stock": "1",
+		"price": "200 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Berserker’s Brew",
+		"description": "+2 melee dmg for 1 min, but -2 AC",
+		"tags": "Buff, Offensive, Risky",
+		"stock": "1",
+		"price": "400 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Potion of Rage",
+		"description": "Grants +2 to Strength-based attack and damage rolls but disadvantage on Wisdom saving throws for 1 minute.",
+		"tags": "Buff, Offensive, Risky",
+		"stock": "1",
+		"price": "550 GP",
+		"image": "/images/potions/"
+	},
+	{
+		"name": "Fungal Elixir of Foresight",
+		"description": "+1 to AC and initiative for 10 minutes",
+		"tags": "Buff, Combat, Initiative",
+		"stock": "2",
+		"price": "350 GP",
+		"image": "/images/potions/"
+	}
 ]

@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   margin: 0;
   background-color: #1e1a14;
   color: #e2d8c3;
@@ -27,7 +27,7 @@ body {
 }
 
 .sidenav h2 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
   color: #f8e4b4;
   font-size: 20px;
   text-align: center;
@@ -63,7 +63,7 @@ body {
 }
 
 h1 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
   font-size: 2.5em;
   color: #f8e4b4;
 }
@@ -73,7 +73,6 @@ p {
   line-height: 1.6;
 }
 
-
 .shop-nav {
   grid-area: shop-nav;
   background-color: #2d241b;
@@ -82,7 +81,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 30px;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
 }
 
 .shop-nav a {
@@ -102,13 +101,12 @@ p {
 
 .item-card {
   background-color: #3a2e24;
-  border: 1px solid #6c845f;
   color: #f8e4b4;
   padding: 15px;
   margin: 10px;
   border-radius: 8px;
   width: 200px;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   text-align: center;
 }
 
@@ -128,7 +126,7 @@ p {
   padding: 16px;
   border-radius: 10px;
   width: 200px;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -140,7 +138,6 @@ p {
 /* Theme: Weapons */
 .shop-content.weapons .item-card {
   background-color: #3a2e24;
-  border: 2px solid #6c845f;
   color: #f8e4b4;
   box-shadow: 0 0 10px rgba(255, 255, 200, 0.2);
 }
@@ -200,9 +197,8 @@ p {
   border-radius: 8px;
   width: 160px;
   font-size: 14px;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   background-color: #3a2e24;
-  border: 1px solid #6c845f;
   color: #f8e4b4;
   text-align: center;
   transition: transform 0.3s ease;
@@ -217,7 +213,6 @@ p {
 /* Weapons Shop */
 .shop-content.weapons .item-card {
   background-color: #3a2e24;
-  border: 2px solid #6c845f;
   color: #f8e4b4;
   box-shadow: 0 0 10px rgba(255, 255, 200, 0.2);
 }
@@ -270,7 +265,7 @@ h1,
 h2,
 h3,
 .shop-nav a {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
 }
 
 .tag-badge {
@@ -283,7 +278,7 @@ h3,
   margin: 2px;
   border-radius: 12px;
   text-transform: uppercase;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   letter-spacing: 0.5px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
@@ -291,7 +286,7 @@ h3,
 /* Cart section */
 
 .cart {
-  position: fixed;
+  position: absolute;
   top: 100px;
   right: 20px;
   background-color: #2d241b;
@@ -300,14 +295,14 @@ h3,
   padding: 20px;
   width: 240px;
   color: #f8e4b4;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   z-index: 1000;
   overflow: auto;
 }
 
 .cart h2 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
   font-size: 20px;
   margin-bottom: 12px;
   text-align: center;
@@ -338,7 +333,7 @@ h3,
   color: white;
   border: none;
   border-radius: 6px;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -360,7 +355,7 @@ h3,
   border-radius: 6px;
   padding: 2px 6px;
   cursor: pointer;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 12px;
   transition: background 0.3s;
 }
@@ -377,7 +372,7 @@ h3,
   border: none;
   border-radius: 8px;
   color: white;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s ease;
@@ -390,8 +385,6 @@ h3,
 /* Tag section */
 
 /*Weapon tag section*/
-
-
 
 /*Potion tag section*/
 .tag-healing {
@@ -448,17 +441,327 @@ h3,
   background-color: #c79f1c;
 }
 
+/*Weapon Tags*/
+
+.tag-dagger {
+  background-color: #c0c0c0;
+}
+
+.tag-mace {
+  background-color: #888888;
+}
+
+.tag-maul {
+  background-color: #5D6D7E;
+}
+
+.tag-battleaxe {
+  background-color: #a93226;
+}
+
+.tag-longsword {
+  background-color: #2980b9;
+}
+
+.tag-shortsword {
+  background-color: #8e6e53;
+}
+
+.tag-shortswords {
+  background-color: #8e6e53;
+}
+
+.tag-longbow {
+  background-color: #1e8449;
+}
+
+.tag-shortbow {
+  background-color: #A0522D;
+}
+
+.tag-crossbow-bolts {
+  background-color: #616A6B;
+}
+
+.tag-warhammer {
+  background-color: #5d6d7e;
+}
+
+.tag-spear {
+  background-color: #cd7f32;
+}
+
+.tag-crossbow {
+  background-color: #6e2c00;
+}
+
+.tag-scimitar {
+  background-color: #5dade2;
+}
+
+.tag-rapier {
+  background-color: #9b59b6;
+}
+
+.tag-greatsword {
+  background-color: #2c3e50;
+}
+
+.tag-halberd {
+  background-color: #c0392b;
+}
+
+/*Defense Tags*/
+
+.tag-shield {
+  background-color: #cd7f32;
+}
+
+.tag-buckler {
+  background-color: #d5b895;
+}
+
+/*Armor Tags*/
+
+.tag-helmet {
+  background-color: #7f8c8d;
+}
+
+.tag-chestplate {
+  background-color: #95a5a6;
+}
+
+.tag-gaunlets {
+  background-color: #a04000;
+}
+
+.tag-greaves {
+  background-color: #bfc9ca;
+}
+
+.tag-boots {
+  background-color: #784212;
+}
+
+.tag-cloak {
+  background-color: #2e4053;
+}
+
+/*Rarity Tags*/
+
+.rarity-Common {
+  border: 2px solid #bfc9ca;
+}
+
+.tag-common {
+  background-color: #bfc9ca;
+}
+
+.rarity-Uncommon {
+  border: 2px solid #27AE60;
+}
+
+.tag-Uncommon {
+  background-color: #27AE60;
+}
+
+.rarity-Rare {
+  border: 2px solid #2980B9;
+}
+
+.tag-Rare {
+  background-color: #2980B9;
+}
+
+.rarity-Epic {
+  border: 2px solid #8E44AD;
+}
+
+.tag-Epic {
+  background-color: #8E44AD;
+}
+
+.rarity-Legendary {
+  border: 2px solid #F39C12;
+}
+
+.tag-Legendary {
+  background-color: #F39C12;
+}
+
+.rarity-Unique {
+  border: 2px solid #C0392B;
+}
+
+.tag-Unique {
+  background-color: #C0392B;
+}
+
+/*Quality Tags*/
+
+.tag-magical {
+  background-color: #8e44ad;
+}
+
+.tag-cursed {
+  background-color: #922b21;
+}
+
+.tag-enchanted {
+  background-color: #1d4d6d;
+}
+
+.tag-consumable {
+  background-color: #2196f3;
+}
+
 
 /*Navigation colors*/
-.sidenav a.player { color: #60f560; }
-.sidenav a.calender { color: #f8b12c; }
-.sidenav a.time { color: #b1b0b0; }
-.sidenav a.lore { color: #35c0f7; }
-.sidenav a.gods { color: #f4f4f4; }
-.sidenav a.pillar { color: #ffffff; }
-.sidenav a.demon { color: #d62b2b; }
-.sidenav a.beastiary { color: #159115; }
-.sidenav a.faction { color: #0004ff; }
-.sidenav a.gp { color: #ffd700; }
-.sidenav a.shop { color: #e746e7; background: #1a110d; }
-.sidenav a.feedback { color: #e2d8c3; }
+.sidenav a.player {
+  color: #60f560;
+}
+.sidenav a.calender {
+  color: #f8b12c;
+}
+.sidenav a.time {
+  color: #b1b0b0;
+}
+.sidenav a.lore {
+  color: #35c0f7;
+}
+.sidenav a.gods {
+  color: #f4f4f4;
+}
+.sidenav a.pillar {
+  color: #ffffff;
+}
+.sidenav a.demon {
+  color: #d62b2b;
+}
+.sidenav a.beastiary {
+  color: #159115;
+}
+.sidenav a.faction {
+  color: #0004ff;
+}
+.sidenav a.gp {
+  color: #ffd700;
+}
+.sidenav a.shop {
+  color: #e746e7;
+  background: #1a110d;
+}
+.sidenav a.feedback {
+  color: #e2d8c3;
+}
+
+/* Potion Tags */
+
+.tag-healing {
+  background-color: #E74C3C;
+}
+
+.tag-positive {
+  background-color: #2ECC71;
+}
+
+.tag-utility {
+  background-color: #5DADE2;
+}
+
+.tag-recovery {
+  background-color: #27AE60;
+}
+
+.tag-exploration {
+  background-color: #2980B9;
+}
+
+.tag-vision {
+  background-color: #6C5CE7;
+}
+
+.tag-buff {
+  background-color: #8E44AD;
+}
+
+.tag-combat {
+  background-color: #C0392B;
+}
+
+.tag-movement {
+  background-color: #F39C12;
+}
+
+.tag-defensive {
+  background-color: #566573;
+}
+
+.tag-elemental {
+  background-color: #E67E22;
+}
+
+.tag-physical {
+  background-color: #7B7D7D;
+}
+
+.tag-offensive {
+  background-color: #A93226;
+}
+
+.tag-anti-poison {
+  background-color: #58D68D;
+}
+
+.tag-stealth {
+  background-color: #1C2833;
+}
+
+.tag-escape {
+  background-color: #D6DBDF;
+  color: black;
+}
+
+.tag-mental {
+  background-color: #BB8FCE;
+}
+
+.tag-risky {
+  background-color: #E91E63;
+}
+
+.tag-fey {
+  background-color: #1ABC9C;
+}
+
+.tag-anti-necrotic {
+  background-color: #512E5F;
+}
+
+.tag-wild-magic {
+  background-color: #D35400;
+}
+
+.tag-fun {
+  background-color: #F1948A;
+}
+
+.tag-rp {
+  background-color: #FADBD8;
+}
+
+.tag-debuff {
+  background-color: #76448A;
+}
+
+.tag-magic {
+  background-color: #85C1E9;
+}
+
+.tag-spellcasting {
+  background-color: #7FB3D5;
+}
+
+.tag-initiative {
+  background-color: #F1C40F;
+}

@@ -21,7 +21,7 @@ async function loadShop(filename, theme) {
       itemPrices[item.name] = parseInt(item.price);
 
       const card = document.createElement('div');
-      card.className = 'item-card';
+      card.className = `item-card rarity-${item.rarity}`;
 
       const tags = item.tags.split(',').map(tag => {
         const trimmed = tag.trim();

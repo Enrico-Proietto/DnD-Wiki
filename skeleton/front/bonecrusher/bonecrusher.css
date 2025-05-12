@@ -1,0 +1,173 @@
+html,
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #0a0a0a;
+  color: #eee;
+  font-family: "Cinzel", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   overflow: hidden;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  flex: 1;
+  min-width: 300px;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lore {
+  background: #000000cc;
+  padding: 20px;
+  border-left: 4px solid #ffffff;
+  font-style: italic;
+  line-height: 1.6;
+  box-shadow: 0 0 10px #ffffff;
+  z-index: 1;
+}
+
+.stat-block {
+  background: #000000cc;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+  z-index: 1;
+}
+
+.stat {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.stat i {
+  margin-right: 8px;
+}
+
+h3 {
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: "Cinzel Decorative", serif;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.footer-box {
+  background: #1a1a1a;
+  padding: 15px;
+  margin-top: 30px;
+  border-left: 4px solid #555;
+  font-style: italic;
+  max-width: 800px;
+  box-shadow: 0 0 5px #ffffff;
+}
+
+.back-button {
+  color: #d4d4d4;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: 0.3s;
+  display: flex;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background: #ffffff;
+  color: #1e1a14;
+}
+
+/* Bone Dust */
+.dust {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: drift 11s linear infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(200px, -200px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Fog */
+.fog {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    transparent 0%,
+    #3f3f3f27 80%
+  );
+  animation: fogMove 30s ease-in-out infinite;
+}
+
+@keyframes fogMove {
+  0% {
+    transform: translate(-10%, -10%) scale(1);
+  }
+  50% {
+    transform: translate(10%, 10%) scale(1.1);
+  }
+  100% {
+    transform: translate(-10%, -10%) scale(1);
+  }
+}
+
+/* Bone Hand */
+.bone-hand {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url("https://i.imgur.com/VfgFAdV.png") no-repeat center/contain;
+  opacity: 0;
+  animation: clawOut 4s ease-out forwards;
+}
+
+@keyframes clawOut {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}

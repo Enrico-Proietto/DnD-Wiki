@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="feedback.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
   <style>
-    
+
   </style>
 </head>
 
@@ -153,17 +153,53 @@
     const form = document.getElementById('feedbackForm');
     const responseMsg = document.getElementById('responseMsg');
 
+    const questions = {
+      q1: "How much are you enjoying the campaign overall? (1–10)",
+      q2: "How invested are you in your character's story arc? (1–10)",
+      q3: "How well do you understand the overall story and plot? (1–10)",
+      q4: "How challenging do you find the encounters? (1–10)",
+      q5: "What do you enjoy most about the campaign?",
+      q6: "What do you enjoy least or find confusing/frustrating?",
+      q7: "Do you feel your character gets time to shine? (1–10)",
+      q8: "Anything you'd like to explore more with your character?",
+      q9: "Any moments where you felt especially connected to your character?",
+      q10: "How immersive do you find the world? (1–10)",
+      q11: "Do your actions affect the world meaningfully? (1–10)",
+      q12: "Favorite locations/factions?",
+      q13: "Lore you'd like to explore further?",
+      q14: "How balanced is combat? (1–10)",
+      q15: "How memorable are the enemies and fights? (1–10)",
+      q16: "What kind of challenges would you like more/less of?",
+      q17: "Favorite encounter so far?",
+      q18: "How comfortable do you feel roleplaying? (1–10)",
+      q19: "Do you feel supported/included by the group? (1–10)",
+      q20: "Any dynamics you'd like to improve?",
+      q21: "Are the twists and secrets impactful? (1–10)",
+      q22: "Do you trust any NPC? Why or why not?",
+      q23: "Favorite NPC and why?",
+      q26: "What is the DM doing well?",
+      q27: "Anything you’d like the DM to change?",
+      q28: "Any scenes/themes you’d love to explore?",
+      q29: "If your character had a motto?",
+      q30: "What would be their last words?",
+    };
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const data = new FormData(form);
       const entries = Array.from(data.entries());
 
-      const content = entries.map(([key, value]) => `**${key.replace(/^q/, 'Q')}:** ${value}`).join('\n\n');
+      const name = document.getElementById('name').value || 'Anonymous';
 
-      const res = await fetch('https://discord.com/api/webhooks/YOUR_WEBHOOK_URL', {
+      const content = entries.map(([key, value]) => {
+        const question = questions[key] || key;
+        return `**${question}**\n${value}`;
+      }).join('\n\n');
+
+      const res = await fetch('https://discord.com/api/webhooks/1370127818377396284/Op1oF03rJBpVQK_eytGV5Tuq8Lxqa8Mu6KTZwM-t5QD3ERnmyYDEojlQlM8QjT9naoIc', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ content: `📬 New Feedback:\n\n${content}` })
+        body: JSON.stringify({ content: `My Liege, new Feedback from ${name}:\n\n ${content}` })
       });
 
       if (res.ok) {

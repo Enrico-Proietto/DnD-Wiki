@@ -1,10 +1,130 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: "Cinzel", serif;
-  background: radial-gradient(ellipse at center, #1c4422, #000);
-  color: #e2d8c3;
+  background-color: #120d0d;
+  color: #e6c47c;
   overflow-x: hidden;
 }
+
+.container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 3rem;
+  color: #6effd0;
+  text-shadow: 0 0 10px #6effd0;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #a8ffbfa1;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.creature-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.creature-card {
+  background: #010002b3;
+  border: 2px solid #a8ffbfa1;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  color: white;
+  box-shadow: 0 0 15px #6effd0;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeInCard 1.5s ease-in-out;
+}
+
+.creature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #6effd0;
+}
+
+.skeleton {
+  border-color: #fafafa;
+  box-shadow: 0 0 15px #fafafa;
+}
+
+.zombie {
+  border-color: #17914e;
+  box-shadow: 0 0 15px #17914e;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px #fff);
+  }
+  to {
+    filter: drop-shadow(0 0 15px #fff);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.back-button {
+  color: #a8ffbfa1;
+  text-decoration: none;
+  border: 1px solid #6effd0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: 0.3s;
+  display: flex;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background: #6effd0;
+  color: #1e1a14;
+}
+
 
 .undead-main {
   margin-left: 270px;
