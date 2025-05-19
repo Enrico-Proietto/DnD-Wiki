@@ -66,8 +66,8 @@
                     {
                         "name": "Voidflow Sash",
                         "description": "<h3>Evasive Step</h3> <br> When an enemy misses you with a melee attack, you can move 5 feet in any direction without provoking opportunity attacks. <br> <h3>Flowing Motion</h3> <br>If you take the Dodge action, you gain +10 feet movement speed until the end of your next turn. <br> <h3>Stillness of the Void</h3> <br>If you remain motionless for one round, your next melee attack has advantage and deals extra damage equal to your Wisdom modifier. <br><br> <i>A silken sash woven with void energy, shifting between deep purple and black.</i> ",
-                        "imageSrc": "",
-                        "imageAlt": ""
+                        "imageSrc": "/images/gear/voidflowSash.png",
+                        "imageAlt": "Voidflow Sash"
                     },
                     {
                         "name": "Vortex Gaunlets",

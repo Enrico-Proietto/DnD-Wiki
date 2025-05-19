@@ -121,9 +121,9 @@
                     },
                     {
                         "name": "Light crossbows",
-                        "description": "Currently this slot is empty.",
-                        "imageSrc": "",
-                        "imageAlt": ""
+                        "description": "A small light crossbow.",
+                        "imageSrc": "/images/gear/lightCrossbow.png",
+                        "imageAlt": "Light crossbow"
                     }
                 ],
                 "rightGear": [
