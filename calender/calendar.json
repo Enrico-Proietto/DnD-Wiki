@@ -1,0 +1,67 @@
+{
+    "daysOfWeek": [
+        "Solarisday",
+        "Lunarisday",
+        "Morthalday",
+        "Vaithosday",
+        "Zephyrosday",
+        "Nethosday",
+        "Umbrosday"
+    ],
+    "months": [
+        {
+            "name": "Vaelithor",
+            "days": 31
+        },
+        {
+            "name": "Sythornis",
+            "days": 30
+        },
+        {
+            "name": "Ilvaris",
+            "days": 31
+        },
+        {
+            "name": "Draventor",
+            "days": 30
+        },
+        {
+            "name": "Othranis",
+            "days": 31
+        },
+        {
+            "name": "Zentharios",
+            "days": 30
+        },
+        {
+            "name": "Malzakar",
+            "days": 31
+        },
+        {
+            "name": "Thalmyris",
+            "days": 30
+        },
+        {
+            "name": "Yvrenoth",
+            "days": 31
+        },
+        {
+            "name": "Vorrakos",
+            "days": 30
+        },
+        {
+            "name": "Azarothal",
+            "days": 31
+        },
+        {
+            "name": "Nyxendar",
+            "days": 30
+        }
+    ],
+    "firstDayOfYear": "Lunarisday",
+    "currentDay": {
+        "month": "Zentharios",
+        "day": 18,
+        "time": "5:30 PM"
+    }
+}

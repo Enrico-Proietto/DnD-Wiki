@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  background: #0d0b0c;
+  color: #e6e0e0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.emblem {
+  width: 120px;
+  filter: drop-shadow(0 0 10px #a90011);
+}
+
+h1 {
+  font-size: 3rem;
+  color: #a90011;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #c9c9c9;
+}
+
+.divine-section {
+  background-color: #1a0f12;
+  border-left: 4px solid #a90011;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.goddess-image {
+  height: 450px;
+  width: 450px;
+}
+
+.goddess-text {
+  font-size: 30px;
+}
+
+.main-lore {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-left: 4px solid #b00c1f;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.houses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 70px;
+}
+
+.house-card {
+  background: #151515;
+  border: 2px solid #420e13;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.house-card h3 {
+  color: #ff3e57;
+  margin-top: 0;
+}
+
+.house-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.members {
+  margin-top: 30px;
+}
+
+.members h4 {
+  color: #ffaaaa;
+  margin-bottom: 5px;
+}
+
+.members ul {
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+.members li {
+  margin-bottom: 5px;
+}
+
+.members li::marker {
+  content: "➤";
+}

@@ -1,0 +1,113 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #f7f1e1; /* parchment tone */
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* subtle paper texture */
+  padding: 2rem;
+  color: #2e1f0f;
+}
+
+.month {
+  margin-bottom: 3rem;
+  background-color: #fdf6e3;
+  border: 2px solid #8b5c2c;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+}
+
+.month h2 {
+  margin-bottom: 0.5rem;
+  color: #4b2e14;
+  border-bottom: 2px solid #a1866f;
+  padding-bottom: 0.3rem;
+  font-size: 1.8rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.day-name,
+.day {
+  text-align: center;
+  padding: 0.6rem;
+  border: 1px solid #a1866f;
+}
+
+.day-name {
+  background-color: #c2a276;
+  color: #fefefe;
+  font-weight: bold;
+  text-shadow: 0 1px 1px #00000030;
+}
+
+.day {
+  height: 60px;
+  background-color: #fffdf7;
+  transition: background 0.2s;
+}
+
+.day:hover {
+  background-color: #f0e0c0;
+  cursor: pointer;
+}
+
+.last-month {
+  background-color: #c5bbb3;
+  border: 1px solid #ccc;
+}
+
+.today {
+  background-color: #f9e284;
+  border: 2px solid #b1810b;
+  font-weight: bold;
+  color: #4b2e14;
+  box-shadow: inset 0 0 8px #b1810b50;
+}
+
+#weather {
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  height: fit-content;
+  background-color: #e6dac4;
+  border-left: 4px solid #8b5c2c;
+  padding: 1.5rem;
+  margin-left: 2rem;
+  color: #3c2e1f;
+  max-width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#weather h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #b79e7e;
+  padding-bottom: 0.3rem;
+}
+
+#weather h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.back-button {
+  color: #522c0e;
+  text-decoration: none;
+  border: 1px solid #522c0e;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: 0.3s;
+  display: flex;
+  justify-self: center;
+  background-color: #f4e5cd;
+}
+
+.back-button:hover {
+  background: #522c0e;
+  color: #f1efef;
+}

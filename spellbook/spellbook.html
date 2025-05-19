@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schools of Magic</title>
+  <link href="spellbook.css" rel="stylesheet">
+</head>
+
+<body>
+  <canvas id="introCanvas"></canvas>
+  <canvas id="backgroundCanvas"></canvas>
+
+  <div class="page-transition" id="page">
+    <div class="school-hub">
+      <h1 class="hub-title">📜 <span class="aurora-text">Schools of Magic</span></h1>
+      <p class="hub-subtitle">Power moves in shadows and in halls. These are the hands that steer the world...</p>
+
+      <div class="school-grid" id="school-grid">
+
+        <div class="school-card abjuration">
+          <div class="spark-container"></div>
+          <h2 class="abjuration">Abjuration</h2>
+          <p>“The shield of the weave. Magic that wards, repels, seals, or nullifies.”</p>
+        </div>
+
+        <div class="school-card conjuration">
+          <div class="spark-container"></div>
+          <h2 class="conjuration">Conjuration</h2>
+          <p>“To summon is to defy distance and fate.”</p>
+        </div>
+
+        <div class="school-card divination">
+          <div class="spark-container"></div>
+          <h2 class="divination">Divination</h2>
+          <p>“To see beyond is to shape what is.”</p>
+        </div>
+
+        <div class="school-card enchantment">
+          <div class="spark-container"></div>
+          <h2 class="enchantment">Enchantment</h2>
+          <p>“Magic that whispers instead of roars.”</p>
+        </div>
+
+        <div class="school-card evocation" onclick="navigateTo('evocation/evocation.html')">
+          <div class="spark-container"></div>
+          <h2 class="evocation">Evocation</h2>
+          <p>“Power. Pure and unrepentant.”</p>
+        </div>
+
+        <div class="school-card illusion">
+          <div class="spark-container"></div>
+          <h2 class="illusion">Illusion</h2>
+          <p>“Perception is a lie. We are just better liars.”</p>
+        </div>
+
+        <div class="school-card necromancy" onclick="navigateTo('necromancy/necromancy.html', 'necromancy')">
+          <div class="spark-container"></div>
+          <h2 class="necromancy">Necromancy</h2>
+          <p>“Life and death are simply phases of usefulness.”</p>
+        </div>
+
+        <div class="school-card transmutation">
+          <div class="spark-container"></div>
+          <h2 class="transmutation">Transmutation</h2>
+          <p>“To alter the world is to know its every secret.”</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="/index.html" class="back-button" onclick="sessionStorage.removeItem('introPlayed')">← Return to Main</a>
+
+    <canvas id="exitCanvas"></canvas>
+    <div id="transitionOverlay"></div>
+  </div>
+
+  <script src="spellbook.js"></script>
+
+</body>
+
+</html>

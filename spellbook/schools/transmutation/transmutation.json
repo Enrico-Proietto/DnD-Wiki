@@ -1,0 +1,172 @@
+[
+    {
+        "name": "Mending",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 minute",
+        "range": "Touch",
+        "duration": "Instantaneous",
+        "description": "Repairs a single break or tear in an object, like a torn cloak or a broken chain.",
+        "classes": "Bard, Cleric, Druid, Sorcerer, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Shape Water",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "Instantaneous or 1 hour",
+        "description": "Manipulate water—move it, shape it, change its flow or temperature.",
+        "classes": "Druid, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Control Flames",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Instantaneous or 1 hour",
+        "description": "Control nonmagical flames—expand, extinguish, or shape them.",
+        "classes": "Druid, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Feather Fall",
+        "spellLevel": "Level 1",
+        "castingTime": "1 reaction",
+        "range": "60 feet",
+        "duration": "1 minute",
+        "description": "Slow the fall of up to 5 creatures, reducing falling speed to 60 ft/round, no damage.",
+        "classes": "Bard, Sorcerer, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Jump",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "1 minute",
+        "description": "Triple the jump distance of a creature.",
+        "classes": "Druid, Ranger, Sorcerer, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Longstrider",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "1 hour",
+        "description": "Increase the target’s movement speed by 10 feet.",
+        "classes": "Bard, Druid, Ranger, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Alter Self",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "Self",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Change your physical appearance, gain aquatic adaptation, or natural weapons.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "Conditional"
+    },
+    {
+        "name": "Darkvision",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "8 hours",
+        "description": "Give a creature the ability to see in darkness up to 60 feet.",
+        "classes": "Druid, Ranger, Sorcerer, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Fly",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "Grant the ability to fly with 60 feet movement speed.",
+        "classes": "Sorcerer, Warlock, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Gaseous Form",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Turn a creature into a misty cloud that can float and pass through cracks.",
+        "classes": "Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Water Breathing",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "24 hours",
+        "description": "Up to 10 creatures can breathe underwater.",
+        "classes": "Druid, Ranger, Sorcerer, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Polymorph",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Transform a creature into a beast of CR equal or lower to its level/CR.",
+        "classes": "Bard, Druid, Sorcerer, Wizard",
+        "damage": "Varies (based on transformation)"
+    },
+    {
+        "name": "Telekinesis",
+        "spellLevel": "Level 5",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "Move objects or creatures with your mind.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "Conditional (can shove, restrain)"
+    },
+    {
+        "name": "Flesh to Stone",
+        "spellLevel": "Level 6",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Turn a creature into stone with a failed Constitution save over multiple rounds.",
+        "classes": "Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Reverse Gravity",
+        "spellLevel": "Level 7",
+        "castingTime": "1 action",
+        "range": "100 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Create an area where gravity reverses and throws everything into the air.",
+        "classes": "Druid, Sorcerer, Wizard",
+        "damage": "Falling damage (up to DM)"
+    },
+    {
+        "name": "Abi-Dalzim’s Horrid Wilting",
+        "spellLevel": "Level 8",
+        "castingTime": "1 action",
+        "range": "150 feet",
+        "duration": "Instantaneous",
+        "description": "Extract moisture from creatures and plants in a 30-foot cube.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "12d8 necrotic (resisted by constructs/undead)"
+    },
+    {
+        "name": "Shapechange",
+        "spellLevel": "Level 9",
+        "castingTime": "1 action",
+        "range": "Self",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Transform into any creature you’ve seen of CR equal to your level or lower.",
+        "classes": "Druid, Wizard",
+        "damage": "Varies by form"
+    }
+]

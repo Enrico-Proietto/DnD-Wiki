@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Guidance",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Target gains +1d4 to one ability check of its choice before the roll.",
+        "classes": "Cleric, Druid, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Detect Magic",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action (or ritual)",
+        "range": "Self (30-foot radius)",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "Sense the presence of magic within 30 feet of you. You can see a faint aura around magical items.",
+        "classes": "Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Detect Evil and Good",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "Self (30-foot radius)",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "Detect aberrations, celestials, elementals, fey, fiends, or undead within 30 feet.",
+        "classes": "Cleric, Paladin",
+        "damage": ""
+    },
+    {
+        "name": "Detect Thoughts",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "Self (30 feet)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Read surface thoughts of a creature and probe deeper with a save.",
+        "classes": "Bard, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "See Invisibility",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "Self",
+        "duration": "1 hour",
+        "description": "See invisible creatures and objects as if they were visible.",
+        "classes": "Sorcerer, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Clairvoyance",
+        "spellLevel": "Level 3",
+        "castingTime": "10 minutes",
+        "range": "1 mile",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "Create an invisible sensor to hear or see a location within 1 mile that you’ve seen or can describe.",
+        "classes": "Bard, Cleric, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Tongues",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "1 hour",
+        "description": "The creature touched can understand and speak any spoken language.",
+        "classes": "Bard, Cleric, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Arcane Eye",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Create an invisible, magical eye that you can move and see through.",
+        "classes": "Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Legend Lore",
+        "spellLevel": "Level 5",
+        "castingTime": "10 minutes",
+        "range": "Self",
+        "duration": "Instantaneous",
+        "description": "Learn lore about a person, place, or object of legendary importance.",
+        "classes": "Bard, Cleric, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "True Seeing",
+        "spellLevel": "Level 6",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "1 hour",
+        "description": "Grants true sight out to 120 feet, seeing through illusions and invisibility.",
+        "classes": "Bard, Cleric, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Foresight",
+        "spellLevel": "Level 9",
+        "castingTime": "1 minute",
+        "range": "Touch",
+        "duration": "8 hours",
+        "description": "The target can't be surprised, has advantage on attack rolls, ability checks, and saving throws. Other creatures have disadvantage to hit it.",
+        "classes": "Bard, Druid, Warlock, Wizard",
+        "damage": ""
+    }
+]

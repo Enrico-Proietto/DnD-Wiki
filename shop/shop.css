@@ -18,7 +18,7 @@ body {
 .sidenav {
   height: 100%;
   width: 250px;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   background: linear-gradient(to bottom, #2c1f17, #1a1410);
@@ -188,7 +188,6 @@ p {
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-  min-height: 80vh;
 }
 
 /* Item card base */

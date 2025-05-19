@@ -1,0 +1,132 @@
+[
+    {
+        "name": "Chill Touch",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "1 round",
+        "description": "Create a ghostly skeletal hand that delivers a necrotic chill and prevents healing.",
+        "classes": "Sorcerer, Warlock, Wizard",
+        "damage": "1d8 necrotic (scales with level)"
+    },
+    {
+        "name": "Cause Fear",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "A creature becomes frightened of you until the spell ends.",
+        "classes": "Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Inflict Wounds",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "Instantaneous",
+        "description": "Make a melee spell attack to deal necrotic damage.",
+        "classes": "Cleric",
+        "damage": "3d10 necrotic (increases by level)"
+    },
+    {
+        "name": "Blindness/Deafness",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "1 minute",
+        "description": "You can blind or deafen a foe. Constitution saving throw to resist.",
+        "classes": "Bard, Cleric, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Gentle Repose",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "10 days",
+        "description": "Protects a corpse from decay and becoming undead.",
+        "classes": "Cleric, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Animate Dead",
+        "spellLevel": "Level 3",
+        "castingTime": "1 minute",
+        "range": "10 feet",
+        "duration": "Instantaneous",
+        "description": "Raise skeletons or zombies to serve you.",
+        "classes": "Cleric, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Blight",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "Instantaneous",
+        "description": "Necrotic energy drains moisture and vitality from a creature or plant.",
+        "classes": "Druid, Sorcerer, Warlock, Wizard",
+        "damage": "8d8 necrotic"
+    },
+    {
+        "name": "Danse Macabre",
+        "spellLevel": "Level 5",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Raise up to 5 skeletons or zombies from dead bodies.",
+        "classes": "Bard, Cleric, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Circle of Death",
+        "spellLevel": "Level 6",
+        "castingTime": "1 action",
+        "range": "150 feet",
+        "duration": "Instantaneous",
+        "description": "A sphere of negative energy expands to 60 feet radius.",
+        "classes": "Sorcerer, Warlock, Wizard",
+        "damage": "8d6 necrotic"
+    },
+    {
+        "name": "Finger of Death",
+        "spellLevel": "Level 7",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Instantaneous",
+        "description": "Send negative energy to kill or reanimate the target as a zombie if it dies.",
+        "classes": "Sorcerer, Warlock, Wizard",
+        "damage": "d8 + 30 necrotic"
+    },
+    {
+        "name": "Clone",
+        "spellLevel": "Level 8",
+        "castingTime": "1 hour",
+        "range": "Touch",
+        "duration": "Instantaneous",
+        "description": "Create a duplicate of yourself that activates upon your death.",
+        "classes": "Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Astral Projection",
+        "spellLevel": "Level 9",
+        "castingTime": "1 hour",
+        "range": "10 feet",
+        "duration": "Special",
+        "description": "Send your soul into the Astral Plane; your body remains behind in suspended animation.",
+        "classes": "Cleric, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Power Word: Kill",
+        "spellLevel": "Level 9",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Instantaneous",
+        "description": "Instantly kills one creature with 100 HP or fewer—no saving throw.",
+        "classes": "Sorcerer, Warlock, Wizard",
+        "damage": "Instant Death (conditional)"
+    }
+]

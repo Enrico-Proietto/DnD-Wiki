@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Minor Illusion",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "1 minute",
+        "description": "Create a sound or image of an object no larger than a 5-foot cube.",
+        "classes": "Bard, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Disguise Self",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "Self",
+        "duration": "1 hour",
+        "description": "Change your appearance, including clothing, armor, and facial features.",
+        "classes": "Bard, Sorcerer, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Silent Image",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "Create a visual illusion (no sound or smell) within a 15-foot cube.",
+        "classes": "Bard, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Mirror Image",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "Self",
+        "duration": "1 minute",
+        "description": "Create illusory duplicates of yourself to confuse attackers.",
+        "classes": "Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Invisibility",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Turn a creature invisible until the spell ends or they attack/cast a spell.",
+        "classes": "Artificer, Bard, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Major Image",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "Create a realistic illusion with sound, smell, and temperature.",
+        "classes": "Bard, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Greater Invisibility",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Make a creature invisible even if they attack or cast spells.",
+        "classes": "Bard, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Mislead",
+        "spellLevel": "Level 5",
+        "castingTime": "1 action",
+        "range": "Self",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Become invisible and create an illusory double you can control.",
+        "classes": "Bard, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Programmed Illusion",
+        "spellLevel": "Level 6",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Until dispelled",
+        "description": "Create an illusion that activates under specific conditions.",
+        "classes": "Bard, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Project Image",
+        "spellLevel": "Level 7",
+        "castingTime": "1 action",
+        "range": "500 miles",
+        "duration": "Concentration, up to 1 day",
+        "description": "Create an illusionary copy of yourself that can move and speak.",
+        "classes": "Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Illusory Dragon",
+        "spellLevel": "Level 8",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Create a terrifying illusion of a dragon. It frightens and damages enemies.",
+        "classes": "Wizard",
+        "damage": "7d6 psychic (frightens enemies too)"
+    }
+]

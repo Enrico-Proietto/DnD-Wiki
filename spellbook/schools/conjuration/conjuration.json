@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Mage Hand",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "1 minute",
+        "description": "Create a spectral hand that can manipulate or interact with objects.",
+        "classes": "Bard, Sorcerer, Warlock, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Find Familiar",
+        "spellLevel": "Level 1",
+        "castingTime": "1 hour",
+        "range": "10 feet",
+        "duration": "Instantaneous",
+        "description": "Summon a spirit in the form of a familiar—owl, cat, raven, etc.",
+        "classes": "Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Unseen Servant",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "1 hour",
+        "description": "Summon an invisible force to perform simple tasks.",
+        "classes": "Bard, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Misty Step",
+        "spellLevel": "Level 2",
+        "castingTime": "Bonus action",
+        "range": "Self",
+        "duration": "Instantaneous",
+        "description": "Teleport up to 30 feet to an unoccupied space you can see.",
+        "classes": "Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Tasha’s Cauldron of Everything",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "90 feet",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Summon a beast spirit (air, land, or water variant) to fight with you.",
+        "classes": "Druid, Ranger",
+        "damage": "Based on summoned beast (e.g., 1d8+X slashing)"
+    },
+    {
+        "name": "Summon Fey",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "90 feet",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Summon a fey creature with one of several moods (fuming, mirthful, or tricksy).",
+        "classes": "Druid, Warlock, Wizard",
+        "damage": "Varies with fey form"
+    },
+    {
+        "name": "Conjure Animals",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Summon beasts that obey your commands (e.g. 8 wolves or 1 giant elk).",
+        "classes": "Druid, Ranger",
+        "damage": "Based on creature summoned"
+    },
+    {
+        "name": "Dimension Door",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "500 feet",
+        "duration": "Instantaneous",
+        "description": "Teleport yourself and one willing creature to a spot within 500 feet.",
+        "classes": "Bard, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Summon Elemental",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "90 feet",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Summon an elemental (air, earth, fire, or water) that fights for you.",
+        "classes": "Druid, Wizard",
+        "damage": "Depends on elemental type"
+    },
+    {
+        "name": "Teleportation Circle",
+        "spellLevel": "Level 5",
+        "castingTime": "1 minute",
+        "range": "10 feet",
+        "duration": "1 round",
+        "description": "Create a portal to a permanent teleportation circle you know.",
+        "classes": "Bard, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Conjure Elemental",
+        "spellLevel": "Level 5",
+        "castingTime": "1 minute",
+        "range": "90 feet",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Summon an elemental tied to a natural element nearby.",
+        "classes": "Druid, Wizard",
+        "damage": "Based on elemental CR"
+    },
+    {
+        "name": "Word of Recall",
+        "spellLevel": "Level 6",
+        "castingTime": "1 action",
+        "range": "5 feet",
+        "duration": "Instantaneous",
+        "description": "Instantly teleport you and up to 5 others to a sanctuary.",
+        "classes": "Cleric",
+        "damage": ""
+    },
+    {
+        "name": "Teleport",
+        "spellLevel": "Level 7",
+        "castingTime": "1 action",
+        "range": "10 feet",
+        "duration": "Instantaneous",
+        "description": "Instantly teleport yourself and others to a destination you know well.",
+        "classes": "Bard, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Demiplane",
+        "spellLevel": "Level 8",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "1 hour",
+        "description": "Open a shadowy door to a pocket dimension you can store things in.",
+        "classes": "Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Gate",
+        "spellLevel": "Level 9",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Open a planar portal and potentially summon a specific extraplanar creature.",
+        "classes": "Cleric, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Astral Projection",
+        "spellLevel": "Level 9",
+        "castingTime": "1 hour",
+        "range": "10 feet",
+        "duration": "Special",
+        "description": "Send your spirit to the Astral Plane while your body remains in stasis.",
+        "classes": "Cleric, Warlock, Wizard",
+        "damage": ""
+    }
+]

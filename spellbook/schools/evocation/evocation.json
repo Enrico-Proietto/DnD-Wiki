@@ -1,0 +1,242 @@
+[
+    {
+        "name": "Fire Bolt",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Instantaneous",
+        "description": "You hurl a mote of fire at a creature or object within range.",
+        "classes": "Sorcerer, Wizard, Artificer",
+        "damage": "1d10 fire (scales at levels 5/11/17)"
+    },
+    {
+        "name": "Ray of Frost",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Instantaneous",
+        "description": "A beam of blue-white cold energy streaks toward a creature. It also reduces the target’s speed by 10 feet.",
+        "classes": "Sorcerer, Wizard, Artificer",
+        "damage": "1d8 cold (scales at levels 5/11/17)"
+    },
+    {
+        "name": "Shocking Grasp",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "Instantaneous",
+        "description": "Lightning springs from your hand to deliver a shock. The target can't take reactions until its next turn.",
+        "classes": "Sorcerer, Wizard, Artificer",
+        "damage": "1d8 lightning (scales at levels 5/11/17)"
+    },
+    {
+        "name": "Burning Hands",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "Self (15-foot cone)",
+        "duration": "Instantaneous",
+        "description": "Each creature in a 15-ft cone must make a Dex save or take fire damage.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "3d6 fire (increases by 1d6 per level)"
+    },
+    {
+        "name": "Magic Missile",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Instantaneous",
+        "description": "You create three glowing darts of magical force. Each dart hits a creature you choose.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "1d4+1 force per dart (increases +1 dart per spell level)"
+    },
+    {
+        "name": "Thunderwave",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "Self (15-foot cube)",
+        "duration": "Instantaneous",
+        "description": "A wave of thunderous force sweeps out from you. Creatures must make a Con save or take damage and be pushed back.",
+        "classes": "Bard, Druid, Sorcerer, Wizard",
+        "damage": "2d8 thunder (increases by 1d8 per level)"
+    },
+    {
+        "name": "Scorching Ray",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Instantaneous",
+        "description": "You create three rays of fire and hurl them at targets within range. Each ray requires a separate ranged spell attack.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "2d6 fire per ray"
+    },
+    {
+        "name": "Shatter",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Instantaneous",
+        "description": "A sudden loud ringing noise painfully intense erupts from a point you choose, damaging creatures and objects in a 10-foot radius sphere.",
+        "classes": "Bard, Sorcerer, Warlock, Wizard",
+        "damage": "3d8 thunder"
+    },
+    {
+        "name": "Aganazzar’s Scorcher",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "30 feet (line)",
+        "duration": "Instantaneous",
+        "description": "A line of roaring flame 30 feet long and 5 feet wide blasts out from you in a direction you choose.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "3d8 fire"
+    },
+    {
+        "name": "Fireball",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "150 feet",
+        "duration": "Instantaneous",
+        "description": "A bright streak flashes from your pointing finger to a point you choose, erupting into a 20-foot-radius explosion of fire.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "8d6 fire"
+    },
+    {
+        "name": "Lightning Bolt",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "100 feet (line)",
+        "duration": "Instantaneous",
+        "description": "A stroke of lightning blasts out in a 100-foot long, 5-foot wide line from you. Each creature in the line must make a Dexterity saving throw.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "8d6 lightning"
+    },
+    {
+        "name": "Melf’s Minute Meteors",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "Self",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "You create six tiny meteors that orbit you. You can hurl them on your turns to explode on impact.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "2d6 fire per meteor (Dex save)"
+    },
+    {
+        "name": "Ice Storm",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "300 feet",
+        "duration": "Instantaneous",
+        "description": "Hailstones rain down in a 20-foot-radius, 40-foot-high cylinder. Terrain becomes difficult for 1 round.",
+        "classes": "Druid, Sorcerer, Wizard",
+        "damage": "2d8 bludgeoning + 4d6 cold"
+    },
+    {
+        "name": "Wall of Fire",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "You create a wall of fire up to 60 feet long and 20 feet high, which deals damage to creatures near it or within it.",
+        "classes": "Druid, Sorcerer, Wizard",
+        "damage": "5d8 fire"
+    },
+    {
+        "name": "Cone of Cold",
+        "spellLevel": "Level 5",
+        "castingTime": "1 action",
+        "range": "Self (60-foot cone)",
+        "duration": "Instantaneous",
+        "description": "A blast of cold air erupts from your hands. Each creature in the area must make a Constitution saving throw.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "8d8 cold"
+    },
+    {
+        "name": "Immolation",
+        "spellLevel": "Level 5",
+        "castingTime": "1 action",
+        "range": "90 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "A creature bursts into flames and continues to burn each round unless extinguished.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "8d6 fire (initial), 4d6 fire (each round)"
+    },
+    {
+        "name": "Chain Lightning",
+        "spellLevel": "Level 6",
+        "castingTime": "1 action",
+        "range": "150 feet",
+        "duration": "Instantaneous",
+        "description": "A bolt arcs from one creature and then jumps to up to three others. Each must be within 30 feet of the previous target.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "10d8 lightning"
+    },
+    {
+        "name": "Sunbeam",
+        "spellLevel": "Level 6",
+        "castingTime": "1 action",
+        "range": "60 feet (line)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "A beam of radiant light blinds and damages creatures in its path. You can create a new beam every turn.",
+        "classes": "Druid, Sorcerer, Wizard",
+        "damage": "6d8 radiant (plus blindness)"
+    },
+    {
+        "name": "Delayed Blast Fireball",
+        "spellLevel": "Level 7",
+        "castingTime": "1 action",
+        "range": "150 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "You place a tiny glowing bead. The longer you wait, the more powerful the explosion becomes.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "Starts at 12d6 fire + 1d6 for each round delayed"
+    },
+    {
+        "name": "Fire Storm",
+        "spellLevel": "Level 7",
+        "castingTime": "1 action",
+        "range": "150 feet",
+        "duration": "Instantaneous",
+        "description": "Sheets of fire fill a 10-foot cubes pattern that you arrange, causing damage to those caught inside.",
+        "classes": "Cleric, Druid",
+        "damage": "7d10 fire"
+    },
+    {
+        "name": "Sunburst",
+        "spellLevel": "Level 8",
+        "castingTime": "1 action",
+        "range": "150 feet",
+        "duration": "Instantaneous",
+        "description": "Blinding light in a 60-foot-radius explodes, damaging and potentially blinding creatures.",
+        "classes": "Druid, Sorcerer, Wizard",
+        "damage": "12d6 radiant"
+    },
+    {
+        "name": "Incendiary Cloud",
+        "spellLevel": "Level 8",
+        "castingTime": "1 action",
+        "range": "150 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "A roiling cloud of smoke and flame fills the area, damaging creatures inside it.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "10d8 fire"
+    },
+    {
+        "name": "Meteor Swarm",
+        "spellLevel": "Level 9",
+        "castingTime": "1 action",
+        "range": "1 mile",
+        "duration": "Instantaneous",
+        "description": "Four massive meteors fall, each exploding in a 40-foot radius. Massive devastation ensues.",
+        "classes": "Sorcerer, Wizard",
+        "damage": "20d6 fire + 20d6 bludgeoning"
+    },
+    {
+        "name": "Power Word: Kill",
+        "spellLevel": "Level 9",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Instantaneous",
+        "description": "If a creature has 100 hit points or fewer, it dies instantly with no saving throw.",
+        "classes": "Sorcerer, Warlock, Wizard",
+        "damage": "Instant Death (conditional)"
+    }
+]

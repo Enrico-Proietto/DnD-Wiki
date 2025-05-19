@@ -23,12 +23,38 @@
                 "wisdom": "17",
                 "charisma": "9"
             },
-            "skills": {
-                "athletics": "+4",
-                "insight": "+5",
-                "medicine": "+2",
-                "persuasion": "+4"
-            }
+            "skills": [
+                {
+                    "name": "Athletics",
+                    "amount": "+4"
+                },
+                {
+                    "name": "Insight",
+                    "amount": "+5"
+                },
+                {
+                    "name": "Medicine",
+                    "amount": "+2"
+                },
+                {
+                    "name": "Persuasion",
+                    "amount": "+4"
+                }
+            ],
+            "statistics": [
+                {
+                    "name": "Hits",
+                    "amount": 0
+                },
+                {
+                    "name": "Damage",
+                    "amount": 0
+                },
+                {
+                    "name": "Faints",
+                    "amount": 0
+                }
+            ]
         }
     ],
     "karwallo": [
@@ -57,7 +83,21 @@
             "skills": {
                 "insight": "+2",
                 "persuasion": "+4"
-            }
+            },
+            "statistics": [
+                {
+                    "name": "Hits",
+                    "amount": 0
+                },
+                {
+                    "name": "Damage",
+                    "amount": 0
+                },
+                {
+                    "name": "Faints",
+                    "amount": 0
+                }
+            ]
         }
     ],
     "lein": [
@@ -87,7 +127,21 @@
             "skills": {
                 "arcana": "+2",
                 "history": "+2"
-            }
+            },
+            "statistics": [
+                {
+                    "name": "Hits",
+                    "amount": 0
+                },
+                {
+                    "name": "Damage",
+                    "amount": 0
+                },
+                {
+                    "name": "Faints",
+                    "amount": 0
+                }
+            ]
         }
     ],
     "willump": [
@@ -119,7 +173,21 @@
                 "athletics": "+5",
                 "insight": "+4",
                 "medicine": "+2"
-            }
+            },
+            "statistics": [
+                {
+                    "name": "Hits",
+                    "amount": 0
+                },
+                {
+                    "name": "Damage",
+                    "amount": 0
+                },
+                {
+                    "name": "Faints",
+                    "amount": 0
+                }
+            ]
         }
     ],
     "vergil": [
@@ -149,7 +217,21 @@
                 "athletics": "+5",
                 "insight": "+4",
                 "medicine": "+2"
-            }
+            },
+            "statistics": [
+                {
+                    "name": "Hits",
+                    "amount": 0
+                },
+                {
+                    "name": "Damage",
+                    "amount": 0
+                },
+                {
+                    "name": "Faints",
+                    "amount": 0
+                }
+            ]
         }
     ],
     "shimazu": [
@@ -180,7 +262,21 @@
                 "perception": "+3",
                 "survival": "+3",
                 "insight": "+3"
-            }
+            },
+            "statistics": [
+                {
+                    "name": "Hits",
+                    "amount": 0
+                },
+                {
+                    "name": "Damage",
+                    "amount": 0
+                },
+                {
+                    "name": "Faints",
+                    "amount": 0
+                }
+            ]
         }
     ]
 }
