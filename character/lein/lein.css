@@ -24,93 +24,15 @@ body {
   height: 100vh;
 }
 
-.sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: linear-gradient(to bottom, #2c1f17, #1a1410);
-  padding-top: 20px;
-  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
-}
-
-.sidenav h2 {
-  font-family: "Cinzel Decorative", cursive;
-  color: #f8e4b4;
-  font-size: 20px;
-  text-align: center;
-  padding: 0 15px 20px;
-  border-bottom: 1px solid #5a3e2b;
-  margin-bottom: 20px;
-}
-
-.sidenav a {
-  padding: 12px 20px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #e2d8c3;
-  display: block;
-  transition: background 0.3s, color 0.3s;
-  font-weight: bold;
-}
-
-.sidenav a.title {
-  font-size: 30px;
-}
-
-.sidenav a:hover {
-  background-color: #5a3e2b;
-  color: #fff2d8;
-}
-
-/* Sidebar Link Colors */
-.sidenav a.player {
-  color: #60f560;
-}
-.sidenav a.calender {
-  color: #f8b12c;
-}
-.sidenav a.time {
-  color: #b1b0b0;
-}
-.sidenav a.lore {
-  color: #35c0f7;
-}
-.sidenav a.gods {
-  color: #f4f4f4;
-}
-.sidenav a.pillar {
-  color: #ffffff;
-}
-.sidenav a.demon {
-  color: #d62b2b;
-}
-.sidenav a.beastiary {
-  color: #159115;
-}
-.sidenav a.faction {
-  color: #0004ff;
-}
-.sidenav a.gp {
-  color: #ffd700;
-}
-.sidenav a.shop {
-  color: #e746e7;
-}
-.sidenav a.feedback {
-  color: #e2d8c3;
-}
-
 .header {
   grid-area: header;
-  background-color: #113983;
+  background-color: #468ba7;
   display: flex;
   align-items: center;
   font-size: 24px;
   font-family: "Cinzel Decorative", cursive;
-  color: #00aeff;
-  border-bottom: 2px solid #2155b6;
+  color: #7bcdee;
+  border-bottom: 2px solid #64bde0;
   margin-left: 52px;
 }
 
@@ -122,7 +44,7 @@ body {
   justify-content: center;
   position: relative;
   margin-left: 52px;
-  background: radial-gradient(ellipse at center, #0c0d4d 0%, #07084d 100%);
+  background: radial-gradient(ellipse at center, #468ba7 0%, #388aaa 100%);
 }
 
 .middle-row {
@@ -157,16 +79,16 @@ body {
 .gear-slot {
   width: 80px;
   height: 80px;
-  background-color: #113983;
-  border: 2px solid #2155b6;
+  background-color: #468ba7;
+  border: 2px solid #7bcdee;
   border-radius: 6px;
-  box-shadow: 0 0 10px rgba(112, 170, 115, 0.3);
+  box-shadow: 0 0 10px #64bde0;
 }
 
 .spell-slot {
   position: relative;
-  background-color: #113983;
-  border: 2px solid #2155b6;
+  background-color: #468ba7;
+  border: 2px solid #7bcdee;
   color: #e2d8c3;
   padding: 10px 15px;
   border-radius: 8px;
@@ -174,7 +96,7 @@ body {
   text-align: center;
   font-family: "Cinzel", serif;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 5px #64bde0;
   transition: 0.3s ease;
   overflow: visible;
 }
@@ -185,7 +107,7 @@ body {
   gap: 10px;
 }
 
-.ranged {
+.range {
   display: flex;
   gap: 10px;
 }
@@ -193,13 +115,13 @@ body {
 .character-image {
   width: 480px;
   height: 480px;
-  background-color: #113983;
+  background-color: #468ba7;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   margin: 0 20px;
-  border: 2px solid #2155b6;
+  border: 2px solid #7bcdee;
   position: relative;
 }
 
@@ -212,13 +134,13 @@ body {
 
 .footer {
   grid-area: footer;
-  background-color: #113983;
-  border-top: 2px solid #2155b6;
+  background-color: #468ba7;
+  border-top: 2px solid #7bcdee;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  color: #00aeff;
+  color: #243741;
   margin-left: 52px;
 }
 
@@ -243,6 +165,24 @@ body {
   border: 1px solid #7a6246;
   border-radius: 6px;
   margin-bottom: 8px;
+}
+
+/* Equipment Layouts */
+.leftGear-column,
+.rightGear-column,
+.gear-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.meele-row,
+.range-row,
+.spell-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .item-tooltip {
@@ -340,4 +280,377 @@ body {
 
 .emoji {
   margin-right: 8px;
+}
+
+.spell-slot.active .spell-tooltip,
+.leftGear-slot.active .leftGear-tooltip,
+.rightGear-slot.active .rightGear-tooltip,
+.range-slot.active .range-tooltip,
+.meele-slot.active .meele-tooltip {
+  display: block;
+}
+
+/* Gear/Spell/Meele Slots */
+/* .gear-slot,
+.leftGear-slot,
+.rightGear-slot,
+.meele-slot,
+.spell-slot, */
+.range-slot {
+  position: relative;
+  background-color: #468ba7;
+  border: 2px solid #7bcdee;
+  color: #e2d8c3;
+  border-radius: 6px;
+  font-family: "Cinzel", serif;
+  box-shadow: 0 0 5px #64bde0;
+  transition: 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.range-slot {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.leftGearImg,
+.rightGearImg,
+.rangeImg,
+.meeleImg {
+  max-width: 75px;
+  border-radius: 4px;
+}
+
+/* Tooltips */
+.spell-tooltip,
+.leftGear-tooltip,
+.rightGear-tooltip,
+.range-tooltip,
+.meele-tooltip {
+  display: none;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2d241b;
+  color: #f8e4b4;
+  border: 1px solid #7a6246;
+  padding: 10px;
+  width: 260px;
+  border-radius: 6px;
+  font-size: 14px;
+  z-index: 10;
+  box-shadow: 0 0 10px #00000099;
+  text-align: left;
+}
+
+.spell-tooltip strong,
+.leftGear-tooltip strong,
+.rightGear-tooltip strong,
+.range-tooltip strong,
+.meele-tooltip strong {
+  display: block;
+  font-size: 16px;
+  color: #ffd080;
+  margin-bottom: 5px;
+}
+
+/*------------------*/
+/* SIDENAV LAYOUT   */
+/*------------------*/
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #2c1f17, #1a1410);
+  padding-top: 20px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #f8e4b4;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid #5a3e2b;
+  margin-bottom: 20px;
+}
+
+.sidenav a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  font-weight: bold;
+  color: #e2d8c3;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidenav a.title {
+  font-size: 30px;
+}
+
+.sidenav a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff2d8;
+  text-shadow: 0 0 5px #fff2d8, 0 0 10px #ffdb7c;
+  border-left: 4px solid #f8e4b4;
+}
+
+.sidenav i {
+  margin-right: 8px;
+}
+
+/* Toggle behavior */
+.toggle-btn {
+  background: none;
+  color: #f8e4b4;
+  font-size: 24px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.sidenav.collapsed {
+  width: 60px;
+}
+
+.sidenav.collapsed a:not(.title),
+.sidenav.collapsed h2 {
+  display: none;
+}
+
+.nav-section {
+  border-bottom: 1px solid #5a3e2b;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+
+/*-----------------------------*/
+/* TEXT EFFECTS / HIGHLIGHTS   */
+/*-----------------------------*/
+.aurora-text {
+  font-size: 1em;
+  font-weight: bold;
+  background: linear-gradient(
+    120deg,
+    #a0f8ff,
+    #78ffe1,
+    #fcd5ff,
+    #91e0ff,
+    #c1fffa
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: auroraGlow 8s ease-in-out infinite;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(160, 255, 255, 0.3),
+    0 0 20px rgba(120, 255, 225, 0.3);
+}
+
+/*-------------------------*/
+/* LINK COLORS BY SECTION */
+/*-------------------------*/
+.nav-section a.player {
+  color: #60f560;
+  animation: pulse-player 3s infinite;
+}
+.nav-section a.calender {
+  color: #f8b12c;
+  animation: flicker-calendar 2.5s infinite;
+}
+.nav-section a.time {
+  color: #b1b0b0;
+  animation: shimmer-time 4s ease-in-out infinite;
+}
+.nav-section a.lore {
+  color: #35c0f7;
+}
+.nav-section a.spellbook {
+  color: #8a2be2;
+  animation: glow-spellbook 5s ease-in-out infinite;
+}
+.nav-section a.gods {
+  color: #f4f4f4;
+  animation: glow-gods 4s infinite;
+}
+.nav-section a.pillar {
+  color: #ffffff;
+  animation: shine-pillar 6s ease-in-out infinite;
+}
+.nav-section a.demon {
+  color: #d62b2b;
+  animation: pulse-demon 2.5s infinite;
+}
+.nav-section a.beastiary {
+  color: #159115;
+  animation: fog-beast 6s ease-in-out infinite;
+}
+.nav-section a.faction {
+  color: #0004ff;
+  animation: pulse-faction 4s infinite;
+}
+.nav-section a.gp {
+  color: #ffd700;
+  animation: sparkle-gp 3s ease-in-out infinite;
+}
+.nav-section a.shop {
+  color: #e746e7;
+  animation: beat-shop 3s infinite;
+}
+.nav-section a.feedback {
+  color: #e2d8c3;
+  background: linear-gradient(to bottom, #1d1510, #110d0b);
+  animation: flicker-feedback 5s infinite;
+}
+
+/*----------------------*/
+/* RESPONSIVE STYLES    */
+/*----------------------*/
+@keyframes auroraGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes flicker-calendar {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  24%,
+  55% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes shimmer-time {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #ffffff44;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes glow-spellbook {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #8a2be2;
+  }
+  50% {
+    text-shadow: 0 0 15px #c09cff;
+  }
+}
+
+@keyframes glow-gods {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #ffffffaa;
+  }
+  50% {
+    text-shadow: 0 0 15px #ffffff88;
+  }
+}
+
+@keyframes shine-pillar {
+  0%,
+  100% {
+    text-shadow: 0 0 8px #ffffff55;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffffffaa;
+  }
+}
+
+@keyframes pulse-demon {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #d62b2b;
+  }
+  50% {
+    text-shadow: 0 0 15px #ff0000;
+  }
+}
+
+@keyframes fog-beast {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #15911544;
+  }
+  50% {
+    text-shadow: 0 0 20px #25ff25aa;
+  }
+}
+
+@keyframes pulse-faction {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #0004ff;
+  }
+  50% {
+    text-shadow: 0 0 15px #2c7fff;
+  }
+}
+
+@keyframes sparkle-gp {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #ffd700;
+  }
+  50% {
+    text-shadow: 0 0 20px #fff88a;
+  }
+}
+
+@keyframes beat-shop {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #e746e7;
+  }
+  50% {
+    text-shadow: 0 0 15px #ff91ff;
+  }
+}
+
+@keyframes flicker-feedback {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.7;
+  }
 }

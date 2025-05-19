@@ -96,3 +96,8 @@ setInterval(() => {
     runeTwo.remove();
   }, 3000);
 }, 4000);
+
+function toggleSidenav() {
+    document.querySelector(".sidenav").classList.toggle("collapsed");
+    document.querySelector(".main").classList.toggle("expanded");
+}

@@ -99,36 +99,84 @@
             },
             "gear": {
                 "leftGear": [
-                    {},
-                    {},
-                    {},
-                    {},
-                    {}
+                    {
+                        "name": "Head Gear Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Cape Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Chain Shirt",
+                        "description": "",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Hand Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Shoe Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
                 ],
                 "meele": [
                     {
                         "name": "Staff of Healing",
-                        "description": "Adds a +2 to all healing actions.",
+                        "description": "A healing staff found in the tomb of Sir Eamon Blackthorn. The tomb was abandond and opend after a centuries, but the flowers on the staff is still bluming. The staff adds a +2 to all healing actions.",
                         "imageSrc": "/images/gear/healingStaff.png",
                         "imageAlt": "Picture of the Staff of Healing"
                     },
                     {
                         "name": "The Help Sword",
-                        "description": "Spawn a spirit that aids you.",
+                        "description": "A wooden sword with ancient runes ingraved on it. After swinging the sword a spirit will spawn that aids you and your teammates.",
                         "imageSrc": "/images/gear/helpSword.png",
                         "imageAlt": "Picture of the Help Sword"
                     }
                 ],
                 "range": [
-                    {},
-                    {}
+                    {
+                        "name": "Range Hand 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Range Hand 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
                 ],
                 "rightGear": [
-                    [],
-                    {},
-                    {},
-                    {},
-                    {}
+                    {
+                        "name": "Nechlace Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Ring 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Ring 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
                 ]
             },
             "items": {

@@ -11,8 +11,8 @@
             "level": "4",
             "xp": "1125",
             "xpNeededForUpgrade": "1500",
-            "pageSrc": "",
-            "imageSrc": "",
+            "pageSrc": "/character/karwallo.png",
+            "imageSrc": "/images/characters/karwallo.png",
             "spellslotLvl1": "2",
             "abilityScores": {
                 "strength": "16",
@@ -22,10 +22,16 @@
                 "wisdom": "10",
                 "charisma": "14"
             },
-            "skills": {
-                "insight": "+2",
-                "persuasion": "+4"
-            },
+            "skills": [
+                {
+                    "name": "Insight",
+                    "amount": "+2"
+                },
+                {
+                    "name": "Persuasion",
+                    "amount": "+4"
+                }
+            ],
             "spells": {
                 "divineSmite": {
                     "name": "Divine Smite",
@@ -47,7 +53,86 @@
                 }
             },
             "gear": {
-
+                "leftGear": [
+                    {
+                        "name": "Head Gear Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Cape Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Chain Mail",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Hand Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Boots of Mudwalking",
+                        "description": "These boots allow the wearer to walk across mud, snow, or sand without sinking, but they halve movement speed.",
+                        "imageSrc": "/images/gear/boots-of-mudwalking.png",
+                        "imageAlt": "Boots of Mudwalking"
+                    }
+                ],
+                "meele": [
+                    {
+                        "name": "Infernium Blade",
+                        "description": "<h3>Infernal Smite</h3>Once per turn, when you hit a creature with this weapon and it was hit with The Infernal Ember, you can choose to deal an additional 1d6 fire damage. If the target is celestial or fey, this increases to 2d6 fire damage. <br> <h3>Hellborn Resilience</h3> When reduced to 0 HP, you can instead drop to 1 HP. This effect can only be used once per long rest. <br> <h3>Chains of the Damned</h3> Once per long rest, when you score a critical hit, spectral chains erupt from the sword, wrapping around the enemy. The target must make a DC 15 Strength saving throw or be restrained until the end of your next turn.",
+                        "imageSrc": "/images/gear/inferniumBlade.png",
+                        "imageAlt": "Infernium Blade"
+                    },
+                    {
+                        "name": "Meele 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ],
+                "range": [
+                    {
+                        "name": "Range Hand 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Range Hand 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ],
+                "rightGear": [
+                    {
+                        "name": "Clan Nechlace",
+                        "description": "A necklace given to Karwallo from his parents. With this necklace, Karwallo shows the world that his clan is still alive.",
+                        "imageSrc": "/images/gear/necklace.png",
+                        "imageAlt": "Karwallo's clan necklace"
+                    },
+                    {
+                        "name": "Ring 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Ring 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ]
             },
             "items": {
                 "tarotCard": {

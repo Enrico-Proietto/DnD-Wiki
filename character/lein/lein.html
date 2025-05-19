@@ -1,81 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="lein.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
   <title>Lein Equipment - Whispers from the Void</title>
 </head>
+
 <body>
 
-    <div class="layout">
-        <div class="sidenav">
-          <h2><a class="title" href="/index.html">Whisper's from the Void</a></h2>
-          <a class="player" href="/player/player.html">Players</a>
-          <a class="calender" href="/calender/calender.html">Calender</a>
-          <a class="time" href="/timeline/timeline.html">Timeline</a>
-          <a class="lore" href="/lore/lore.html">Chronical</a>
-          <a class="gods" href="/gods/pantheon.html">Pantheon</a>
-          <a class="pillar" href="/pillars/pillars.html">Mythical Powers</a>
-          <a class="demon" href="/demonomicon/demonomicon.html">Demonomicon</a>
-          <a class="beastiary" href="/beastiary/beastiary.html">Beastiary</a>
-          <a class="faction" href="/faction/faction.html">Faction</a>
-          <a class="gp" href="/gold/gold.html">Gold</a>
-          <a class="shop" href="/shop/shop.html">Shop</a>
-          <a class="feedback" href="/feedback/feedback.html">Feedback</a>
-        </div>
+  <div class="layout">
+
+    <div class="sidenav">
+      <button class="toggle-btn" onclick="toggleSidenav()" aria-label="Toggle Navigation Menu">☰</button>
+
+      <h2 role="heading" aria-level="1"><span class="aurora-text">Whispers from the Void</span></h2>
+
+      <div class="nav-section">
+        <a class="player" href="/player/player.html">👥 Players</a>
+        <a class="calender" href="/calender/calender.html">📅 Calendar</a>
+        <a class="time" href="/timeline/timeline.html">🕰️ Timeline</a>
+      </div>
+
+      <div class="nav-section">
+        <a class="lore" href="/lore/lore.html">📜 Chronical</a>
+        <a href="/spellbook/spellbook.html">📖 <span class="aurora-text">Spellbook</span></a>
+        <a class="gods" href="/gods/pantheon.html">⛪ Pantheon</a>
+        <a class="pillar" href="/pillars/pillars.html">💠 Mythical Powers</a>
+        <a class="demon" href="/demonomicon/demonomicon.html">🩸 Demonomicon</a>
+        <a class="beastiary" href="/beastiary/beastiary.html">🐉 Beastiary</a>
+        <a class="faction" href="/faction/faction.html">⚔️ Factions</a>
+      </div>
+
+      <div class="nav-section">
+        <a class="gp" href="/gold/gold.html">💰 Gold</a>
+        <a class="shop" href="/shop/shop.html">🛒 Shop</a>
+        <a class="feedback" href="/feedback/feedback.html">📝 Feedback</a>
+      </div>
+    </div>
+
     <div class="header">
-        <div class="name" id="characterName"></div>
-        <div class="status-bars">
-            <div class="status hp"><span class="emoji">❤️</span> HP: <span id="hpValue"></span></div>
-            <div class="status ac"><span class="emoji">🛡️</span> AC: <span id="acValue"></span></div>
-            <div class="status gp"><span class="emoji">💰</span> GP: <span id="gpValue"></span></div>
-        </div>
+      <div class="name" id="characterName"></div>
+      <div class="status-bars">
+        <div class="status hp"><span class="emoji">❤️</span> HP: <span id="hpValue"></span></div>
+        <div class="status ac"><span class="emoji">🛡️</span> AC: <span id="acValue"></span></div>
+        <div class="status gp"><span class="emoji">💰</span> GP: <span id="gpValue"></span></div>
+      </div>
     </div>
     <div class="center">
-        <div class="middle-row">
-          <div class="gear-column">
-            <div class="gear-slot"></div>
-            <div class="gear-slot"></div>
-            <div class="gear-slot"></div>
-            <div class="gear-slot"></div>
-            <div class="gear-slot"></div>
-          </div>
-          <div class="character-image">
-            <img src="/images/characters/lein.png" alt="Character">
-          </div>
-          <div class="gear-column">
-            <div class="gear-slot"></div>
-            <div class="gear-slot"></div>
-            <div class="gear-slot"></div>
-            <div class="gear-slot"></div>
-            <div class="gear-slot"></div>
-          </div>
+      <div class="middle-row">
+        <div class="gear-column">
+          <div class="gear-slot"></div>
+          <div class="gear-slot"></div>
+          <div class="gear-slot"></div>
+          <div class="gear-slot"></div>
+          <div class="gear-slot"></div>
         </div>
-        <div class="gear-row">
-            <div class="melee">
-                <div class="gear-slot"></div>
-                <div class="gear-slot"></div>
-            </div>
-            <div class="ranged">
-                <div class="gear-slot"></div>
-                <div class="gear-slot"></div>
-            </div>
+        <div class="character-image">
+          <img src="/images/characters/lein.png" alt="Character">
         </div>
-        <div class="spell-row" id="spellRow"></div>
+        <div class="gear-column">
+          <div class="gear-slot"></div>
+          <div class="gear-slot"></div>
+          <div class="gear-slot"></div>
+          <div class="gear-slot"></div>
+          <div class="gear-slot"></div>
+        </div>
       </div>
-      <div class="footer">
-        <div style="display: flex; gap: 40px; font-size: 16px;">
-            <div class="abilities" id="abilitiesBlock"></div>
-            <div class="skills" id="skillsBlock"></div>
-            <div id="spellslotsBlock"></div>
-          </div>
+      <div class="gear-row">
+        <div class="melee">
+          <div class="gear-slot"></div>
+          <div class="gear-slot"></div>
+        </div>
+        <div class="range-row" id="range"></div>
       </div>
-      <div class="inventory"></div>
+      <div class="spell-row" id="spellRow"></div>
     </div>
-    
-    <script src="lein.js"></script>
-    <script src="../toggleTooltip.js"></script>
+    <div class="footer">
+      <div style="display: flex; gap: 40px; font-size: 16px;">
+        <div class="abilities" id="abilitiesBlock"></div>
+        <div class="skills" id="skillsBlock"></div>
+        <div id="spellslotsBlock"></div>
+      </div>
+    </div>
+    <div class="inventory"></div>
+  </div>
+
+  <script src="lein.js"></script>
+  <script src="../toggleTooltip.js"></script>
 
 </body>
+
 </html>

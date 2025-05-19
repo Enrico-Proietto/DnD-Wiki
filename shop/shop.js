@@ -158,3 +158,8 @@ function clearCart() {
   Object.keys(cart).forEach(key => delete cart[key]);
   renderCart();
 }
+
+function toggleSidenav() {
+    document.querySelector(".sidenav").classList.toggle("collapsed");
+    document.querySelector(".main").classList.toggle("expanded");
+}

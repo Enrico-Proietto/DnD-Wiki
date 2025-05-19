@@ -1,5 +1,5 @@
 {
-    "belarus": [
+    "lein": [
         {
             "name": "Lein",
             "race": "Elf",
@@ -66,7 +66,86 @@
                 }
             },
             "gear": {
-
+                "leftGear": [
+                    {
+                        "name": "Head Gear Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Cape Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Chest Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Hand Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Boots Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ],
+                "meele": [
+                    {
+                        "name": "Meele 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Meele 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ],
+                "range": [
+                    {
+                        "name": "Starfire Grimoire",
+                        "description": "A mystical tome bound in stardust-infused leather, glowing faintly under moonlight.",
+                        "imageSrc": "/images/gear/starfireGrimoire.png",
+                        "imageAlt": "Starfire Grimoire"
+                    },
+                    {
+                        "name": "Light crossbows",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ],
+                "rightGear": [
+                    {
+                        "name": "Necklace Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Ring 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Ring 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ]
             },
             "items": {
                 "handySpicePouch": {

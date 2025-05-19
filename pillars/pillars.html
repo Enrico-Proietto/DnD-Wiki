@@ -9,21 +9,35 @@
 </head>
 
 <body>
+
   <div class="sidenav">
-    <h2><a class="title" href="/index.html">Whisper's from the Void</a></h2>
-    <a class="player" href="/player/player.html">Players</a>
-    <a class="calender" href="/calender/calender.html">Calender</a>
-    <a class="time" href="/timeline/timeline.html">Timeline</a>
-    <a class="lore" href="/lore/lore.html">Chronical</a>
-    <a class="gods" href="/gods/pantheon.html">Pantheon</a>
-    <a class="mythical-pillar" href="/pillars/pillars.html">Mythical Powers</a>
-    <a class="demon" href="/demonomicon/demonomicon.html">Demonomicon</a>
-    <a class="beastiary" href="/beastiary/beastiary.html">Beastiary</a>
-    <a class="faction" href="/faction/faction.html">Faction</a>
-    <a class="gp" href="/gold/gold.html">Gold</a>
-    <a class="shop" href="/shop/shop.html">Shop</a>
-    <a class="feedback" href="/feedback/feedback.html">Feedback</a>
+    <button class="toggle-btn" onclick="toggleSidenav()" aria-label="Toggle Navigation Menu">☰</button>
+
+    <h2 role="heading" aria-level="1"><span class="aurora-text">Whispers from the Void</span></h2>
+
+    <div class="nav-section">
+      <a class="player" href="/player/player.html">👥 Players</a>
+      <a class="calender" href="/calender/calender.html">📅 Calendar</a>
+      <a class="time" href="/timeline/timeline.html">🕰️ Timeline</a>
+    </div>
+
+    <div class="nav-section">
+      <a class="lore" href="/lore/lore.html">📜 Chronical</a>
+      <a href="/spellbook/spellbook.html">📖 <span class="aurora-text">Spellbook</span></a>
+      <a class="gods" href="/gods/pantheon.html">⛪ Pantheon</a>
+      <a class="pillarNav" href="/pillars/pillars.html">💠 Mythical Powers</a>
+      <a class="demon" href="/demonomicon/demonomicon.html">🩸 Demonomicon</a>
+      <a class="beastiary" href="/beastiary/beastiary.html">🐉 Beastiary</a>
+      <a class="faction" href="/faction/faction.html">⚔️ Factions</a>
+    </div>
+
+    <div class="nav-section">
+      <a class="gp" href="/gold/gold.html">💰 Gold</a>
+      <a class="shop" href="/shop/shop.html">🛒 Shop</a>
+      <a class="feedback" href="/feedback/feedback.html">📝 Feedback</a>
+    </div>
   </div>
+
   <h1>The Seven Mythical Powers</h1>
   <div class="pillars">
     <div class="pillar">
@@ -36,7 +50,6 @@
       <div class="pillar-icon">🌒</div>
       <div class="pillar-name">Eclipse Counter</div>
       <div class="pillar-desc">Strike back if an enemy misses—stronger against larger foes.</div>
-      <img class="pillar-img" src="/images/characters/assgetsu.png">
     </div>
     <div class="pillar">
       <div class="pillar-icon">🎟️</div>
@@ -69,6 +82,8 @@
       <img class="pillar-img" src="/images/characters/belarus.png">
     </div>
   </div>
+
+  <script src="pillars.js"></script>
 </body>
 
 </html>

@@ -81,3 +81,8 @@ document.getElementById('book').addEventListener('click', () => {
 
 // Load the pages initially
 loadPages();
+
+function toggleSidenav() {
+    document.querySelector(".sidenav").classList.toggle("collapsed");
+    document.querySelector(".main").classList.toggle("expanded");
+}

@@ -51,31 +51,84 @@
             },
             "gear": {
                 "leftGear": [
-                    {},
-                    {},
-                    {},
+                    {
+                        "name": "Head Gear Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Cape Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Voidflow Sash",
+                        "description": "<h3>Evasive Step</h3> <br> When an enemy misses you with a melee attack, you can move 5 feet in any direction without provoking opportunity attacks. <br> <h3>Flowing Motion</h3> <br>If you take the Dodge action, you gain +10 feet movement speed until the end of your next turn. <br> <h3>Stillness of the Void</h3> <br>If you remain motionless for one round, your next melee attack has advantage and deals extra damage equal to your Wisdom modifier. <br><br> <i>A silken sash woven with void energy, shifting between deep purple and black.</i> ",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
                     {
                         "name": "Vortex Gaunlets",
                         "description": "Allows monks to pull a creature within 30 feet of them towards them once per short rest (DC 14 Strength save).",
                         "imageSrc": "/images/gear/vortex-gaunlets.png",
                         "imageAlt": "Vortex Gaunlets"
                     },
-                    {}
+                    {
+                        "name": "Hand 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
                 ],
                 "meele": [  
-                    {},
-                    {}            
+                    {
+                        "name": "Meele 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Meele 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }            
                 ],
                 "range": [
-                    {},
-                    {}
+                    {
+                        "name": "Range Hand 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Range Hand 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
                 ],
                 "rightGear": [
-                    [],
-                    {},
-                    {},
-                    {},
-                    {}
+                    {
+                        "name": "Necklace Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Ring 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Ring 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
                 ]
             },
             "items": {

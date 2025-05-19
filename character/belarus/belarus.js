@@ -52,7 +52,7 @@ async function loadCharacter() {
       gearSlot.setAttribute('onClick', 'toggleTooltipLeftGear(this)')
 
       gearSlot.innerHTML = `
-                <div class="leftGear-tooltip">
+                <div class="leftGear-tooltip tooltip tooltip-left">
                   <strong>${gear.name}</strong><br>
                   ${gear.description}
                 </div>
@@ -72,13 +72,33 @@ async function loadCharacter() {
 
       meeleSlot.innerHTML = `
       <img class="meeleImg" src="${meele.imageSrc}" alt="${meele.imageAlt}">
-        <div class="meele-tooltip">
+        <div class="meele-tooltip tooltip tooltip-bottom">
           <strong>${meele.name}</strong><br>
           ${meele.description}
         </div>
       `;
 
       gearMeeleRow.appendChild(meeleSlot);
+    })
+
+    // Range Row
+    const gearRangeRow = document.getElementById('range');
+    gearRangeRow.innerHTML = '';
+
+    Object.values(belarus.gear.range).forEach(range => {
+      const rangeSlot = document.createElement('div');
+      rangeSlot.classList.add('range-slot');
+      rangeSlot.setAttribute('onClick', 'toggleTooltipRange(this)');
+
+      rangeSlot.innerHTML = `
+      <img class="rangeImg" src="${range.imageSrc}" alt="${range.imageAlt}">
+        <div class="range-tooltip tooltip tooltip-bottom">
+          <strong>${range.name}</strong><br>
+          ${range.description}
+        </div>
+      `;
+
+      gearRangeRow.appendChild(rangeSlot);
     })
 
     // Right Gear Column
@@ -91,7 +111,7 @@ async function loadCharacter() {
       gearSlot.setAttribute('onClick', 'toggleTooltipRightGear(this)')
 
       gearSlot.innerHTML = `
-            <div class="rightGear-tooltip">
+            <div class="rightGear-tooltip tooltip tooltip-right">
              <strong>${gear.name}</strong><br>
              ${gear.description}
             </div>
@@ -159,3 +179,8 @@ function updateXPBars() {
 }
 
 loadCharacter();
+
+function toggleSidenav() {
+  document.querySelector(".sidenav").classList.toggle("collapsed");
+  document.querySelector(".main").classList.toggle("expanded");
+}

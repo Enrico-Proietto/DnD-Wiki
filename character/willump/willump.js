@@ -54,7 +54,7 @@ async function loadCharacter() {
 
       gearSlot.innerHTML = `
       <img class="leftGearImg" src="${gear.imageSrc}">
-            <div class="leftGear-tooltip">
+            <div class="leftGear-tooltip tooltip tooltip-left"">
               <strong>${gear.name}</strong><br>
               ${gear.description}
             </div>
@@ -73,7 +73,7 @@ async function loadCharacter() {
       meeleSlot.setAttribute('onClick', 'toggleTooltipMeele(this)');
 
       meeleSlot.innerHTML = `
-          <div class="meele-tooltip">
+          <div class="meele-tooltip tooltip tooltip-bottom">
             <strong>${meele.name}</strong><br>
             ${meele.description}
           </div>
@@ -92,7 +92,7 @@ async function loadCharacter() {
       gearSlot.setAttribute('onClick', 'toggleTooltipRightGear(this)')
 
       gearSlot.innerHTML = `
-        <div class="rightGear-tooltip">
+        <div class="rightGear-tooltip tooltip tooltip-right">
          <strong>${gear.name}</strong><br>
          ${gear.description}
         </div>

@@ -101,7 +101,7 @@
 		"tags": "Utility, Defensive, Movement",
 		"stock": "3",
 		"price": "100 GP",
-		"image": "/images/potions/"
+		"image": "/images/potions/featherFall.png"
 	},
 	{
 		"name": "Potion of Gravemist",
@@ -117,7 +117,7 @@
 		"tags": "Defensive, Buff, Mental",
 		"stock": "2",
 		"price": "400 GP",
-		"image": "/images/potions/"
+		"image": "/images/potions/mindShielding.png"
 	},
 	{
 		"name": "Everclear Tonic",
@@ -133,7 +133,7 @@
 		"tags": "Buff, Defensive, Risky, Fey",
 		"stock": "2",
 		"price": "400 GP",
-		"image": "/images/potions/"
+		"image": "/images/potions/feyLuck.png"
 	},
 	{
 		"name": "Elixir of Undead Warding",
