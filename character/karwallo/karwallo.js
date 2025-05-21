@@ -1,7 +1,10 @@
+let characterData;
+
 async function loadCharacter() {
   try {
     const response = await fetch('karwallo.json');
     const data = await response.json();
+    characterData = data;
     const karwallo = data.karwallo[0];
 
     document.getElementById('characterName').textContent = karwallo.name;
@@ -121,26 +124,6 @@ async function loadCharacter() {
       gearRightColumn.appendChild(gearSlot);
     });
 
-    // Spell Row
-    const spellRow = document.getElementById('spellRow');
-    spellRow.innerHTML = ''; // clear previous spells
-
-    Object.values(karwallo.spells).forEach(spell => {
-      const spellSlot = document.createElement('div');
-      spellSlot.classList.add('spell-slot');
-      spellSlot.setAttribute('onclick', 'toggleTooltip(this)');
-
-      spellSlot.innerHTML = `
-        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
-        <div class="spell-tooltip">
-          <strong>${spell.name}</strong><br>
-          ${spell.description}
-        </div>
-      `;
-
-      spellRow.appendChild(spellSlot);
-    });
-
     // ==== Inventory Items ====
     const inventoryDiv = document.querySelector('.inventory');
     inventoryDiv.innerHTML = '<h2>Inventory</h2>';
@@ -184,4 +167,78 @@ loadCharacter();
 function toggleSidenav() {
     document.querySelector(".sidenav").classList.toggle("collapsed");
     document.querySelector(".main").classList.toggle("expanded");
+}
+
+
+function toggleSidenav() {
+  document.querySelector(".sidenav").classList.toggle("collapsed");
+  document.querySelector(".main").classList.toggle("expanded");
+}
+
+function switchTo(section) {
+  const equip = document.getElementById('equipmentSection');
+  const abilities = document.getElementById('abilitiesSection');
+
+  if (section === 'equipment') {
+    equip.style.display = 'block';
+    abilities.style.display = 'none';
+  } else {
+    equip.style.display = 'none';
+    abilities.style.display = 'block';
+    renderAbilities(); // only builds once
+  }
+}
+
+function renderAbilities() {
+  const karwallo = characterData.karwallo[0];
+  const section = document.getElementById('abilitiesSection');
+  if (section.innerHTML.trim()) return;
+
+  let html = '';
+
+  const renderCategory = (title, items, isPower = false) => {
+    if (!items || items.length === 0) return '';
+    let block = `<h3 class="ability-section-title">${title}</h3><div class="ability-grid">`;
+    items.forEach(entry => {
+      block += `
+        <div class="ability-card">
+          <h4>${entry.name}</h4>
+          ${isPower ? `<div class="cooldown">${entry.cooldown}</div>` : ''}
+          <div>${entry.description}</div>
+        </div>
+      `;
+    });
+    block += '</div>';
+    return block;
+  };
+
+  html += renderCategory('Feats', karwallo.feats);
+  html += renderCategory('Powers', karwallo.power, true);
+  html += renderCategory('Class Abilities', karwallo.classAbilities);
+  html += renderCategory('Race Abilities', karwallo.raceAbilities);
+  html += renderCategory('The Infernal Ember', karwallo.infernalEmber);
+
+  const spells = karwallo.spells;
+  if (spells && Object.keys(spells).length > 0) {
+    html += renderSpells(karwallo.spells);
+  }
+
+  section.innerHTML = html;
+}
+
+function renderSpells(spells) {
+  let html = `<h3 class="ability-section-title">Spells</h3><div class="spell-row">`;
+  Object.values(spells).forEach(spell => {
+    html += `
+      <div class="spell-slot" onclick="toggleTooltip(this)">
+        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
+        <div class="spell-tooltip">
+          <strong>${spell.name}</strong><br>
+          ${spell.description}
+        </div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+  return html; // store in the pagination system
 }

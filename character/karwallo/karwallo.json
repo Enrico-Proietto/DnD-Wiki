@@ -144,12 +144,35 @@
                 },
                 "javelins": {
                     "name": "Javelins",
-                    "imageSrc": "",
+                    "imageSrc": "/images/gear/javelins.png",
                     "imageAlt": "Picture of a javelin.",
                     "description": "Javelins that can be thrown.",
                     "amount": "2"
                 }
-            }
+            },
+            "feats": [
+                {
+                    "name": "Sentinel",
+                    "description": "Great for protecting allies, as it keeps enemies locked down in melee."
+                }
+            ],
+            "power": [
+                {
+                    "name": "Critical Over",
+                    "description": "For one minute, all the player’s attack rolls automatically crit… BUT<br><ul> <li>Every attack against them also crits.</li> <li>Every skill check they make is also either a Nat 1 or a Nat 20 (flip a coin).</li> <li>If they get knocked unconscious while using this ability, they must roll death saves with disadvantage.</li> </ul>",
+                    "cooldown": "1x per Battle"
+                }
+            ],
+            "infernalEmber": [
+                {
+                    "name": "Ember Strike",
+                    "description": "<ul> <li>Once per long rest, Karwallo can unleash a devastating attack imbued with Azarel’s power</li> <li>When he hits with a weapon attack, he deals an additional 2d6 fire damage.</li> <li>If the target dies, Karwallo absorbs a fragment of their life force, regaining 2d4 hit points.</li></ul>"
+                },
+                {
+                    "name": "The Will of Fire",
+                    "description": "He gains resistance to fire damage and advantage on saving throws against exhaustion."
+                }
+            ]
         }
     ]
 }

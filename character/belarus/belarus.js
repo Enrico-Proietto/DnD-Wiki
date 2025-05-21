@@ -1,7 +1,10 @@
+let characterData;
+
 async function loadCharacter() {
   try {
     const response = await fetch('belarus.json');
     const data = await response.json();
+    characterData = data;
     const belarus = data.belarus[0];
 
     // Update name
@@ -52,6 +55,7 @@ async function loadCharacter() {
       gearSlot.setAttribute('onClick', 'toggleTooltipLeftGear(this)')
 
       gearSlot.innerHTML = `
+      <img class="leftGearImg" src="${gear.imageSrc}">
                 <div class="leftGear-tooltip tooltip tooltip-left">
                   <strong>${gear.name}</strong><br>
                   ${gear.description}
@@ -91,7 +95,7 @@ async function loadCharacter() {
       rangeSlot.setAttribute('onClick', 'toggleTooltipRange(this)');
 
       rangeSlot.innerHTML = `
-      <img class="rangeImg" src="${range.imageSrc}" alt="${range.imageAlt}">
+      <img class="rangeImg" src="${range.imageSrc}">
         <div class="range-tooltip tooltip tooltip-bottom">
           <strong>${range.name}</strong><br>
           ${range.description}
@@ -118,26 +122,6 @@ async function loadCharacter() {
           `;
 
       gearRightColumn.appendChild(gearSlot);
-    });
-
-    // Spell Row
-    const spellRow = document.getElementById('spellRow');
-    spellRow.innerHTML = ''; // clear previous spells
-
-    Object.values(belarus.spells).forEach(spell => {
-      const spellSlot = document.createElement('div');
-      spellSlot.classList.add('spell-slot');
-      spellSlot.setAttribute('onclick', 'toggleTooltip(this)');
-
-      spellSlot.innerHTML = `
-        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
-        <div class="spell-tooltip">
-          <strong>${spell.name}</strong><br>
-          ${spell.description}
-        </div>
-      `;
-
-      spellRow.appendChild(spellSlot);
     });
 
     // ==== Inventory Items ====
@@ -183,4 +167,71 @@ loadCharacter();
 function toggleSidenav() {
   document.querySelector(".sidenav").classList.toggle("collapsed");
   document.querySelector(".main").classList.toggle("expanded");
+}
+
+function switchTo(section) {
+  const equip = document.getElementById('equipmentSection');
+  const abilities = document.getElementById('abilitiesSection');
+
+  if (section === 'equipment') {
+    equip.style.display = 'block';
+    abilities.style.display = 'none';
+  } else {
+    equip.style.display = 'none';
+    abilities.style.display = 'block';
+    renderAbilities(); // only builds once
+  }
+}
+
+function renderAbilities() {
+  const belarus = characterData.belarus[0];
+  const section = document.getElementById('abilitiesSection');
+  if (section.innerHTML.trim()) return;
+
+  let html = '';
+
+  const renderCategory = (title, items, isPower = false) => {
+    if (!items || items.length === 0) return '';
+    let block = `<h3 class="ability-section-title">${title}</h3><div class="ability-grid">`;
+    items.forEach(entry => {
+      block += `
+        <div class="ability-card">
+          <h4>${entry.name}</h4>
+          ${isPower ? `<div class="cooldown">${entry.cooldown}</div>` : ''}
+          <div>${entry.description}</div>
+        </div>
+      `;
+    });
+    block += '</div>';
+    return block;
+  };
+
+  html += renderCategory('Feats', belarus.feats);
+  html += renderCategory('Powers', belarus.power, true);
+  html += renderCategory('Class Abilities', belarus.classAbilities);
+  html += renderCategory('Race Abilities', belarus.raceAbilities);
+
+  const spells = belarus.spells;
+  if (spells && Object.keys(spells).length > 0) {
+    html += renderSpells(belarus.spells);
+  }
+
+  section.innerHTML = html;
+}
+
+function renderSpells(spells) {
+  let html = `<h3 class="ability-section-title">Spells</h3><div class="spell-row">`;
+  Object.values(spells).forEach(spell => {
+    html += `
+      <div class="spell-slot" onclick="toggleTooltip(this)">
+        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
+        <div class="spell-tooltip">
+          <strong>${spell.name}</strong><br>
+          ${spell.description}
+        </div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+  return html; // store in the pagination system
 }

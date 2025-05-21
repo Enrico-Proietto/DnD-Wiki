@@ -82,6 +82,26 @@ async function loadCharacter() {
       gearMeeleRow.appendChild(meeleSlot);
     })
 
+    // Range Row
+    const gearRangeRow = document.getElementById('range');
+    gearRangeRow.innerHTML = '';
+
+    Object.values(willump.gear.range).forEach(range => {
+      const rangeSlot = document.createElement('div');
+      rangeSlot.classList.add('range-slot');
+      rangeSlot.setAttribute('onClick', 'toggleTooltipRange(this)');
+
+      rangeSlot.innerHTML = `
+      <img class="rangeImg" src="${range.imageSrc}" alt="${range.imageAlt}">
+        <div class="range-tooltip tooltip tooltip-bottom">
+          <strong>${range.name}</strong><br>
+          ${range.description}
+        </div>
+      `;
+
+      gearRangeRow.appendChild(rangeSlot);
+    });
+
     // Right Gear Column
     const gearRightColumn = document.getElementById('rightGear');
     gearRightColumn.innerHTML = '';

@@ -1,0 +1,54 @@
+body {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  padding-top: 4em;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.chest {
+  margin: 2em auto;
+  width: 200px;
+  height: 120px;
+  position: relative;
+  cursor: pointer;
+}
+
+.lid, .base {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #8b4513;
+  border: 3px solid #4b2e1f;
+  border-radius: 5px;
+}
+
+.lid {
+  top: 0;
+  height: 40px;
+  background: linear-gradient(to bottom, #a0522d, #8b4513);
+  z-index: 2;
+}
+
+.base {
+  top: 40px;
+  height: 80px;
+  background: linear-gradient(to bottom, #5a2d14, #3e1f0f);
+}
+
+#chestMessage {
+  margin-top: 1em;
+  font-style: italic;
+  color: #888;
+}
+
+#countdown {
+  margin-top: 2em;
+  font-size: 1.2em;
+  color: #ccc;
+}

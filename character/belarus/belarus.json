@@ -114,7 +114,7 @@
                     {
                         "name": "Chain Shirt",
                         "description": "",
-                        "imageSrc": "",
+                        "imageSrc": "/images/gear/chainShirt.png",
                         "imageAlt": "No image unavailable"
                     },
                     {
@@ -210,8 +210,8 @@
                 },
                 "lightCrossbow": {
                     "name": "Light Crossbow",
-                    "imageSrc": "",
-                    "imageAlt": "",
+                    "imageSrc": "/images/gear/lightCrossbow.png",
+                    "imageAlt": "Light Crossbow",
                     "description": "A simple crossbow.",
                     "amount": "1"
                 },
@@ -222,7 +222,24 @@
                     "description": "Normal shooting arrows.",
                     "amount": "20"
                 }
-            }
+            },
+            "feats": [
+                {
+                    "name": "Voice of the Wilds",
+                    "description": "Gain advantage on Wisdom (Animal Handling) and Charisma (Persuasion) checks with beasts and fey. You can cast Speak with Animals and Speak with Plants without expending a spell slot once per short rest."
+                },
+                {
+                    "name": "War Caster",
+                    "description": "You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage."
+                }
+            ],
+            "power": [
+                {
+                    "name": "Who’s That Owlbear?",
+                    "description": "The player polymorphs into a random creature for 1 minute.<br>Instead of using a random CR creature, roll a d8 to determine the general vibe:<br><ol><li>A house pet (cat, dog, parrot, etc.).</li> <li>A barnyard animal (cow, pig, chicken).</li> <li>A giant version of a small animal (Giant Squirrel, Giant Rat, etc.).</li> <li>Something completely useless (slug, fish, rock with googly eyes).</li> <li>A weirdly specific magical creature (flumph, animate teapot).</li> <li>A small dragon or pseudodragon.</li> <li>A horrifying abomination (DM’s choice).</li> <li>A perfect version of themselves… but they cannot speak.</li></ol>",
+                    "cooldown": "1x per Long Rest"
+                }
+            ]
         }
     ]
 }

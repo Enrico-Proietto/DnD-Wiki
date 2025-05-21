@@ -17,11 +17,13 @@
     },
     "luckbringers": {
         "name": "The Luckbringers",
-        "type": "religion"
+        "type": "luck",
+        "link": "luckbringers/luckbringers.html"
     },
     "weavcersOfDestiny": {
         "name": "The Weavers of Destiny",
-        "type": "religion"
+        "type": "destiny",
+        "link": "destiny/destiny.html"
     },
     "councilOfNine": {
         "name": "Council of Nine",
@@ -29,6 +31,7 @@
     },
     "crimsonDominion": {
         "name": "The Crimson Dominion",
-        "type": "religion"
+        "type": "crimson",
+        "link": "crimsonDominion/crimsonDominion.html"
     }
 }

@@ -1,0 +1,139 @@
+[
+    {
+        "name": "The World Tree's Whisper",
+        "effect": "You immediately understand and can speak any language for 1 year. You also gain knowledge of a secret from the world tree, granting insight into one future event.",
+        "symbol": "A big beautiful tree with glowing runes on its bark.",
+        "imageSrc": "/images/deckOfMany/worldTree.png",
+        "type": "Positive"
+    },
+    {
+        "name": "The Artisan's Forge",
+        "effect": "A legendary weapon or piece of armor is created for you, perfectly tailored to your abilities and style. It glows faintly with divine energy. (Only one thing per person)",
+        "symbol": "A hammer striking an anvil with sparks flying.",
+        "type": "Positive"
+    },
+    {
+        "name": "Eternal Bond",
+        "effect": "An ethereal, loyal companion appears and binds to you—a celestial hound, raven, or fox (your choice). It fights and scouts loyally, disappearing only upon your death.",
+        "symbol": "A glowing leash intertwined with stars.",
+        "type": "Positive"
+    },
+    {
+        "name": "Coin of Fortune",
+        "effect": "You find a magical coin. Once per day, you can flip it. Heads grants you immense luck (advantage on all rolls for 1 minute), while tails does nothing.",
+        "symbol": "A shining gold coin inscribed with a four-leaf clover.",
+        "type": "Positive"
+    },
+    {
+        "name": "Favor of the Dragon God",
+        "effect": "You gain the ability to summon a small, friendly dragon spirit once per week. It can aid you in combat, provide wisdom, or serve as a messenger.",
+        "symbol": "A curled dragon resting on a hoard of gold.",
+        "type": "Positive"
+    },
+    {
+        "name": "Harmony's Embrace",
+        "effect": "You are blessed with a profound sense of inner peace. You are immune to being charmed or frightened for one week. Additionally, you gain +2 Wisdom permanently.",
+        "symbol": "A serene dove with glowing wings.",
+        "type": "Positive"
+    },
+    {
+        "name": "The Coin to Rule the Dead",
+        "effect": "You gain a special coin from the God of Death, granting you a second chance of life without any disadvantages.",
+        "symbol": "A black coin with a skeletal hand.",
+        "type": "Positive"
+    },
+    {
+        "name": "Azarel's Mark",
+        "effect": "You will recieve the mark of Azarel like you did as deal. Is it helpfull? That for you to decide.",
+        "symbol": "A demon head mark with flames around it.",
+        "imageSrc": "/images/deckOfMany/azarelsMark.png",
+        "type": "Negative"
+    },
+    {
+        "name": "Thalyris's Scorn",
+        "effect": "ou are cursed to crave the blood of living, sentient creatures. For the next month, you must drink blood from such a being at least once every seven days. Failure to do so will result in you transforming into a vampire under Thalyris's thrall. This transformation is permanent unless undone by a powerful divine ritual.",
+        "symbol": "A crimson goblet brimming with swirling, dark liquid.",
+        "type": "Negative"
+    },
+    {
+        "name": "Chains of Despair",
+        "effect": "You are cursed with a 50% chance to lose your next action in combat as ghostly chains briefly restrain you. The curse lasts until you complete a dangerous quest to destroy the chains' anchor.",
+        "symbol": "A broken shackle surrounded by mist.",
+        "imageSrc": "/images/deckOfMany/chainsOfDespair.png",
+        "type": "Negative"
+    },
+    {
+        "name": "Unending Hunger",
+        "effect": "You develop an insatiable hunger, requiring twice the normal food and drink to survive. Failure to do so results in 1 exhaustion level per day.",
+        "symbol": "A table of empty plates.",
+        "type": "Negative"
+    },
+    {
+        "name": "Crippling Doubt",
+        "effect": "You are haunted by terrifying visions of failure, imposing disadvantage on Wisdom saving throws and all Insight or Perception checks for 30 days.",
+        "symbol": "A cracked mirror reflecting a shadowy figure.",
+        "type": "Negative"
+    },
+    {
+        "name": "Lure of the Abyss",
+        "effect": "You are cursed to hear whispers from a malevolent being. Each long rest, you must succeed on a DC 15 Wisdom save or lose the ability to recover hit points that night.",
+        "symbol": "A dark, swirling portal.",
+        "type": "Negative"
+    },
+    {
+        "name": "Soul Fragment",
+        "effect": "A piece of your soul is stolen, reducing your maximum hit points by 10%. You must find the soul's resting place to restore it.",
+        "symbol": "A glowing crystal with cracks running through it.",
+        "type": "Negative"
+    },
+    {
+        "name": "Echoes of Eternity",
+        "effect": "You gain profound knowledge of a past event, but your mind is scarred by the experience. Gain advantage on Intelligence checks for one week but suffer disadvantage on Wisdom saves.",
+        "symbol": "An ancient book with torn pages.",
+        "type": "Mixed"
+    },
+    {
+        "name": "The Gambler's Wager",
+        "effect": "Roll a d20. On 11 or higher, you gain 3000 gold pieces. On 10 or lower, you are cursed to lose all wealth and possessions.",
+        "symbol": "A pair of dice showing 1 and 20.",
+        "type": "Mixed"
+    },
+    {
+        "name": "Twist of Fate",
+        "effect": "Your alignment shifts one step (e.g., Lawful to Neutral or Good to Evil). This change lasts until you complete a personal quest related to your new alignment.",
+        "symbol": "A spinning wheel with a smiling mask and a frowning mask.",
+        "type": "Mixed"
+    },
+    {
+        "name": "Memory's Shard",
+        "effect": "You recall a forgotten memory, granting you a skill proficiency or language you didn't know you had. However, you lose a different proficiency or language.",
+        "symbol": "A shard of glass with an eye etched on it.",
+        "type": "Mixed"
+    },
+    {
+        "name": "The Black Abyss",
+        "effect": "You are instantly teleported to an isolated demiplane of darkness. Escape is only possible through clever puzzle-solving or powerful magic.",
+        "symbol": "A swirling vortex.",
+        "type": "Devastating"
+    },
+    {
+        "name": "Infernal Debt",
+        "effect": "You are bound to a devil with a single wish to grant you. Fulfillment of the wish comes with a hidden cost: failure to meet their terms within one year results in your soul being forfeit.",
+        "symbol": "A contract engulfed in flames.",
+        "type": "Devastating"
+    },
+    {
+        "name": "The Cosmos",
+        "effect": "You feel the comsic warp around you granting to use the spell Wish for one time.",
+        "symbol": "A dark sky with many stars and a aurora borealis",
+        "imageSrc": "/images/deckOfMany/cosmos.png",
+        "type": "Powerful"
+    },
+    {
+        "name": "Eternal Champion",
+        "effect": "You are granted the blessing of a divine being. Your Strength, Dexterity, and Constitution scores increase by +2 for 1 year. However, you are now a beacon to enemies of that deity.",
+        "symbol": "A golden crown with radiant light.",
+        "imageSrc": "/images/deckOfMany/eternalChampion.png",
+        "type": "Powerful"
+    }
+]

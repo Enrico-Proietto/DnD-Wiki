@@ -8,13 +8,21 @@ async function loadFactions() {
     Object.values(data).forEach(faction => {
         const factionSlot = document.createElement('div');
         factionSlot.classList.add('faction-card');
-        factionSlot.classList.add(faction.type)
+        factionSlot.classList.add(faction.type);
+
+        // Assign the click handler properly
+        factionSlot.onclick = () => navigateTo(faction.link);
 
         factionSlot.innerHTML = `
+            <div class="spark-container"></div>
             <h2>${faction.name}</h2>
         `;
         factionGrid.appendChild(factionSlot);
-    })
+    });
 }
 
 loadFactions();
+
+function navigateTo(page) {
+    window.location.href = `/faction/${page}`;
+}

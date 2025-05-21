@@ -1,4 +1,53 @@
-{
+{   
+    "assgetsu": [
+        {
+            "name": "Assgetsu",
+            "race": "Half-Human Half-Elf",
+            "class": "Barbarian",
+            "alignment": "Chaotic -Good",
+            "hp": "43",
+            "ac": "14",
+            "gp": "312",
+            "level": "4",
+            "xp": "225",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/assgetsu/assgetsu.html",
+            "imageSrc": "/images/characters/assgetsu.png",
+            "ragePoints": "2",
+            "abilityScores": {
+                "strength": "16",
+                "dexterity": "14",
+                "constitution": "15",
+                "intelligence": "10",
+                "wisdom": "12",
+                "charisma": "13"
+            },
+            "skills": [
+                {
+                    "name": "Athletics",
+                    "amount": "+5"
+                },
+                {
+                    "name": "Survival",
+                    "amount": "+3"
+                }
+            ],
+            "statistics": [
+                {
+                    "name": "Hits",
+                    "amount": 0
+                },
+                {
+                    "name": "Damage",
+                    "amount": 0
+                },
+                {
+                    "name": "Faints",
+                    "amount": 0
+                }
+            ]
+        }
+    ],
     "belarus": [
         {
             "name": "Belarus Radowani",

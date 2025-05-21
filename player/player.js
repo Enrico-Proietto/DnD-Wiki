@@ -52,12 +52,17 @@ function createSpellSlotsMarkup(player) {
     ? `<div class="status ki-slot"><span class="emoji">🧘</span> Ki: <span>${player.kiSlots}</span></div>`
     : '';
 
-  if (spellSlots.length === 0 && !kiPoints) return '';
+  const ragePoints = player.ragePoints
+    ? `<div class="status rage-slot"><span class="emoji">💪</span> Rage: <span>${player.ragePoints}</span></div>`
+    : '';
+
+  if (spellSlots.length === 0 && !kiPoints && !ragePoints) return '';
 
   return `
     <div class="status-bars spell-ki-bars">
       ${spellSlots.join('')}
       ${kiPoints}
+      ${ragePoints}
     </div>`;
 }
 

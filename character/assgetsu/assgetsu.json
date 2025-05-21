@@ -1,0 +1,156 @@
+{
+    "assgetsu": [
+        {
+            "name": "Assgetsu",
+            "race": "Half-Human Half-Elf",
+            "class": "Barbarian",
+            "alignment": "Chaotic-Good",
+            "hp": "43",
+            "ac": "14",
+            "gp": "312",
+            "level": "4",
+            "xp": "225",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/assgetsu.html",
+            "imageSrc": "/images/characters/assgetsu.png",
+            "ragePoints": "2",
+            "abilityScores": {
+                "strength": "16",
+                "dexterity": "14",
+                "constitution": "15",
+                "intelligence": "10",
+                "wisdom": "12",
+                "charisma": "13"
+            },
+            "skills": [
+                {
+                    "name": "Athletics",
+                    "amount": "+5"
+                },
+                {
+                    "name": "Survival",
+                    "amount": "+3"
+                }
+            ],
+            "gear": {
+                "leftGear": [
+                    {
+                        "name": "Head Gear Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Cape Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Chest Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Bloodfang Gauntlets",
+                        "description": "Effects:<br> <ul> <li>Frenzied Bite: When raging, you can use a Bonus Action to make an unarmed strike. If it hits, you regain HP equal to half the damage dealt (rounded down).</li> <li>Primal Instinct: When reduced to 0 HP, you can instead drop to 1 HP. This effect can only be used once per long rest.</li> <li>Drawn to Bloodshed: If an enemy within 30 feet is below half HP, your movement speed increases by 20 feet toward them.</li> </ul> <br><i>Description: These crimson leather gauntlets have the fangs of a dire wolf embedded in the knuckles.</i>",
+                        "imageSrc": "/images/gear/bloodfangGauntlets.png",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Shoe Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
+                ],
+                "meele": [
+                    {
+                        "name": "Greataxe",
+                        "description": "A mighty greataxe that deals 1d12 damage.",
+                        "imageSrc": "/images/gear/greataxe.png",
+                        "imageAlt": "Picture of the Staff of Healing"
+                    },
+                    {
+                        "name": "Meele Slot 2",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
+                ],
+                "range": [
+                    {
+                        "name": "Range Hand 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Range Hand 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
+                ],
+                "rightGear": [
+                    {
+                        "name": "Nechlace Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Ring 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Ring 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
+                ]
+            },
+            "items": {
+                "javelins": {
+                    "name": "Javelins",
+                    "imageSrc": "/images/gear/javelins.png",
+                    "imageAlt": "Picture of a javelin.",
+                    "description": "Javelins that can be thrown. <br><br>1d6 + Strength modifier Piercing damage.",
+                    "amount": "4"
+                },
+                "ashOfVampire": {
+                    "name": "Ash of Vampire",
+                    "imageSrc": "/images/items/ashOfVampire.png",
+                    "imageAlt": "Picture of the Ash of Vampire.",
+                    "description": "Ash of a vampire that can be used to create a potion.",
+                    "amount": "1"
+                }
+            },
+            "power": [
+                {
+                    "name": "Eclipse Counter",
+                    "description": "If an enemy misses you with an attack, you can use a reaction to make an unarmed or weapon attack against them.<br>If the enemy is larger than you, you has advantage on this counterattack.",
+                    "cooldown": "2x per Battle"
+                }
+            ],
+            "classAbilities": [
+                {
+                    "name": "Rage",
+                    "description": "On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits:<br> - You have advantage on Strength checks and Strength saving throws.<br> - When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.<br> - You have resistance to bludgeoning, piercing, and slashing damage."
+                },
+                {
+                    "name": "Danger Sense",
+                    "description": "You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated."
+                },
+                {
+                    "name": "Reckless Attack",
+                    "description": "When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
+                }
+            ]
+        }
+    ]
+}

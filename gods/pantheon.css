@@ -121,6 +121,11 @@ body {
   animation: rotateReverseImg 60s linear infinite;
 }
 
+.sleeper {
+  height: 245px;
+  width: 245px;
+}
+
 /*------------------*/
 /* STARS BACKGROUND */
 /*------------------*/

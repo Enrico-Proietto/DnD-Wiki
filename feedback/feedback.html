@@ -172,7 +172,7 @@
 
       const content = entries.map(([key, value]) => `**${key.replace(/^q/, 'Q')}:** ${value}`).join('\n\n');
 
-      const res = await fetch('https://discord.com/api/webhooks/YOUR_WEBHOOK_URL', {
+      const res = await fetch('https://discord.com/api/webhooks/1370127818377396284/Op1oF03rJBpVQK_eytGV5Tuq8Lxqa8Mu6KTZwM-t5QD3ERnmyYDEojlQlM8QjT9naoIc', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content: `📬 New Feedback:\n\n${content}` })

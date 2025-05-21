@@ -101,13 +101,13 @@
                         "name": "Range Hand 1 Slot",
                         "description": "Currently this slot is empty.",
                         "imageSrc": "",
-                        "imageAlt": ""
+                        "imageAlt": "No image unavailable"
                     },
                     {
                         "name": "Range Hand 2 Slot",
                         "description": "Currently this slot is empty.",
                         "imageSrc": "",
-                        "imageAlt": ""
+                        "imageAlt": "No image unavailable"
                     }
                 ],
                 "rightGear": [
@@ -115,19 +115,19 @@
                         "name": "Necklace Slot",
                         "description": "Currently this slot is empty.",
                         "imageSrc": "",
-                        "imageAlt": ""
+                        "imageAlt": "No image unavailable"
                     },
                     {
                         "name": "Ring 1 Slot",
                         "description": "Currently this slot is empty.",
                         "imageSrc": "",
-                        "imageAlt": ""
+                        "imageAlt": "No image unavailable"
                     },
                     {
                         "name": "Ring 2 Slot",
                         "description": "Currently this slot is empty.",
                         "imageSrc": "",
-                        "imageAlt": ""
+                        "imageAlt": "No image unavailable"
                     }
                 ]
             },

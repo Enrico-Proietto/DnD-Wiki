@@ -12,10 +12,10 @@ const firstborns = [
 ];
 
 const ascended = [
-  { name: "Elendor", image: "/images/gods/elendor.png", link: "/gods//elendor.html" },
+  { name: "Elendor", image: "/images/gods/elendor.png", link: "/gods/elendor/elendor.html" },
   { name: "Anos Voldigoad", image: "/images/gods/anos.png", link: "/gods/anos/anos.html" },
   { name: "Zurathis", image: "/images/gods/zurathis.png", link: "/gods/zurathis/zurathis.html" },
-  { name: "Elorthas", image: "/images/gods/elorthas.png", link: "/gods//elorthas/elorthas.html" },
+  { name: "Elorthas", image: "/images/gods/elorthas.png", link: "/gods/elorthas/elorthas.html" },
   { name: "Tyrathar", image: "/images/gods/tyrathar.png", link: "" },
   { name: "Zarrak", image: "/images/gods/zarrak.png", link: "" },
   { name: "Eryndor", image: "/images/gods/eryndor.png", link: "" },

@@ -98,6 +98,12 @@ h1 {
   border: 2px solid #fdc538;
 }
 
+.status.rage-slot {
+  background-color: #ff2c2c;
+  color: #ffeaea;
+  border: 2px solid #fdc538;
+}
+
 .emoji {
   margin-right: 8px;
 }
@@ -286,13 +292,18 @@ h1 {
 }
 
 .status.spell-slot,
-.status.ki-slot {
+.status.ki-slot,
+.status.rage-slot {
   padding: 8px 16px;
   font-size: 0.9em;
   width: fit-content;
 }
 
 /*Race section*/
+
+.race.human {
+  color: #f0cc9dde;
+}
 
 .race.orc {
   color: #4a956fa5;

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Luckbringers | Faction Page</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to right, #dbeafe, #e0f2fe);
+            margin: 0;
+            padding: 0;
+            color: #1e3a8a;
+        }
+
+        header {
+            background: #3b82f6;
+            color: #f0f9ff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #f0f9ff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2563eb;
+            border-bottom: 2px solid #93c5fd;
+            padding-bottom: 5px;
+        }
+
+        .artifact,
+        .card {
+            background: #dbeafe;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            border-left: 6px solid #3b82f6;
+            border-radius: 6px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #1e40af;
+        }
+
+        .dice-result {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            color: #475569;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>The Luckbringers</h1>
+        <p>Fortune favors the bold</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About the Faction</h2>
+            <p>The Luckbringers are the faithful of <strong>Aelos</strong>, God of Fortune. They believe that chance and
+                fate are tools of divine will, and live by daring wagers, bold ventures, and fearless hearts. Known for
+                their charm and luck, Luckbringers serve as gamblers, advisers, and agents of fate.</p>
+        </section>
+
+        <section>
+            <h2>Core Beliefs</h2>
+            <ul>
+                <li>Chance is divine, not random.</li>
+                <li>Fortune favors those who act boldly.</li>
+                <li>Winning and losing both teach destiny’s lesson.</li>
+                <li>Luck is a test, not a gift.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Artifacts of Aelos</h2>
+            <div class="artifact">
+                <strong>🎲 Dice of Destiny</strong>: Alter the outcome of an event by divine chance.
+            </div>
+            <div class="artifact">
+                <strong>🪙 Coin of Eternal Luck</strong>: Flip daily for miraculous luck or dreadful misfortune.
+            </div>
+            <div class="artifact">
+                <strong>☀️ Amulet of Serendipity</strong>: Grants passive good fortune in daily endeavors.
+            </div>
+        </section>
+
+        <section>
+            <h2>Try Your Luck</h2>
+            <button onclick="rollDice()">Roll the Dice of Destiny</button>
+            <div id="diceResult" class="dice-result"></div>
+        </section>
+
+        <section>
+            <h2>Card of the Day</h2>
+            <button onclick="drawCard()">Draw a Fortune Card</button>
+            <div id="cardDisplay" class="card"></div>
+        </section>
+    </div>
+
+    <footer>
+        Blessed by Aelos.
+    </footer>
+
+    <script>
+        function rollDice() {
+            const result = Math.floor(Math.random() * 20) + 1;
+            document.getElementById('diceResult').innerText = `You rolled a ${result}!`;
+        }
+
+        const cards = [
+            "🎲 Dice of Destiny - Alter fate with a roll.",
+            "🪙 Coin of Eternal Luck - Fortune or failure?",
+            "☀️ Amulet of Serendipity - Luck favors you subtly.",
+            "🌿 Harmony's Embrace - You are immune to fear and charm.",
+            "🌀 Twist of Fate - Your alignment shifts unexpectedly.",
+            "📜 Echoes of Eternity - Knowledge at the cost of clarity."
+        ];
+
+        function drawCard() {
+            const randomIndex = Math.floor(Math.random() * cards.length);
+            document.getElementById('cardDisplay').innerText = cards[randomIndex];
+        }
+    </script>
+</body>
+
+</html>

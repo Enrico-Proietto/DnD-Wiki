@@ -430,6 +430,7 @@ body {
 /*-------------------------*/
 .nav-section a.player {
   color: #60f560;
+  background: linear-gradient(to bottom, #1d1510, #110d0b);
   animation: pulse-player 3s infinite;
 }
 .nav-section a.calender {
@@ -477,7 +478,6 @@ body {
 }
 .nav-section a.feedback {
   color: #e2d8c3;
-  background: linear-gradient(to bottom, #1d1510, #110d0b);
   animation: flicker-feedback 5s infinite;
 }
 
@@ -665,4 +665,89 @@ body {
 .range-slot:hover .tooltip,
 .spell-slot:hover .tooltip {
   display: block;
+}
+
+.section-toggle {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.section-toggle button {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #3b4a2f;
+  color: #e2d8c3;
+  border: 2px solid #6c845f;
+  border-radius: 10px;
+  font-family: "Cinzel", serif;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.section-toggle button:hover {
+  background-color: #4f6140;
+}
+
+.ability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.ability-card {
+  background-color: #2d241b;
+  border: 2px solid #6c845f;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 15px #0000004d;
+  color: #e2d8c3;
+  font-family: "Cinzel", serif;
+  transition: transform 0.3s ease;
+}
+
+.ability-card:hover {
+  transform: scale(1.03);
+  border-color: #b7e197;
+  box-shadow: 0 0 25px rgba(160, 255, 160, 0.4);
+}
+
+.ability-card h4 {
+  color: #ffd080;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.ability-card .cooldown {
+  color: #b0e3c1;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.ability-section-title {
+  font-size: 24px;
+  color: #c1f0b2;
+  border-bottom: 1px solid #507548;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#abilitiesSection {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ability-card img {
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 1px solid #6c845f;
+  box-shadow: 0 0 8px rgba(160, 255, 160, 0.1);
 }

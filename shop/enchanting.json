@@ -5,7 +5,7 @@
         "tags": "Service, Enchantment, Upgrade",
         "stock": "10",
         "price": "1000 GP",
-        "image": ""
+        "image": "/images/gear/weaponEnchantment.png"
     },
     {
         "name": "Elemental Rune",
@@ -13,7 +13,7 @@
         "tags": "Service, Enchantment, Elemental",
         "stock": "5",
         "price": "750 GP",
-        "image": ""
+        "image": "/images/gear/elementalRune.png"
     },
     {
         "name": "Armor Glyph",
@@ -21,7 +21,7 @@
         "tags": "Service, Enchantment, Resistance",
         "stock": "3",
         "price": "600 GP",
-        "image": ""
+        "image": "/images/gear/armorGlyph.png"
     },
     {
         "name": "Spellscroll Creation",
@@ -29,7 +29,7 @@
         "tags": "Service, Magic",
         "stock": "10",
         "price": "200",
-        "image": ""
+        "image": "/images/gear/spellscrollCreation.png"
     },
     {
         "name": "Wand Recharging",
@@ -37,7 +37,7 @@
         "tags": "Service, Magic",
         "stock": "5",
         "price": "100 GP",
-        "image": ""
+        "image": "/images/gear/wandRecharging.png"
     },
     {
         "name": "Curse Removal or Binding",
@@ -45,7 +45,7 @@
         "tags": "Service, Magic, Curse",
         "stock": "3",
         "price": "750 GP",
-        "image": ""
+        "image": "/images/gear/curseRemoval.png"
     },
     {
         "name": "Whispering Ring",
@@ -53,7 +53,7 @@
         "tags": "Ring",
         "stock": "4",
         "price": "150 GP",
-        "image": ""
+        "image": "/images/gear/whisperingRing.png"
     },
     {
         "name": "Spectral Tether Pendant",
@@ -61,7 +61,7 @@
         "tags": "Necklace",
         "stock": "2",
         "price": "900 GP",
-        "image": ""
+        "image": "/images/gear/spectralTetherPendant.png"
     },
     {
         "name": "Rune of the Flame",
@@ -69,7 +69,7 @@
         "tags": "Rune, Magic",
         "stock": "3",
         "price": "450 GP",
-        "image": ""
+        "image": "/images/gear/runeOfTheFlame.png"
     },
     {
         "name": "Scroll of Binding Chains",
@@ -77,6 +77,6 @@
         "tags": "Scroll, Magic",
         "stock": "6",
         "price": "250 GP",
-        "image": ""
+        "image": "/images/gear/scrollOfBindingChains.png"
     }
 ]
