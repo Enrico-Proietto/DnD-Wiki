@@ -153,7 +153,26 @@
                     "description": "Revives a creature in a 5ft. range.",
                     "amount": "1"
                 }
-            }
+            },
+            "feats": [
+                {
+                    "name": "Mobile",
+                    "description": "Your speed increases by 10 feet. <br>When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn."
+                }
+            ],
+            "power": [
+                {
+                    "name": "Chaos Coupon",
+                    "description": "Effect: The player may declare a “discount” on one thing… but it’s random how much they get off.<br><ul>Roll a d100: <ul><li>1-5: The price doubles.</li><li>6-40: They get 10% off.</li><li>41-80: They get 50% off.</li><li>81-95: They get 90% off.</li><li>96-100: It’s completely free, but the seller is now suspicious and might ask for a favor later.</li></ul></ul>",
+                    "cooldown": "1x per Session"
+                }
+            ],
+            "classAbilities": [
+                {
+                    "name": "Ki Punch",
+                    "description": "(Range 4 meters)"
+                }
+            ]
         }
     ]
 }

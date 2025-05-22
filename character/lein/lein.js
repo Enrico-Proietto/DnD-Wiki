@@ -1,7 +1,10 @@
+let characterData;
+
 async function loadCharacter() {
   try {
     const response = await fetch('lein.json');
     const data = await response.json();
+    characterData = data;
     const lein = data.lein[0];
 
     // Update name
@@ -25,11 +28,15 @@ async function loadCharacter() {
     document.getElementById('abilitiesBlock').innerHTML = abilitiesHTML;
 
     // Update Skills
-    const skillsHTML = `
-        <strong>Skills:</strong><br>
-        Athletics ${lein.skills.athletics}, Insight ${lein.skills.insight},<br>
-        Medicine ${lein.skills.medicine}, Persuasion ${lein.skills.persuasion}
-      `;
+    let number = 0;
+    let skillsHTML = `<strong>Skills:</strong><br>`;
+    Object.values(lein.skills).forEach(skill => {
+      number = number + 1;
+      skillsHTML = skillsHTML + (`${skill.name} ${skill.amount} `)
+      if (number % 2 === 0) {
+        skillsHTML = skillsHTML + (`<br>`)
+      }
+    })
     document.getElementById('skillsBlock').innerHTML = skillsHTML;
 
     const spellHTML = `
@@ -38,24 +45,45 @@ async function loadCharacter() {
       `;
     document.getElementById('spellslotsBlock').innerHTML = spellHTML;
 
-    const spellRow = document.getElementById('spellRow');
-    spellRow.innerHTML = ''; // clear previous spells
+    // Left Gear Column
+    const gearLeftColumn = document.getElementById('leftGear');
+    gearLeftColumn.innerHTML = '';
 
-    Object.values(lein.spells).forEach(spell => {
-      const spellSlot = document.createElement('div');
-      spellSlot.classList.add('spell-slot');
-      spellSlot.setAttribute('onclick', 'toggleTooltip(this)');
+    Object.values(lein.gear.leftGear).forEach(gear => {
+      const gearSlot = document.createElement('div');
+      gearSlot.classList.add('leftGear-slot');
+      gearSlot.setAttribute('onClick', 'toggleTooltipLeftGear(this)')
 
-      spellSlot.innerHTML = `
-        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
-        <div class="spell-tooltip">
-          <strong>${spell.name}</strong><br>
-          ${spell.description}
+      gearSlot.innerHTML = `
+      <img class="leftGearImg" src="${gear.imageSrc}">
+                <div class="leftGear-tooltip tooltip tooltip-left">
+                  <strong>${gear.name}</strong><br>
+                  ${gear.description}
+                </div>
+              `;
+
+      gearLeftColumn.appendChild(gearSlot);
+    });
+
+    // Meele Row
+    const gearMeeleRow = document.getElementById('meele');
+    gearMeeleRow.innerHTML = '';
+
+    Object.values(lein.gear.meele).forEach(meele => {
+      const meeleSlot = document.createElement('div');
+      meeleSlot.classList.add('meele-slot');
+      meeleSlot.setAttribute('onClick', 'toggleTooltipMeele(this)');
+
+      meeleSlot.innerHTML = `
+      <img class="meeleImg" src="${meele.imageSrc}" alt="${meele.imageAlt}">
+        <div class="meele-tooltip tooltip tooltip-bottom">
+          <strong>${meele.name}</strong><br>
+          ${meele.description}
         </div>
       `;
 
-      spellRow.appendChild(spellSlot);
-    });
+      gearMeeleRow.appendChild(meeleSlot);
+    })
 
     // Range Row
     const gearRangeRow = document.getElementById('range');
@@ -64,11 +92,11 @@ async function loadCharacter() {
     Object.values(lein.gear.range).forEach(range => {
       const rangeSlot = document.createElement('div');
       rangeSlot.classList.add('range-slot');
-      rangeSlot.setAttribute('onClick', 'toggleTooltipMeele(this)');
+      rangeSlot.setAttribute('onClick', 'toggleTooltipRange(this)');
 
       rangeSlot.innerHTML = `
       <img class="rangeImg" src="${range.imageSrc}" alt="${range.imageAlt}">
-        <div class="range-tooltip">
+        <div class="range-tooltip tooltip tooltip-bottom">
           <strong>${range.name}</strong><br>
           ${range.description}
         </div>
@@ -76,6 +104,26 @@ async function loadCharacter() {
 
       gearRangeRow.appendChild(rangeSlot);
     })
+
+    // Right Gear Column
+    const gearRightColumn = document.getElementById('rightGear');
+    gearRightColumn.innerHTML = '';
+
+    Object.values(lein.gear.rightGear).forEach(gear => {
+      const gearSlot = document.createElement('div');
+      gearSlot.classList.add('rightGear-slot');
+      gearSlot.setAttribute('onClick', 'toggleTooltipRightGear(this)')
+
+      gearSlot.innerHTML = `
+      <img class="rightGearImg" src="${gear.imageSrc}">
+            <div class="rightGear-tooltip tooltip tooltip-right">
+             <strong>${gear.name}</strong><br>
+             ${gear.description}
+            </div>
+          `;
+
+      gearRightColumn.appendChild(gearSlot);
+    });
 
     // ==== Inventory Items ====
     const inventoryDiv = document.querySelector('.inventory');
@@ -118,6 +166,76 @@ function updateXPBars() {
 loadCharacter();
 
 function toggleSidenav() {
-    document.querySelector(".sidenav").classList.toggle("collapsed");
-    document.querySelector(".main").classList.toggle("expanded");
+  document.querySelector(".sidenav").classList.toggle("collapsed");
+  document.querySelector(".main").classList.toggle("expanded");
+}
+
+function switchTo(section) {
+  const equip = document.getElementById('equipmentSection');
+  const abilities = document.getElementById('abilitiesSection');
+
+  if (section === 'equipment') {
+    equip.style.display = 'block';
+    abilities.style.display = 'none';
+  }
+
+  if (section === 'abilities') {
+    equip.style.display = 'none';
+    abilities.style.display = 'block';
+    renderAbilities();
+  }
+
+}
+
+function renderAbilities() {
+  const lein = characterData.lein[0];
+  const section = document.getElementById('abilitiesSection');
+  if (section.innerHTML.trim()) return;
+
+  let html = '';
+
+  const renderCategory = (title, items, isPower = false) => {
+    if (!items || items.length === 0) return '';
+    let block = `<h3 class="ability-section-title">${title}</h3><div class="ability-grid">`;
+    items.forEach(entry => {
+      block += `
+        <div class="ability-card">
+          <h4>${entry.name}</h4>
+          ${isPower ? `<div class="cooldown">${entry.cooldown}</div>` : ''}
+          <div>${entry.description}</div>
+        </div>
+      `;
+    });
+    block += '</div>';
+    return block;
+  };
+
+  html += renderCategory('Feats', lein.feats);
+  html += renderCategory('Powers', lein.power, true);
+  html += renderCategory('Class Abilities', lein.classAbilities);
+  html += renderCategory('Race Abilities', lein.raceAbilities);
+
+  const spells = lein.spells;
+  if (spells && Object.keys(spells).length > 0) {
+    html += renderSpells(lein.spells);
+  }
+
+  section.innerHTML = html;
+}
+
+function renderSpells(spells) {
+  let html = `<h3 class="ability-section-title">Spells</h3><div class="spell-row">`;
+  Object.values(spells).forEach(spell => {
+    html += `
+      <div class="spell-slot" onclick="toggleTooltip(this)">
+        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
+        <div class="spell-tooltip">
+          <strong>${spell.name}</strong><br>
+          ${spell.description}
+        </div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+  return html; // store in the pagination system
 }

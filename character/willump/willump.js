@@ -1,7 +1,10 @@
+let characterData;
+
 async function loadCharacter() {
   try {
     const response = await fetch('willump.json');
     const data = await response.json();
+    characterData = data;
     const willump = data.willump[0];
 
     // Update name
@@ -73,6 +76,7 @@ async function loadCharacter() {
       meeleSlot.setAttribute('onClick', 'toggleTooltipMeele(this)');
 
       meeleSlot.innerHTML = `
+      <img class="meeleImg" src="${meele.imageSrc}" alt="${meele.imageAlt}">
           <div class="meele-tooltip tooltip tooltip-bottom">
             <strong>${meele.name}</strong><br>
             ${meele.description}
@@ -112,6 +116,7 @@ async function loadCharacter() {
       gearSlot.setAttribute('onClick', 'toggleTooltipRightGear(this)')
 
       gearSlot.innerHTML = `
+      <img class="rightGearImg" src="${gear.imageSrc}">
         <div class="rightGear-tooltip tooltip tooltip-right">
          <strong>${gear.name}</strong><br>
          ${gear.description}
@@ -119,26 +124,6 @@ async function loadCharacter() {
       `;
 
       gearRightColumn.appendChild(gearSlot);
-    });
-
-    // Spell Row
-    const spellRow = document.getElementById('spellRow');
-    spellRow.innerHTML = ''; // clear previous spells
-
-    Object.values(willump.spells).forEach(spell => {
-      const spellSlot = document.createElement('div');
-      spellSlot.classList.add('spell-slot');
-      spellSlot.setAttribute('onclick', 'toggleTooltip(this)');
-
-      spellSlot.innerHTML = `
-        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
-          <div class="spell-tooltip">
-            <strong>${spell.name}</strong><br>
-            ${spell.description}
-          </div>
-        `;
-
-      spellRow.appendChild(spellSlot);
     });
 
     // ==== Inventory Items ====
@@ -180,3 +165,71 @@ function updateXPBars() {
 }
 
 loadCharacter();
+
+function switchTo(section) {
+  const equip = document.getElementById('equipmentSection');
+  const abilities = document.getElementById('abilitiesSection');
+
+  if (section === 'equipment') {
+    equip.style.display = 'block';
+    abilities.style.display = 'none';
+  } else {
+    equip.style.display = 'none';
+    abilities.style.display = 'block';
+    renderAbilities(); // only builds once
+  }
+}
+
+function renderAbilities() {
+  const willump = characterData.willump[0];
+  const section = document.getElementById('abilitiesSection');
+  if (section.innerHTML.trim()) return;
+
+  let html = '';
+
+  const renderCategory = (title, items, isPower = false) => {
+    if (!items || items.length === 0) return '';
+    let block = `<h3 class="ability-section-title">${title}</h3><div class="ability-grid">`;
+    items.forEach(entry => {
+      block += `
+        <div class="ability-card">
+          <h4>${entry.name}</h4>
+          ${isPower ? `<div class="cooldown">${entry.cooldown}</div>` : ''}
+          <div>${entry.description}</div>
+        </div>
+      `;
+    });
+    block += '</div>';
+    return block;
+  };
+
+  html += renderCategory('Feats', willump.feats);
+  html += renderCategory('Powers', willump.power, true);
+  html += renderCategory('Class Abilities', willump.classAbilities);
+  html += renderCategory('Race Abilities', willump.raceAbilities);
+  html += renderCategory('The Infernal Ember', willump.infernalEmber);
+
+  const spells = willump.spells;
+  if (spells && Object.keys(spells).length > 0) {
+    html += renderSpells(willump.spells);
+  }
+
+  section.innerHTML = html;
+}
+
+function renderSpells(spells) {
+  let html = `<h3 class="ability-section-title">Spells</h3><div class="spell-row">`;
+  Object.values(spells).forEach(spell => {
+    html += `
+      <div class="spell-slot" onclick="toggleTooltip(this)">
+        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
+        <div class="spell-tooltip">
+          <strong>${spell.name}</strong><br>
+          ${spell.description}
+        </div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+  return html; // store in the pagination system
+}

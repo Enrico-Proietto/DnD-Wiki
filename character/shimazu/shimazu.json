@@ -5,13 +5,13 @@
             "race": "Half-Orc Half-Dragonborn",
             "class": "Fighter",
             "alignment": "Chaotic-Neutral",
-            "hp": "31",
-            "ac": "10",
-            "gp": "90",
+            "hp": "38",
+            "ac": "14",
+            "gp": "302",
             "level": "4",
             "xp": "425",
             "xpNeededForUpgrade": "1500",
-            "pageSrc": "/character/belarus.html",
+            "pageSrc": "/character/shimazu/shimazu.html",
             "imageSrc": "/images/characters/shimazu.png",
             "abilityScores": {
                 "strength": "17",
@@ -45,84 +45,111 @@
             ],
             "gear": {
                 "leftGear": [
-                    {},
-                    {},
-                    {},
                     {
-                        "name": "Vortex Gaunlets",
-                        "description": "Allows monks to pull a creature within 30 feet of them towards them once per short rest (DC 14 Strength save).",
-                        "imageSrc": ""
+                        "name": "Head Gear Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
                     },
-                    {}
+                    {
+                        "name": "Cape Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Chest Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Hand Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Shoe Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
                 ],
                 "meele": [
                     {
-                        "name": "Staff of Healing",
-                        "description": "Adds a +2 to all healing actions.",
-                        "imageSrc": ""
+                        "name": "Shortsword",
+                        "description": "",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
                     },
                     {
-                        "name": "The Help Sword",
-                        "description": "Spawn a spirit that aids you.",
-                        "imageSrc": ""
+                        "name": "Shortsword",
+                        "description": "",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
                     }
                 ],
                 "range": [
-                    {},
-                    {}
+                    {
+                        "name": "Range Hand 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Range Hand 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
                 ],
                 "rightGear": [
-                    [],
-                    {},
-                    {},
-                    {},
-                    {}
+                    {
+                        "name": "Nechlace Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Ring 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Ring 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
                 ]
             },
             "items": {
-                "flameTouchedLantern": {
-                    "name": "Flame Touched Lantern",
-                    "imageSrc": "../images/gear/flame-touched_lantern.png",
-                    "imageAlt": "Picture of a Flame Touched Lantern",
-                    "description": "This magical lantern burns for 24 hours on a single flask of oil and emits light in a 60-foot radius.",
-                    "amount": "1"
-                },
-                "handySpicePouch": {
-                    "name": "Handy Spice Pouch",
+                "clanSymbol": {
+                    "name": "Sangrelis Clan Symbol",
                     "imageSrc": "",
-                    "imageAlt": "",
-                    "description": "A small pouch that magically refills itself with a random spice each day, perfect for cooking on long journeys.",
+                    "imageAlt": "Sangralis Clan Symbol",
+                    "description": "The clan symbol of Sangrelis. Left behind by Vyras Sangrelis after he was defeated.",
                     "amount": "1"
-                },
-                "featherlightTent": {
-                    "name": "Featherlight Tent",
-                    "imageSrc": "",
-                    "imageAlt": "",
-                    "description": "A magically reinforced tent that weighs only 5 pounds and can comfortably fit four people.",
-                    "amount": "1"
-                },
-                "mace": {
-                    "name": "Mace",
-                    "imageSrc": "",
-                    "imageAlt": "",
-                    "description": "A trusty old mace.",
-                    "amount": "1"
-                },
-                "lightCrossbow": {
-                    "name": "Light Crossbow",
-                    "imageSrc": "",
-                    "imageAlt": "",
-                    "description": "A simple crossbow.",
-                    "amount": "1"
-                },
-                "bolts": {
-                    "name": "Bolts",
-                    "imageSrc": "",
-                    "imageAlt": "",
-                    "description": "Normal shooting arrows.",
-                    "amount": "20"
                 }
-            }
+            },
+            "feats": [
+                {
+                    "name": "Armorless",
+                    "description": "You survived long without armor, this has hardend your scales harder and makes your natural ac +4. Also because you wear no body armor you can walk +10ft per round."
+                }
+            ],
+            "classAbilities": [
+                {
+                    "name": "Action Surge",
+                    "description": ""
+                },
+                {
+                    "name": "Second Wind",
+                    "description": "Heal 1d10 + your Fighter level"
+                }
+            ]
         }
     ]
 }

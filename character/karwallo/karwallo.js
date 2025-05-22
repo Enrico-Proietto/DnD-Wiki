@@ -54,7 +54,7 @@ async function loadCharacter() {
 
       gearSlot.innerHTML = `
       <img class="leftGearImg" src="${gear.imageSrc}">
-                <div class="leftGear-tooltip">
+                <div class="leftGear-tooltip tooltip tooltip-left">
                   <strong>${gear.name}</strong><br>
                   ${gear.description}
                 </div>
@@ -74,7 +74,7 @@ async function loadCharacter() {
 
       meeleSlot.innerHTML = `
       <img class="meeleImg" src="${meele.imageSrc}" alt="${meele.imageAlt}">
-        <div class="meele-tooltip">
+        <div class="meele-tooltip tooltip tooltip-bottom">
           <strong>${meele.name}</strong><br>
           ${meele.description}
         </div>
@@ -94,7 +94,7 @@ async function loadCharacter() {
 
       rangeSlot.innerHTML = `
       <img class="rangeImg" src="${range.imageSrc}" alt="${range.imageAlt}">
-        <div class="range-tooltip">
+        <div class="range-tooltip tooltip tooltip-bottom">
           <strong>${range.name}</strong><br>
           ${range.description}
         </div>
@@ -115,7 +115,7 @@ async function loadCharacter() {
 
       gearSlot.innerHTML = `
       <img class="rightGearImg" src="${gear.imageSrc}">
-            <div class="rightGear-tooltip">
+            <div class="rightGear-tooltip tooltip tooltip-right">
              <strong>${gear.name}</strong><br>
              ${gear.description}
             </div>
@@ -167,12 +167,6 @@ loadCharacter();
 function toggleSidenav() {
     document.querySelector(".sidenav").classList.toggle("collapsed");
     document.querySelector(".main").classList.toggle("expanded");
-}
-
-
-function toggleSidenav() {
-  document.querySelector(".sidenav").classList.toggle("collapsed");
-  document.querySelector(".main").classList.toggle("expanded");
 }
 
 function switchTo(section) {

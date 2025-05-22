@@ -10,21 +10,35 @@
 
 <body>
   <div class="layout">
+
     <div class="sidenav">
-      <h2><a class="title" href="/index.html">Whisper's from the Void</a></h2>
-      <a class="player" href="/player/player.html">Players</a>
-      <a class="calender" href="/calender/calender.html">Calender</a>
-      <a class="time" href="/timeline/timeline.html">Timeline</a>
-      <a class="lore" href="/lore/lore.html">Chronical</a>
-      <a class="gods" href="/gods/pantheon.html">Pantheon</a>
-      <a class="pillar" href="/pillars/pillars.html">Mythical Powers</a>
-      <a class="demon" href="/demonomicon/demonomicon.html">Demonomicon</a>
-      <a class="beastiary" href="/beastiary/beastiary.html">Beastiary</a>
-      <a class="faction" href="/faction/faction.html">Faction</a>
-      <a class="gp" href="/gold/gold.html">Gold</a>
-      <a class="shop" href="/shop/shop.html">Shop</a>
-      <a class="feedback" href="/feedback/feedback.html">Feedback</a>
+      <button class="toggle-btn" onclick="toggleSidenav()" aria-label="Toggle Navigation Menu">☰</button>
+
+      <h2 role="heading" aria-level="1"><span class="aurora-text">Whispers from the Void</span></h2>
+
+      <div class="nav-section">
+        <a class="player" href="/player/player.html">👥 Players</a>
+        <a class="calender" href="/calender/calender.html">📅 Calendar</a>
+        <a class="time" href="/timeline/timeline.html">🕰️ Timeline</a>
+      </div>
+
+      <div class="nav-section">
+        <a class="lore" href="/lore/lore.html">📜 Chronical</a>
+        <a href="/spellbook/spellbook.html">📖 <span class="aurora-text">Spellbook</span></a>
+        <a class="gods" href="/gods/pantheon.html">⛪ Pantheon</a>
+        <a class="pillar" href="/pillars/pillars.html">💠 Mythical Powers</a>
+        <a class="demon" href="/demonomicon/demonomicon.html">🩸 Demonomicon</a>
+        <a class="beastiary" href="/beastiary/beastiary.html">🐉 Beastiary</a>
+        <a class="faction" href="/faction/faction.html">⚔️ Factions</a>
+      </div>
+
+      <div class="nav-section">
+        <a class="gp" href="/gold/gold.html">💰 Gold</a>
+        <a class="shop" href="/shop/shop.html">🛒 Shop</a>
+        <a class="feedback" href="/feedback/feedback.html">📝 Feedback</a>
+      </div>
     </div>
+
     <div class="header">
       <div class="name" id="characterName"></div>
       <div class="status-bars">
@@ -34,21 +48,25 @@
       </div>
     </div>
     <div class="center">
-      <div class="middle-row">
-        <div class="leftGear-column" id="leftGear"></div>
-        <div class="character-image">
-          <img src="/images/characters/shimazu.png" alt="Character">
-        </div>
-        <div class="rightGear-column" id="rightGear"></div>
+      <div class="section-toggle">
+        <button onclick="switchTo('equipment')">Equipment</button>
+        <button onclick="switchTo('abilities')">Power</button>
       </div>
-      <div class="gear-row">
-        <div class="meele-row" id="meele"></div>
-        <div class="ranged">
-          <div class="gear-slot hand-three"></div>
-          <div class="gear-slot hand-four"></div>
+
+      <div id="equipmentSection">
+        <div class="middle-row">
+          <div class="leftGear-column" id="leftGear"></div>
+          <div class="character-image">
+            <img src="/images/characters/shimazu.png" alt="Character">
+          </div>
+          <div class="rightGear-column" id="rightGear"></div>
+        </div>
+        <div class="gear-row">
+          <div class="meele-row" id="meele"></div>
+          <div class="range-row" id="range"></div>
         </div>
       </div>
-      <div class="spell-row" id="spellRow"></div>
+      <div id="abilitiesSection" style="display: none;"></div>
     </div>
     <div class="footer">
       <div style="display: flex; gap: 40px; font-size: 16px;">

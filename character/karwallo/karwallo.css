@@ -683,6 +683,30 @@ body {
 }
 
 
+.tooltip-bottom {
+  top: 120%;
+  bottom: auto;
+}
+
+.tooltip-left {
+  left: auto;
+  right: 120%;
+  transform: translateY(60%);
+}
+
+.tooltip-right {
+  left: 120%;
+  transform: translateY(60%);
+}
+
+.gear-slot:hover .tooltip,
+.leftGear-slot:hover .tooltip,
+.rightGear-slot:hover .tooltip,
+.meele-slot:hover .tooltip,
+.range-slot:hover .tooltip,
+.spell-slot:hover .tooltip {
+  display: block;
+}
 
 .section-toggle {
   display: flex;

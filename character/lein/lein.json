@@ -19,12 +19,12 @@
                 "strength": "8",
                 "dexterity": "16",
                 "constitution": "13",
-                "intelligence": "16",
+                "intelligence": "17",
                 "wisdom": "12",
                 "charisma": "10"
             },
             "skills": {
-                "arcana": "+2",
+                "arcana": "+4",
                 "history": "+2"
             },
             "spells": {
@@ -176,7 +176,27 @@
                     "description": "Books with many runes inscribed in it.",
                     "amount": "4"
                 }
-            }
+            },
+            "feats": [
+                {
+                    "name": "Rune-Eyed Savant",
+                    "description": "<ul> <li>You can read and comprehend any magical script, regardless of language (including coded runes, glyphs, or divine sigils).</li> <li>Once per long rest, when you cast a spell, you can inscribe an invisible arcane rune in the area (lasts 1 minute): <ul><li>While the rune is active, the next enemy that enters or starts their turn within 10 feet of it must make an Intelligence saving throw (DC 13) or become disoriented, suffering disadvantage on their next attack roll or saving throw before the end of their turn.</li><ul></li></ul>"
+                }
+            ],
+            "power": [
+                {
+                    "name": "Abyssal Grasp",
+                    "description": "",
+                    "cooldown": "3x per long rest"
+                }
+
+            ],
+            "classAbilities": [
+                {
+                    "name": "Portent",
+                    "description": "Starting at 2nd level when you choose this school, glimpses of the future begin to press in on your awareness. When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn. <br> Each foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls."
+                }
+            ]
         }
     ]
 }

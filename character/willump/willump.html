@@ -34,18 +34,26 @@
       </div>
     </div>
     <div class="center">
-      <div class="middle-row">
-        <div class="leftGear-column" id="leftGear"></div>
-        <div class="character-image">
-          <img src="/images/characters/willump.png" alt="Character">
+
+      <div class="section-toggle">
+        <button onclick="switchTo('equipment')">Equipment</button>
+        <button onclick="switchTo('abilities')">Power</button>
+      </div>
+
+      <div id="equipmentSection">
+        <div class="middle-row">
+          <div class="leftGear-column" id="leftGear"></div>
+          <div class="character-image">
+            <img src="/images/characters/willump.png" alt="Character">
+          </div>
+          <div class="rightGear-column" id="rightGear"></div>
         </div>
-        <div class="rightGear-column" id="rightGear"></div>
+        <div class="gear-row">
+          <div class="meele-row" id="meele"></div>
+          <div class="range-row" id="range"></div>
+        </div>
       </div>
-      <div class="gear-row">
-        <div class="meele-row" id="meele"></div>
-        <div class="range-row" id="range"></div>
-      </div>
-      <div class="spell-row" id="spellRow"></div>
+      <div id="abilitiesSection" style="display: none;"></div>
     </div>
     <div class="footer">
       <div style="display: flex; gap: 40px; font-size: 16px;">
@@ -57,7 +65,7 @@
     <div class="inventory"></div>
   </div>
   <script src="willump.js"></script>
-  <script src="../toggleTooltip.js"></script>
+  <script src="/toggleTooltip.js"></script>
 </body>
 
 </html>
