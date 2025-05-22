@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Weapon Enchantment",
+        "description": "Add a +1 bonus to a weapon (takes 3 days)",
+        "tags": "Service, Enchantment, Upgrade",
+        "stock": "10",
+        "price": "1000 GP",
+        "image": "/images/gear/weaponEnchantment.png"
+    },
+    {
+        "name": "Elemental Rune",
+        "description": "Adds 1d4 elemental damage to weapon",
+        "tags": "Service, Enchantment, Elemental",
+        "stock": "5",
+        "price": "750 GP",
+        "image": "/images/gear/elementalRune.png"
+    },
+    {
+        "name": "Armor Glyph",
+        "description": "Add resistance to a damage type for 1 combat/day",
+        "tags": "Service, Enchantment, Resistance",
+        "stock": "3",
+        "price": "600 GP",
+        "image": "/images/gear/armorGlyph.png"
+    },
+    {
+        "name": "Spellscroll Creation",
+        "description": "Custom spell scroll up to 3rd level",
+        "tags": "Service, Magic",
+        "stock": "10",
+        "price": "200",
+        "image": "/images/gear/spellscrollCreation.png"
+    },
+    {
+        "name": "Wand Recharging",
+        "description": "Restore charges to existing magical wands",
+        "tags": "Service, Magic",
+        "stock": "5",
+        "price": "100 GP",
+        "image": "/images/gear/wandRecharging.png"
+    },
+    {
+        "name": "Curse Removal or Binding",
+        "description": "Removes or seals cursed item properties",
+        "tags": "Service, Magic, Curse",
+        "stock": "3",
+        "price": "750 GP",
+        "image": "/images/gear/curseRemoval.png"
+    },
+    {
+        "name": "Whispering Ring",
+        "description": "Send 1 message/day to anyone you've met",
+        "tags": "Ring",
+        "stock": "4",
+        "price": "150 GP",
+        "image": "/images/gear/whisperingRing.png"
+    },
+    {
+        "name": "Spectral Tether Pendant",
+        "description": "Teleport 10 ft. as reaction to damage (1/day)",
+        "tags": "Necklace",
+        "stock": "2",
+        "price": "900 GP",
+        "image": "/images/gear/spectralTetherPendant.png"
+    },
+    {
+        "name": "Rune of the Flame",
+        "description": "Weapon deals +1d4 fire damage (binds for 1 week)",
+        "tags": "Rune, Magic",
+        "stock": "3",
+        "price": "450 GP",
+        "image": "/images/gear/runeOfTheFlame.png"
+    },
+    {
+        "name": "Scroll of Binding Chains",
+        "description": "Cast Hold Person, DC 14",
+        "tags": "Scroll, Magic",
+        "stock": "6",
+        "price": "250 GP",
+        "image": "/images/gear/scrollOfBindingChains.png"
+    }
+]

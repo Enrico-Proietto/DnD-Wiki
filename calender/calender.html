@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Fantasy Calendar</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='calendar.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div style="display: flex;">
+    <!-- Calendar Scrollable Content -->
+    <div id="calendar" style="flex: 3;"></div>
+
+    <!-- Sticky Weather Panel -->
+    <div id="weather">
+      <h2>Weather & Arcane Forecast</h2>
+      <div id="today-weather"></div>
+      <div id="forecast-weather" style="margin-top: 1rem;"></div>
+
+      <a class="back-button" href="/index.html">Go Back</a>
+    </div>
+
+    
+  </div>
+
+  <script src="calendar.js"></script>
+  <script src="weather.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+    "today": {
+        "description": "",
+        "temperature": "3°C",
+        "anomaly": "Wild magic pockets likely",
+        "moonPhase": "Waxing Crescent 🌒"
+    },
+    "forecast": [
+        { "day": "Zephyday", "desc": "Clear skies, mana stable", "icon": "🌤️" },
+        { "day": "Stellarday", "desc": "Arcane winds intensify", "icon": "💨" },
+        { "day": "Solarday", "desc": "Rain with elemental surges", "icon": "🌧️" }
+  ]
+}

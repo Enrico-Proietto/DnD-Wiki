@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School of Necromancy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="necromancy.css">
+</head>
+
+<body>
+
+    <canvas id="backgroundCanvas"></canvas>
+
+    <div class="content">
+        <h1 class="glow-text">School of Necromancy</h1>
+        <h2 class="subtitle">“That which is dead may eternal lie, and with strange aeons, even death may die.”<br>
+            Magic of undeath, decay, and soul manipulation.</h2>
+
+        <div class="card-container" id="cardContainer"></div>
+    </div>
+
+    <a href="/spellbook/spellbook.html" onclick="navigateTo('back'); return false;" class="back-button">← Return
+        to Spellbook</a>
+
+    <canvas id="exitCanvas"></canvas>
+    <div id="transitionOverlay"></div>
+
+    <script src="necromancy.js"></script>
+</body>
+
+</html>

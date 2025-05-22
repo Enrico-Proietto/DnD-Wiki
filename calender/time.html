@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whispers from the Void - Campaign Time</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .container {
+      border: 2px solid #8f8f8f;
+      padding: 30px;
+      display: inline-block;
+      border-radius: 10px;
+      background-color: #2e2e2e;
+    }
+
+    .title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .datetime {
+      font-size: 24px;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: #a9a9a9;
+      margin-top: 10px;
+    }
+
+    #skyImage {
+      width: 200px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="title">🌒 Campaign Time: Whispers from the Void</div>
+  <div class="datetime" id="campaignDate">Loading date...</div>
+  <div class="datetime" id="campaignTime">Loading time...</div>
+  <img id="skyImage" src="" alt="Celestial Phase">
+  <div class="subtitle" id="moonInfo">Loading moon phase...</div>
+</div>
+
+<script>
+  function updateCampaignClock() {
+    const date = new Date();
+    let days = ["Solusday", "Lunarisday", "Trisday", "Quarthday", "Velnisday", "Saturnis", "Thalday"];
+    let months = [
+      "First Seed", "Rainmoot", "Blossomfall", "Suncrest", "Harvestwane", 
+      "Duskhollow", "Frostmourn", "Snowdeep", "Darktide", "Starshroud"
+    ];
+
+    const year = 1356;
+    const dayOfWeek = days[date.getDay()];
+    const month = months[date.getMonth() % months.length];
+    const day = date.getDate();
+
+    const hours = date.getHours();
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+
+    document.getElementById("campaignDate").textContent =
+      `${dayOfWeek}, the ${day}th of ${month}, Year ${year}`;
+    document.getElementById("campaignTime").textContent =
+      `${hours.toString().padStart(2, '0')}:${minutes} Masthothal Time`;
+
+    let skyImage = document.getElementById("skyImage");
+    let moonInfo = document.getElementById("moonInfo");
+    let skyPhase = "";
+
+    if (hours >= 6 && hours < 18) {
+      skyPhase = "sun";
+      skyImage.src = "sun.png";
+    } else if (hours >= 18 && hours < 21) {
+      skyPhase = "selvren";
+      skyImage.src = "moon_silver.png";
+    } else if (hours >= 21 && hours < 24) {
+      skyPhase = "dual";
+      skyImage.src = "dual_moons.png";
+    } else if (hours >= 0 && hours < 3) {
+      skyPhase = "noctara";
+      skyImage.src = "moon_blood.png";
+    } else {
+      skyPhase = "selvren_fade";
+      skyImage.src = "moon_silver.png";
+    }
+
+    let moonText = {
+      sun: "The sun reigns. Peaceful day.",
+      selvren: "Selvren watches over. Night is safe.",
+      dual: "The Sisters dance in harmony. A rare omen.",
+      noctara: "Noctara alone. Beware the cursed night.",
+      selvren_fade: "Selvren lingers, but shadows creep."
+    };
+
+    moonInfo.textContent = moonText[skyPhase];
+  }
+
+  updateCampaignClock();
+  setInterval(updateCampaignClock, 60000);
+</script>
+
+</body>
+</html>

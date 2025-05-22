@@ -1,0 +1,37 @@
+{
+    "crescentVeil": {
+        "name": "The Crescent Veil",
+        "type": "religion"
+    },
+    "infernalConvenant": {
+        "name": "The Infernal Covenant",
+        "type": "religion"
+    },
+    "shadowVeil": {
+        "name": "The Cult of the Shadow Veil",
+        "type": "religion"
+    },
+    "dragonCircle": {
+        "name": "The Dragon Circle",
+        "type": "religion"
+    },
+    "luckbringers": {
+        "name": "The Luckbringers",
+        "type": "luck",
+        "link": "luckbringers/luckbringers.html"
+    },
+    "weavcersOfDestiny": {
+        "name": "The Weavers of Destiny",
+        "type": "destiny",
+        "link": "destiny/destiny.html"
+    },
+    "councilOfNine": {
+        "name": "Council of Nine",
+        "type": "infernal"
+    },
+    "crimsonDominion": {
+        "name": "The Crimson Dominion",
+        "type": "crimson",
+        "link": "crimsonDominion/crimsonDominion.html"
+    }
+}

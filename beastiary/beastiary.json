@@ -1,0 +1,27 @@
+{
+    "magicalCreatures": {
+        "name": "Magical Creatures",
+        "type": "magicalCreatures",
+        "pageSrc": "/beastiary/magicalCreatures/magicalCreatures.html"
+    },
+    "undead": {
+        "name": "Undead",
+        "type": "undead",
+        "pageSrc": "/beastiary/undead/undead.html"
+    },
+    "humanoids": {
+        "name": "Humanoids",
+        "type": "humanoids",
+        "pageSrc": "/beastiary/humanoids/humanoids.html"
+    },
+    "beasts": {
+        "name": "Beasts",
+        "type": "beasts",
+        "pageSrc": "/beastiary/beasts/beasts.html"
+    },
+    "shadows": {
+        "name": "Shadows",
+        "type": "shadows",
+        "pageSrc": "/beastiary/shadows/shadows.html"
+    }
+}

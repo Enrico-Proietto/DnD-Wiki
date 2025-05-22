@@ -1,0 +1,33 @@
+{
+    "weapons": [
+
+    ],
+    "armor": [
+
+    ],
+    "potions": [
+        { 
+            "name": "Potion of Healing", 
+            "description": "Restores 2d4+2 HP", 
+            "stock": "10", 
+            "price": "50 GP", 
+            "tags": [
+                { "name": "Positive" },
+                { "name": "Healing" }
+            ]
+        },
+        {
+            "name": "Greater Healing Potion", 
+            "description": "Restores 4d4+4 HP", 
+            "stock": "5", 
+            "price": "150 GP", 
+            "tags": [
+                { "name": "Positive" },
+                { "name": "Healing" }
+            ]
+        }  
+    ], 
+    "enchanting": [
+
+    ]
+}

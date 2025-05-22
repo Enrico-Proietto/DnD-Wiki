@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deck of Many Things</title>
+  <link rel="stylesheet" href="deckOfMany.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Deck of Many Things</h1>
+    <p>Draw your fate, adventurer...</p>
+  </header>
+  
+  <main>
+    <section id="deck" class="card-grid"></section>
+  </main>
+
+  <template id="card-template">
+    <div class="card">
+      <div class="card-front">
+        <img class="card-image" src="" alt="Card Image">
+      </div>
+      <div class="card-back">
+        <h2 class="card-name"></h2>
+        <p class="card-effect"></p>
+        <p class="card-symbol"></p>
+        <p class="card-type"></p>
+      </div>
+    </div>
+  </template>
+
+  <script src="deckOfMany.js"></script>
+</body>
+</html>

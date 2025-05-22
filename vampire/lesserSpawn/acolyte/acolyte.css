@@ -1,0 +1,180 @@
+html,
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #0a0a0a;
+  color: #eee;
+  font-family: "Cinzel", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  flex: 1;
+  min-width: 300px;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2.5rem;
+  color: crimson;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lore {
+  background: rgba(30, 0, 0, 0.8);
+  padding: 20px;
+  border-left: 4px solid crimson;
+  font-style: italic;
+  line-height: 1.6;
+  box-shadow: 0 0 10px crimson;
+  z-index: 1;
+}
+
+.stat-block {
+  background: rgba(20, 0, 0, 0.85);
+  padding: 20px;
+  border: 1px solid crimson;
+  box-shadow: 0 0 10px crimson;
+  z-index: 1;
+}
+
+.stat {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.stat i {
+  margin-right: 8px;
+}
+
+h3 {
+  color: crimson;
+  margin-top: 20px;
+  font-family: "Cinzel Decorative", serif;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.footer-box {
+  background: #1a1a1a;
+  padding: 15px;
+  margin-top: 30px;
+  border-left: 4px solid #555;
+  font-style: italic;
+  max-width: 800px;
+  box-shadow: 0 0 5px crimson;
+}
+
+.raindrop {
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background: crimson;
+  opacity: 0.7;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 100vh;
+  }
+}
+
+#flash,
+#bolt {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.1s;
+  z-index: -2;
+}
+
+#flash {
+  left: 0;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.4);
+}
+
+#bolt {
+  width: 4px;
+  background: red;
+  box-shadow: 0 0 30px red;
+}
+
+#blood-moon {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(200, 0, 0, 0.8) 0%,
+    rgba(150, 0, 0, 0.6) 40%,
+    rgba(100, 0, 0, 0.4) 70%,
+    transparent 100%
+  );
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 60px rgba(255, 0, 0, 0.4);
+  animation: moonPulse 6s infinite ease-in-out;
+  z-index: -3;
+}
+
+@keyframes moonPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 60px rgba(255, 0, 0, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.9), 0 0 80px rgba(255, 0, 0, 0.5);
+  }
+}
+
+.back-button {
+  color: #ff0033;
+  text-decoration: none;
+  border: 1px solid crimson;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: 0.3s;
+  display: flex;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background: crimson;
+  color: #1e1a14;
+}

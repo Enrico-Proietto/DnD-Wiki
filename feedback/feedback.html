@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - Whispers from the Void</title>
+  <link rel="stylesheet" href="feedback.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <div class="sidenav">
+    <button class="toggle-btn" onclick="toggleSidenav()" aria-label="Toggle Navigation Menu">☰</button>
+
+    <h2 role="heading" aria-level="1"><span class="aurora-text">Whispers from the Void</span></h2>
+
+    <div class="nav-section">
+      <a class="player" href="/player/player.html">👥 Players</a>
+      <a class="calender" href="/calender/calender.html">📅 Calendar</a>
+      <a class="time" href="/timeline/timeline.html">🕰️ Timeline</a>
+    </div>
+
+    <div class="nav-section">
+      <a class="lore" href="/lore/lore.html">📜 Chronical</a>
+      <a href="/spellbook/spellbook.html">📖 <span class="aurora-text">Spellbook</span></a>
+      <a class="gods" href="/gods/pantheon.html">⛪ Pantheon</a>
+      <a class="pillar" href="/pillars/pillars.html">💠 Mythical Powers</a>
+      <a class="demon" href="/demonomicon/demonomicon.html">🩸 Demonomicon</a>
+      <a class="beastiary" href="/beastiary/beastiary.html">🐉 Beastiary</a>
+      <a class="faction" href="/faction/faction.html">⚔️ Factions</a>
+    </div>
+
+    <div class="nav-section">
+      <a class="gp" href="/gold/gold.html">💰 Gold</a>
+      <a class="shop" href="/shop/shop.html">🛒 Shop</a>
+      <a class="feedback" href="/feedback/feedback.html">📝 Feedback</a>
+    </div>
+  </div>
+
+  <h1>Give Us Your Feedback</h1>
+  <form id="feedbackForm">
+    <input type="text" id="name" placeholder="Your Name (optional)">
+
+    <!-- 🎲 General Campaign Experience -->
+    <h2>🎲 General Campaign Experience</h2>
+    <label>Q1: How much are you enjoying the campaign overall? (1–10)</label>
+    <input type="range" id="q1" name="q1" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q1val" class="slider-output">5</output>
+
+    <label>Q2: How invested are you in your character's story arc? (1–10)</label>
+    <input type="range" id="q2" name="q2" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q2val" class="slider-output">5</output>
+
+    <label>Q3: How well do you understand the overall story and plot? (1–10)</label>
+    <input type="range" id="q3" name="q3" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q3val" class="slider-output">5</output>
+
+    <label>Q4: How challenging do you find the encounters? (1–10)</label>
+    <input type="range" id="q4" name="q4" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q4val" class="slider-output">5</output>
+
+    <label>Q5: What do you enjoy most about the campaign?</label>
+    <textarea name="q5"></textarea>
+
+    <label>Q6: What do you enjoy least or find confusing/frustrating?</label>
+    <textarea name="q6"></textarea>
+
+    <!-- 🧙‍♀️ Character -->
+    <h2>🧙‍♀️ Your Character's Role and Impact</h2>
+    <label>Q7: Do you feel your character gets time to shine? (1–10)</label>
+    <input type="range" id="q7" name="q7" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q7val" class="slider-output">5</output>
+
+    <label>Q8: Anything you'd like to explore more with your character?</label>
+    <textarea name="q8"></textarea>
+
+    <label>Q9: Any moments where you felt especially connected to your character?</label>
+    <textarea name="q9"></textarea>
+
+    <!-- 🗺️ World -->
+    <h2>🗺️ Story & Worldbuilding</h2>
+    <label>Q10: How immersive do you find the world? (1–10)</label>
+    <input type="range" id="q10" name="q10" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q10val" class="slider-output">5</output>
+
+    <label>Q11: Do your actions affect the world meaningfully? (1–10)</label>
+    <input type="range" id="q11" name="q11" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q11val" class="slider-output">5</output>
+
+    <label>Q12: Favorite locations/factions?</label>
+    <textarea name="q12"></textarea>
+
+    <label>Q13: Lore you'd like to explore further?</label>
+    <textarea name="q13"></textarea>
+
+    <!-- ⚔️ Combat -->
+    <h2>⚔️ Encounters & Combat</h2>
+    <label>Q14: How balanced is combat? (1–10)</label>
+    <input type="range" id="q14" name="q14" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q14val" class="slider-output">5</output>
+
+    <label>Q15: How memorable are the enemies and fights? (1–10)</label>
+    <input type="range" id="q15" name="q15" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q15val" class="slider-output">5</output>
+
+    <label>Q16: What kind of challenges would you like more/less of?</label>
+    <textarea name="q16"></textarea>
+
+    <label>Q17: Favorite encounter so far?</label>
+    <textarea name="q17"></textarea>
+
+    <!-- 🎭 Roleplay -->
+    <h2>🎭 Roleplaying & Group Dynamics</h2>
+    <label>Q18: How comfortable do you feel roleplaying? (1–10)</label>
+    <input type="range" id="q18" name="q18" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q18val" class="slider-output">5</output>
+
+    <label>Q19: Do you feel supported/included by the group? (1–10)</label>
+    <input type="range" id="q19" name="q19" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q19val" class="slider-output">5</output>
+
+    <label>Q20: Any dynamics you'd like to improve?</label>
+    <textarea name="q20"></textarea>
+
+    <!-- 🕵️‍♂️ Twists & NPCs -->
+    <h2>🕵️‍♂️ Secrets, Twists & NPCs</h2>
+    <label>Q21: Are the twists and secrets impactful? (1–10)</label>
+    <input type="range" id="q21" name="q21" min="1" max="10" value="5" oninput="updateSlider(this)">
+    <output id="q21val" class="slider-output">5</output>
+
+    <label>Q22: Do you trust any NPC? Why or why not?</label>
+    <textarea name="q22"></textarea>
+
+    <label>Q23: Favorite NPC and why?</label>
+    <textarea name="q23"></textarea>
+
+    <!-- 🧠 DM Feedback -->
+    <h2>🧠 Feedback for the DM</h2>
+    <label>Q24: What is the DM doing well?</label>
+    <textarea name="q26"></textarea>
+
+    <label>Q25: Anything you’d like the DM to change?</label>
+    <textarea name="q27"></textarea>
+
+    <label>Q26: Any scenes/themes you’d love to explore?</label>
+    <textarea name="q28"></textarea>
+
+    <!-- ⭐ Just for Fun -->
+    <h2>⭐ Just for Fun</h2>
+    <label>Q27: If your character had a motto?</label>
+    <textarea name="q29"></textarea>
+
+    <label>Q28: What would be their last words?</label>
+    <textarea name="q30"></textarea>
+
+    <button type="submit">Send Feedback</button>
+  </form>
+  <div class="response" id="responseMsg"></div>
+
+  <script>
+    const form = document.getElementById('feedbackForm');
+    const responseMsg = document.getElementById('responseMsg');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const entries = Array.from(data.entries());
+
+      const content = entries.map(([key, value]) => `**${key.replace(/^q/, 'Q')}:** ${value}`).join('\n\n');
+
+      const res = await fetch('https://discord.com/api/webhooks/1370127818377396284/Op1oF03rJBpVQK_eytGV5Tuq8Lxqa8Mu6KTZwM-t5QD3ERnmyYDEojlQlM8QjT9naoIc', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ content: `📬 New Feedback:\n\n${content}` })
+      });
+
+      if (res.ok) {
+        responseMsg.textContent = "Thank you for your feedback!";
+        form.reset();
+      } else {
+        responseMsg.textContent = "Something went wrong. Please try again later.";
+      }
+    });
+
+    function updateSlider(slider) {
+      const output = document.getElementById(slider.id + 'val');
+      const val = parseInt(slider.value);
+      output.textContent = val;
+
+      // Simple red-to-green gradient
+      const red = Math.round(255 - ((val - 1) / 9) * 255);
+      const green = Math.round(((val - 1) / 9) * 255);
+
+      output.style.color = `rgb(${red}, ${green}, 100)`;
+    }
+  </script>
+  <script src="feedback.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+{
+    "karwallo": [
+        {
+            "name": "Karwallo",
+            "race": "Tiefling",
+            "class": "Paladin",
+            "alignment": "Chaotic-Good",
+            "hp": "47",
+            "ac": "16",
+            "gp": "292",
+            "level": "4",
+            "xp": "1125",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/karwallo.png",
+            "imageSrc": "/images/characters/karwallo.png",
+            "spellslotLvl1": "2",
+            "abilityScores": {
+                "strength": "16",
+                "dexterity": "12",
+                "constitution": "14",
+                "intelligence": "10",
+                "wisdom": "10",
+                "charisma": "14"
+            },
+            "skills": [
+                {
+                    "name": "Insight",
+                    "amount": "+2"
+                },
+                {
+                    "name": "Persuasion",
+                    "amount": "+4"
+                }
+            ],
+            "spells": {
+                "divineSmite": {
+                    "name": "Divine Smite",
+                    "description": "You draw down holy power to smite your enemies. Only evil and neutral creatures are harmed by the spell; good creatures are unaffected. The spell deals 1d8 points of damage.",
+                    "imageSrc": "/images/spells/divine-smite.png",
+                    "imageAlt": "Picture of a divine smite."
+                },
+                "huntersMark": {
+                    "name": "Hunter’s Mark",
+                    "description": "You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature.",
+                    "imageSrc": "/images/spells/hunters-mark.png",
+                    "imageAlt": "Picture of a hunter's mark."
+                },
+                "vowOfEnmity": {
+                    "name": "Vow of Enmity",
+                    "description": "Gain  Advantage on Attack Rolls against an enemy. This effect lingers for 10 turns.",
+                    "imageSrc": "/images/spells/vow-of-enmity.png",
+                    "imageAlt": "Picture of a vow of enmity."
+                }
+            },
+            "gear": {
+                "leftGear": [
+                    {
+                        "name": "Head Gear Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Cape Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Chain Mail",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Hand Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Boots of Mudwalking",
+                        "description": "These boots allow the wearer to walk across mud, snow, or sand without sinking, but they halve movement speed.",
+                        "imageSrc": "/images/gear/boots-of-mudwalking.png",
+                        "imageAlt": "Boots of Mudwalking"
+                    }
+                ],
+                "meele": [
+                    {
+                        "name": "Infernium Blade",
+                        "description": "<h3>Infernal Smite</h3>Once per turn, when you hit a creature with this weapon and it was hit with The Infernal Ember, you can choose to deal an additional 1d6 fire damage. If the target is celestial or fey, this increases to 2d6 fire damage. <br> <h3>Hellborn Resilience</h3> When reduced to 0 HP, you can instead drop to 1 HP. This effect can only be used once per long rest. <br> <h3>Chains of the Damned</h3> Once per long rest, when you score a critical hit, spectral chains erupt from the sword, wrapping around the enemy. The target must make a DC 15 Strength saving throw or be restrained until the end of your next turn.",
+                        "imageSrc": "/images/gear/inferniumBlade.png",
+                        "imageAlt": "Infernium Blade"
+                    },
+                    {
+                        "name": "Meele 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ],
+                "range": [
+                    {
+                        "name": "Range Hand 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Range Hand 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ],
+                "rightGear": [
+                    {
+                        "name": "Clan Nechlace",
+                        "description": "A necklace given to Karwallo from his parents. With this necklace, Karwallo shows the world that his clan is still alive.",
+                        "imageSrc": "/images/gear/necklace.png",
+                        "imageAlt": "Karwallo's clan necklace"
+                    },
+                    {
+                        "name": "Ring 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Ring 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ]
+            },
+            "items": {
+                "tarotCard": {
+                    "name": "The Devil Tarot Card",
+                    "imageSrc": "",
+                    "imageAlt": "Taort Card with of the devil.",
+                    "description": "A magical tarot card with the devil on it. Can be used to communicate with Azarel.",
+                    "amount": "1"
+                },
+                "javelins": {
+                    "name": "Javelins",
+                    "imageSrc": "/images/gear/javelins.png",
+                    "imageAlt": "Picture of a javelin.",
+                    "description": "Javelins that can be thrown.",
+                    "amount": "2"
+                }
+            },
+            "feats": [
+                {
+                    "name": "Sentinel",
+                    "description": "Great for protecting allies, as it keeps enemies locked down in melee."
+                }
+            ],
+            "power": [
+                {
+                    "name": "Critical Over",
+                    "description": "For one minute, all the player’s attack rolls automatically crit… BUT<br><ul> <li>Every attack against them also crits.</li> <li>Every skill check they make is also either a Nat 1 or a Nat 20 (flip a coin).</li> <li>If they get knocked unconscious while using this ability, they must roll death saves with disadvantage.</li> </ul>",
+                    "cooldown": "1x per Battle"
+                }
+            ],
+            "infernalEmber": [
+                {
+                    "name": "Ember Strike",
+                    "description": "<ul> <li>Once per long rest, Karwallo can unleash a devastating attack imbued with Azarel’s power</li> <li>When he hits with a weapon attack, he deals an additional 2d6 fire damage.</li> <li>If the target dies, Karwallo absorbs a fragment of their life force, regaining 2d4 hit points.</li></ul>"
+                },
+                {
+                    "name": "The Will of Fire",
+                    "description": "He gains resistance to fire damage and advantage on saving throws against exhaustion."
+                }
+            ]
+        }
+    ]
+}

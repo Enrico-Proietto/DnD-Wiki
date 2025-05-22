@@ -1,0 +1,202 @@
+{
+    "lein": [
+        {
+            "name": "Lein",
+            "race": "Elf",
+            "class": "Wizard",
+            "alignment": "Lawful-Evil",
+            "hp": "30",
+            "ac": "13",
+            "gp": "90",
+            "level": "4",
+            "xp": "675",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/lein.html",
+            "imageSrc": "/images/characters/lein.png",
+            "spellslotLvl1": "4",
+            "spellslotLvl2": "2",
+            "abilityScores": {
+                "strength": "8",
+                "dexterity": "16",
+                "constitution": "13",
+                "intelligence": "17",
+                "wisdom": "12",
+                "charisma": "10"
+            },
+            "skills": {
+                "arcana": "+4",
+                "history": "+2"
+            },
+            "spells": {
+                "firebolt": {
+                    "name": "Firebolt",
+                    "description": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn’t being worn or carried.",
+                    "imageSrc": "/images/spells/firebolt.png",
+                    "imageAlt": "Firebolt"
+                },
+                "mageHand": {
+                    "name": "Mage Hand",
+                    "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.",
+                    "imageSrc": "/images/spells/mage-hand.png",
+                    "imageAlt": "Mage Hand"
+                },
+                "prestidigitation": {
+                    "name": "Prestidigitation",
+                    "description": "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.<br><br><i>Senory Effect</i><br>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.<br><br><i>Fire Play</i><br>You instantaneously light or snuff out a candle, a torch, or a small campfire.<br><br><i>Clean or Soil</i><br>You instantaneously clean or soil an object no larger than 1 cubic foot.<br><br><i>Minor Sensation</i><br>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.<br><br><i>Magic Mark</i><br>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.<br><br><i>Minor Creation</i><br>You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth.",
+                    "imageSrc": "/images/spells/prestidigitation.png",
+                    "imageAlt": "Prestidigitation"
+                },
+                "mageArmor": {
+                    "name": "Mage Armor",
+                    "description": "You touch a willing creature who isn’t wearing armor. Until the spell ends, the target’s base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.",
+                    "imageSrc": "/images/spells/mage-armor.png",
+                    "imageAlt": "Mage Armor"
+                },
+                "shield": {
+                    "name": "Shield",
+                    "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from Magic Missile.",
+                    "imageSrc": "/images/spells/shield.png",
+                    "imageAlt": "Shield"
+                },
+                "magicMissile": {
+                    "name": "Magic Missile",
+                    "description": "You create three glowing darts of magical force. Each dart strikes a creature of your choice that you can see within range. A dart deals 1d4 + 1 Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+                    "imageSrc": "/images/spells/magic-missile.png",
+                    "imageAlt": "Magic Missile"
+                }
+            },
+            "gear": {
+                "leftGear": [
+                    {
+                        "name": "Head Gear Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Cape Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Chest Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Hand Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Boots Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ],
+                "meele": [
+                    {
+                        "name": "Meele 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Meele 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ],
+                "range": [
+                    {
+                        "name": "Starfire Grimoire",
+                        "description": "A mystical tome bound in stardust-infused leather, glowing faintly under moonlight.",
+                        "imageSrc": "/images/gear/starfireGrimoire.png",
+                        "imageAlt": "Starfire Grimoire"
+                    },
+                    {
+                        "name": "Light crossbows",
+                        "description": "A small light crossbow.",
+                        "imageSrc": "/images/gear/lightCrossbow.png",
+                        "imageAlt": "Light crossbow"
+                    }
+                ],
+                "rightGear": [
+                    {
+                        "name": "Necklace Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Ring 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Ring 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ]
+            },
+            "items": {
+                "handySpicePouch": {
+                    "name": "Handy Spice Pouch",
+                    "imageSrc": "/images/gear/handy-spice-pouch.png",
+                    "imageAlt": "Picture of a Handy Spice Pouch",
+                    "description": "A small pouch that magically refills itself with a random spice each day, perfect for cooking on long journeys.",
+                    "amount": "1"
+                },
+                "scrollOfGrease": {
+                    "name": "Scroll of Grease",
+                    "imageSrc": "",
+                    "imageAlt": "Picture of a Scroll of Grease",
+                    "description": "Covers an area with grease.",
+                    "amount": "1"
+                },
+                "scrollOfRevival": {
+                    "name": "Scroll of Revival",
+                    "imageSrc": "",
+                    "imageAlt": "Picture of a Scroll of Revival",
+                    "description": "Lets you revivie a fallen creature.",
+                    "amount": "1"
+                },
+                "booksWithRunes": {
+                    "name": "Books with Runes",
+                    "imageSrc": "",
+                    "imageAlt": "Picture of books with runes",
+                    "description": "Books with many runes inscribed in it.",
+                    "amount": "4"
+                }
+            },
+            "feats": [
+                {
+                    "name": "Rune-Eyed Savant",
+                    "description": "<ul> <li>You can read and comprehend any magical script, regardless of language (including coded runes, glyphs, or divine sigils).</li> <li>Once per long rest, when you cast a spell, you can inscribe an invisible arcane rune in the area (lasts 1 minute): <ul><li>While the rune is active, the next enemy that enters or starts their turn within 10 feet of it must make an Intelligence saving throw (DC 13) or become disoriented, suffering disadvantage on their next attack roll or saving throw before the end of their turn.</li><ul></li></ul>"
+                }
+            ],
+            "power": [
+                {
+                    "name": "Abyssal Grasp",
+                    "description": "",
+                    "cooldown": "3x per long rest"
+                }
+
+            ],
+            "classAbilities": [
+                {
+                    "name": "Portent",
+                    "description": "Starting at 2nd level when you choose this school, glimpses of the future begin to press in on your awareness. When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn. <br> Each foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "House Sangrelis",
+        "description": "House Sangrelis is the oldest and most powerful of the vampire houses, established by the first chosen of Thalyris. Its members view themselves as divine avatars of the Crimson Queen's will. They control the Dominion through cunning diplomacy and raw strength, worshipping Thalyris as both a goddess and a mother.",
+        "members": "Lady Avenstra Sangrelis, Vyras Sangrelis (Deceased)"
+    },
+    {
+        "name": "House Velkynne",
+        "description": "House Velkynne specializes in espionage and assassination. They are masters of shadow magic and alchemical poisons, often working behind the scenes to eliminate threats to the Dominion. Their motto is “In darkness, there is power.“",
+        "members": "Lord Vaelric Velkynne"
+    },
+    {
+        "name": "House Drevalth",
+        "description": "House Drevalth is the militant arm of the Dominion, controlling an elite force of vampiric warriors. They view themselves as the protectors of vampire-kind and are zealously loyal to Seralith and Thalyris. They thrive on bloodlust, valuing combat and strength above all else.",
+        "members": "General Kaelorn Drevalth"
+    },
+    {
+        "name": "House Vyrathis",
+        "description": "House Vyrathis maintains the Dominion's image of sophistication and grandeur. They focus on politics, culture, and diplomacy, often acting as emissaries to the mortal world. Their influence lies in charm and manipulation, using beauty and wit to achieve their goals.",
+        "members": "Duchess Eryndra Vyrathis"
+    },
+    {
+        "name": "House Oryndel",
+        "description": "House Oryndel delves into forbidden knowledge and blood magic. They are scholars and occultists, often experimenting with rituals to enhance their power. Their libraries contain ancient tomes, including texts on the origins of vampires and Thalyris's ascension.",
+        "members": "Archmage Valdrik Oryndel"
+    }
+]

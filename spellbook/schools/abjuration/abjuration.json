@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Blade Ward",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "Self",
+        "duration": "1 round",
+        "description": "Until the end of your next turn, you have resistance to bludgeoning, piercing, and slashing damage from weapon attacks.",
+        "classes": "Bard, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Shield",
+        "spellLevel": "Level 1",
+        "castingTime": "1 reaction (when hit or targeted by *magic missile*)",
+        "range": "Self",
+        "duration": "1 round",
+        "description": "+5 AC until the start of your next turn; you take no damage from *magic missile*.",
+        "classes": "Sorcerer, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Protection from Evil and Good",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "Wards a creature against aberrations, celestials, elementals, fey, fiends, and undead. These creatures have disadvantage to hit the target, and the target can't be charmed, frightened, or possessed by them.",
+        "classes": "Cleric, Paladin, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Arcane Lock",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "Until dispelled",
+        "description": "Magically locks a door, window, or object. Requires extra effort or specific means to open.",
+        "classes": "Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Aid",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "8 hours",
+        "description": "Increase max HP and current HP of up to 3 creatures by 5 (scales with higher levels).",
+        "classes": "Cleric, Paladin",
+        "damage": ""
+    },
+    {
+        "name": "Counterspell",
+        "spellLevel": "Level 3",
+        "castingTime": "1 reaction (when you see a creature casting a spell)",
+        "range": "60 feet",
+        "duration": "Instantaneous",
+        "description": "Interrupt and cancel a creature’s spell if it is 3rd level or lower, or roll to cancel higher-level spells.",
+        "classes": "Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Dispel Magic",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Instantaneous",
+        "description": "End one spell effect on a target. Automatically ends spells of 3rd level or lower.",
+        "classes": "Bard, Cleric, Druid, Paladin, Sorcerer, Warlock, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Freedom of Movement",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "1 hour",
+        "description": "The target cannot be paralyzed, restrained, or impeded by magical movement restrictions.",
+        "classes": "Bard, Cleric, Druid, Ranger",
+        "damage": ""
+    },
+    {
+        "name": "Stoneskin",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "Touch",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Grants resistance to nonmagical bludgeoning, piercing, and slashing damage.",
+        "classes": "Druid, Ranger, Sorcerer, Wizard, Artificer",
+        "damage": ""
+    },
+    {
+        "name": "Wall of Force",
+        "spellLevel": "Level 5",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "Create an invisible wall of force that nothing can pass through unless via teleportation or disintegration.",
+        "classes": "Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Globe of Invulnerability",
+        "spellLevel": "Level 6",
+        "castingTime": "1 action",
+        "range": "Self (10-foot radius)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "A barrier surrounds you, negating all spells of 5th level or lower that target creatures or objects within the globe.",
+        "classes": "Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Symbol",
+        "spellLevel": "Level 7",
+        "castingTime": "1 minute",
+        "range": "Touch",
+        "duration": "Until dispelled or triggered",
+        "description": "Inscribe a glyph that activates with an effect such as fear, pain, or sleep when triggered.",
+        "classes": "Bard, Cleric, Wizard",
+        "damage": "Depends on glyph (e.g., 10d10 necrotic for pain)"
+    },
+    {
+        "name": "Antimagic Field",
+        "spellLevel": "Level 8",
+        "castingTime": "1 action",
+        "range": "Self (10-foot radius)",
+        "duration": "Concentration, up to 1 hour",
+        "description": "A field suppresses all magic in its area, including magical effects, items, and spellcasting.",
+        "classes": "Cleric, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Prismatic Wall",
+        "spellLevel": "Level 9",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "10 minutes",
+        "description": "A wall made of 7 multicolored layers with different magical effects. Each layer must be bypassed separately with specific means.",
+        "classes": "Wizard",
+        "damage": "Varies by layer (acid, fire, poison, etc.)"
+    }
+]

@@ -1,0 +1,178 @@
+{
+    "willump": [
+        {
+            "name": "Willump Shinra",
+            "race": "Dragonborn",
+            "class": "Monk",
+            "alignment": "Lawful-Good",
+            "hp": "40",
+            "ac": "15",
+            "gp": "90",
+            "level": "4",
+            "xp": "1325",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/willump.html",
+            "imageSrc": "/images/characters/willump.png",
+            "kiSlots": "3",
+            "spellslotLvl2": "1",
+            "abilityScores": {
+                "strength": "16",
+                "dexterity": "14",
+                "constitution": "14",
+                "intelligence": "8",
+                "wisdom": "14",
+                "charisma": "10"
+            },
+            "skills": [
+                {
+                    "name": "Acrobatics",
+                    "amount": "+4"
+                },
+                {
+                    "name": "Athletics",
+                    "amount": "+4"
+                },
+                {
+                    "name": "Insight",
+                    "amount": "+4"
+                },
+                {
+                    "name": "Medicine",
+                    "amount": "+2"
+                }
+            ],
+            "spells": {
+                "darkness": {
+                    "name": "Darkness",
+                    "description": "Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.If the point you choose is on an object you are holding or one that isn’t being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.If any of this spell’s area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.",
+                    "imageSrc": "/images/spells/darkness.png",
+                    "imageAlt": "Darkness"
+                }
+            },
+            "gear": {
+                "leftGear": [
+                    {
+                        "name": "Head Gear Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Cape Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Voidflow Sash",
+                        "description": "<h3>Evasive Step</h3> <br> When an enemy misses you with a melee attack, you can move 5 feet in any direction without provoking opportunity attacks. <br> <h3>Flowing Motion</h3> <br>If you take the Dodge action, you gain +10 feet movement speed until the end of your next turn. <br> <h3>Stillness of the Void</h3> <br>If you remain motionless for one round, your next melee attack has advantage and deals extra damage equal to your Wisdom modifier. <br><br> <i>A silken sash woven with void energy, shifting between deep purple and black.</i> ",
+                        "imageSrc": "/images/gear/voidflowSash.png",
+                        "imageAlt": "Voidflow Sash"
+                    },
+                    {
+                        "name": "Vortex Gaunlets",
+                        "description": "Allows monks to pull a creature within 30 feet of them towards them once per short rest (DC 14 Strength save).",
+                        "imageSrc": "/images/gear/vortex-gaunlets.png",
+                        "imageAlt": "Vortex Gaunlets"
+                    },
+                    {
+                        "name": "Hand 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }
+                ],
+                "meele": [  
+                    {
+                        "name": "Meele 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    },
+                    {
+                        "name": "Meele 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": ""
+                    }            
+                ],
+                "range": [
+                    {
+                        "name": "Range Hand 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Range Hand 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
+                ],
+                "rightGear": [
+                    {
+                        "name": "Necklace Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Ring 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Ring 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
+                ]
+            },
+            "items": {
+                "healingPotion": {
+                    "name": "Potion of Healing",
+                    "imageSrc": "/images/gear/healingPotion.png",
+                    "imageAlt": "",
+                    "description": "Restores 2d4+2 HP",
+                    "amount": "1"
+                },
+                "speedPotion": {
+                    "name": "Potion of Speed",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "Gives the user 15ft. to walk",
+                    "amount": "2"
+                },
+                "scrollOfRevive": {
+                    "name": "Scroll of Revive",
+                    "imageSrc": "",
+                    "imageAlt": "",
+                    "description": "Revives a creature in a 5ft. range.",
+                    "amount": "1"
+                }
+            },
+            "feats": [
+                {
+                    "name": "Mobile",
+                    "description": "Your speed increases by 10 feet. <br>When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn."
+                }
+            ],
+            "power": [
+                {
+                    "name": "Chaos Coupon",
+                    "description": "Effect: The player may declare a “discount” on one thing… but it’s random how much they get off.<br><ul>Roll a d100: <ul><li>1-5: The price doubles.</li><li>6-40: They get 10% off.</li><li>41-80: They get 50% off.</li><li>81-95: They get 90% off.</li><li>96-100: It’s completely free, but the seller is now suspicious and might ask for a favor later.</li></ul></ul>",
+                    "cooldown": "1x per Session"
+                }
+            ],
+            "classAbilities": [
+                {
+                    "name": "Ki Punch",
+                    "description": "(Range 4 meters)"
+                }
+            ]
+        }
+    ]
+}

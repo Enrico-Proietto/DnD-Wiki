@@ -1,0 +1,36 @@
+{
+    "front": [
+        {
+            "name": "Bonecrusher Skeleton",
+            "imgSrc": "",
+            "hp": 45,
+            "ac": 14,
+            "speed": "30ft.",
+            "description": "A hulking skeleton with reinforced bones and massive, club-like arms. It smashes enemies with brute force, relentlessly pursuing its targets."
+        },
+        {
+            "name": "Skeletal Executioner",
+            "description": "A towering undead clad in bone-plated remnants of ceremonial armor. A thick noose hangs from its neck, and a massive axe drags behind it, etching scars into the stone. Its face is forever shrouded by a hood that no light can pierce."
+        },
+        {
+            "name": "Blighted Zombie",
+            "description": "A grotesquely swollen corpse, its veins bulging with black ichor. Flesh hangs in rotting sheets, and each step leaves behind the sickly stench of death. Where it walks, disease follows—and behind it, silence."
+        },
+        {
+            "name": "Graveborn Hulk",
+            "description": "A hulking corpse construct sewn from dozens of cadavers, its form unnaturally tall and dripping black ichor from gaping wounds. Its gaze is empty, yet its movements betray a brutal purpose. When it charges, it leaves behind only ruin and silence."
+        }
+    ],
+    "range": [
+        {
+            "name": "Gravebound Archer",
+            "description": "A silent, skeletal archer draped in tattered hunter’s garb. Its arrows glow with a faint green energy, each shot carrying the lingering whispers of the damned."
+        }
+    ],
+    "magic": [
+        {
+            "name": "Bonecaster",
+            "description": "A robed skeleton with runes carved into its ribs and fragments of bone orbiting its outstretched fingers. Its jaw moves with whispered incantations from a forgotten age, calling the weave of death like a symphony."
+        }
+    ]
+}

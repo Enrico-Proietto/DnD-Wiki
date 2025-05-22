@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #0c0b0a, #1a1612);
+  font-family: 'EB Garamond', serif;
+  color: #e6dccf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#backgroundCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.faction-hub {
+  max-width: 1000px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hub-title {
+  font-size: 3.5rem;
+  color: #dbc7a0;
+  text-shadow: 0 0 15px rgba(255, 245, 220, 0.2);
+  font-family: 'Cinzel', serif;
+}
+
+.hub-subtitle {
+  font-size: 1.3rem;
+  color: #b6a58c;
+  margin-bottom: 50px;
+}
+
+.faction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.faction-card {
+  background: rgba(36, 30, 25, 0.9);
+  border: 1px solid #5e4b36;
+  border-radius: 14px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(220, 210, 180, 0.1);
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+
+.faction-card:hover {
+  background-color: rgba(56, 44, 33, 0.95);
+  transform: translateY(-5px) rotateY(1deg);
+  box-shadow: 0 0 20px rgba(245, 230, 200, 0.3);
+}
+
+.faction-card h2 {
+  color: #eeddbb;
+  margin-bottom: 10px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+}
+
+.faction-card p {
+  font-size: 0.95rem;
+  color: #c7b6a0;
+}
+
+.faction-card.religion {
+  background: radial-gradient(ellipse at center, #0a0a1a, #100b20);
+}
+
+.faction-card.luck {
+  background: radial-gradient(ellipse at center, #3b82f6, #1b1b2f);
+}
+
+.faction-card.destiny {
+  background: radial-gradient(ellipse at center, #7e22ce, #1a0c2a);
+}
+
+.faction-card.crimson {
+  background: radial-gradient(ellipse at center, crimson, #2a0d0d);
+}
+
+.faction-card.infernal {
+  background: radial-gradient(ellipse at center, #1a0000, #0b0000);
+}
+
+@keyframes sway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(0.5px); }
+}
+
+.faction-card:nth-child(2) { animation-delay: 0.5s; }
+.faction-card:nth-child(3) { animation-delay: 1s; }
+.faction-card:nth-child(4) { animation-delay: 1.5s; }
+.faction-card:nth-child(5) { animation-delay: 2s; }
+.faction-card:nth-child(6) { animation-delay: 2.5s; }

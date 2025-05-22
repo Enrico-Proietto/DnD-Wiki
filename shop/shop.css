@@ -1,0 +1,988 @@
+.layout {
+  display: grid;
+  grid-template-areas:
+    "sidenav shop-nav"
+    "sidenav shop-container";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+body {
+  font-family: "Cinzel", serif;
+  margin: 0;
+  background-color: #1e1a14;
+  color: #e2d8c3;
+}
+
+/*------------------*/
+/* SIDENAV LAYOUT   */
+/*------------------*/
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #2c1f17, #1a1410);
+  padding-top: 20px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #f8e4b4;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid #5a3e2b;
+  margin-bottom: 20px;
+}
+
+.sidenav a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  font-weight: bold;
+  color: #e2d8c3;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidenav a.title {
+  font-size: 30px;
+}
+
+.sidenav a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff2d8;
+  text-shadow: 0 0 5px #fff2d8, 0 0 10px #ffdb7c;
+  border-left: 4px solid #f8e4b4;
+}
+
+.sidenav i {
+  margin-right: 8px;
+}
+
+.sidenav a.title {
+  font-size: 30px;
+}
+
+/* Toggle behavior */
+.toggle-btn {
+  background: none;
+  color: #f8e4b4;
+  font-size: 24px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.sidenav.collapsed {
+  width: 60px;
+}
+
+.sidenav.collapsed a:not(.title),
+.sidenav.collapsed h2 {
+  display: none;
+}
+
+.nav-section {
+  border-bottom: 1px solid #5a3e2b;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+
+/*-----------------------------*/
+/* TEXT EFFECTS / HIGHLIGHTS   */
+/*-----------------------------*/
+.aurora-text {
+  font-size: 1em;
+  font-weight: bold;
+  background: linear-gradient(
+    120deg,
+    #a0f8ff,
+    #78ffe1,
+    #fcd5ff,
+    #91e0ff,
+    #c1fffa
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: auroraGlow 8s ease-in-out infinite;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(160, 255, 255, 0.3),
+    0 0 20px rgba(120, 255, 225, 0.3);
+}
+
+.main {
+  margin-left: 260px;
+  padding: 20px;
+  background-color: #2d241b;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2.5em;
+  color: #f8e4b4;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.shop-nav {
+  grid-area: shop-nav;
+  background-color: #2d241b;
+  border-bottom: 2px solid #5a3e2b;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.shop-nav a {
+  color: #f8e4b4;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.shop-nav a:hover {
+  background-color: #5a3e2b;
+  color: #fff2d8;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.item-card {
+  background-color: #3a2e24;
+  color: #f8e4b4;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 200px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+}
+
+#shop-container {
+  grid-area: shop-container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background-color: #2d241b;
+  margin-right: 325px;
+}
+
+/* Card styling base */
+.item-card {
+  padding: 16px;
+  border-radius: 10px;
+  width: 200px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+/* Theme: Weapons */
+.shop-content.weapons .item-card {
+  background-color: #3a2e24;
+  color: #f8e4b4;
+  box-shadow: 0 0 10px rgba(255, 255, 200, 0.2);
+}
+
+/* Theme: Armor */
+.shop-content.armor .item-card {
+  background-color: #2a2f35;
+  border: 2px solid #a0a0a0;
+  color: #dcdcdc;
+  box-shadow: 0 0 12px rgba(180, 180, 255, 0.3);
+}
+
+/* Theme: Potions */
+.shop-content.potions .item-card {
+  background-color: #263b2a;
+  border: 2px solid #4caf50;
+  color: #d8f8dc;
+  box-shadow: 0 0 10px rgba(102, 255, 178, 0.2);
+}
+
+/* Theme: Scrolls */
+.shop-content.scrolls .item-card {
+  background-color: #2f2533;
+  border: 2px solid #ba93ff;
+  color: #e7d9ff;
+  box-shadow: 0 0 10px rgba(200, 150, 255, 0.3);
+}
+
+/* Theme: Artifacts */
+.shop-content.artifacts .item-card {
+  background-color: #3d1f1f;
+  border: 2px solid #d4af37;
+  color: #f9e4b7;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+}
+
+/* Item image inside card */
+.item-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* General shop container */
+#shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Item card base */
+.item-card {
+  padding: 12px;
+  border-radius: 8px;
+  width: 160px;
+  font-size: 14px;
+  font-family: "Cinzel", serif;
+  background-color: #3a2e24;
+  color: #f8e4b4;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+/* Specific Shop Themes */
+
+/* Weapons Shop */
+.shop-content.weapons .item-card {
+  background-color: #3a2e24;
+  color: #f8e4b4;
+  box-shadow: 0 0 10px rgba(255, 255, 200, 0.2);
+}
+
+/* Potions Shop */
+.shop-content.potions .item-card {
+  background-color: #263b2a;
+  border: 2px solid #4caf50;
+  color: #d8f8dc;
+  box-shadow: 0 0 12px rgba(102, 255, 178, 0.3);
+}
+
+/* Enchanting Shop */
+.shop-content.enchanting .item-card {
+  background-color: #2b2b3b;
+  border: 2px solid #7e5aff;
+  color: #dcd2ff;
+  box-shadow: 0 0 12px rgba(130, 90, 255, 0.3);
+}
+
+/* Scrolls Shop (if needed) */
+.shop-content.scrolls .item-card {
+  background-color: #2f2533;
+  border: 2px solid #ba93ff;
+  color: #e7d9ff;
+  box-shadow: 0 0 10px rgba(200, 150, 255, 0.3);
+}
+
+/* Artifacts Shop (if needed) */
+.shop-content.artifacts .item-card {
+  background-color: #3d1f1f;
+  border: 2px solid #d4af37;
+  color: #f9e4b7;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+
+.shop-nav {
+  grid-area: shop-nav;
+}
+
+#shop-container {
+  grid-area: shop-container;
+}
+
+h1,
+h2,
+h3,
+.shop-nav a {
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.tag-badge {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 6px;
+  margin: 2px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Cart section */
+
+.cart {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: #2d241b;
+  border: 2px solid #5a3e2b;
+  border-radius: 12px;
+  padding: 20px;
+  width: 240px;
+  color: #f8e4b4;
+  font-family: "Cinzel", serif;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  overflow: auto;
+}
+
+.cart h2 {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 20px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.cart ul li:last-child {
+  border-top: 1px solid #5a3e2b;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.add-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Cinzel", serif;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-button:disabled {
+  background-color: #37813a;
+  color: white;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.remove-button {
+  margin-left: 10px;
+  background-color: #a94442;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-family: "Cinzel", serif;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #922b21;
+}
+
+.send-button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 8px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #45a049;
+}
+
+/* Tag section */
+
+/*Weapon tag section*/
+
+/*Potion tag section*/
+.tag-healing {
+  background-color: #4caf50;
+}
+
+.tag-resistance {
+  background-color: #2196f3;
+}
+
+.tag-negative {
+  background-color: #da1c1c;
+}
+
+/*Enchantment tag section*/
+
+.tag-service {
+  background-color: #2114dd;
+}
+
+.tag-enchantment {
+  background-color: #16c0d6;
+}
+
+.tag-magic {
+  background-color: #7813bb;
+}
+
+.tag-elemental {
+  background-color: #14cc3c;
+}
+
+.tag-curse {
+  background-color: #094d17;
+}
+
+.tag-rune {
+  background-color: #b41717;
+}
+
+.tag-scroll {
+  background-color: #b4a294;
+}
+
+.tag-upgrade {
+  background-color: #6e6e6e;
+}
+
+.tag-ring {
+  background-color: #bd1994;
+}
+
+.tag-necklace {
+  background-color: #c79f1c;
+}
+
+/*Weapon Tags*/
+
+.tag-dagger {
+  background-color: #c0c0c0;
+}
+
+.tag-mace {
+  background-color: #888888;
+}
+
+.tag-maul {
+  background-color: #5D6D7E;
+}
+
+.tag-battleaxe {
+  background-color: #a93226;
+}
+
+.tag-longsword {
+  background-color: #2980b9;
+}
+
+.tag-shortsword {
+  background-color: #8e6e53;
+}
+
+.tag-shortswords {
+  background-color: #8e6e53;
+}
+
+.tag-longbow {
+  background-color: #1e8449;
+}
+
+.tag-shortbow {
+  background-color: #A0522D;
+}
+
+.tag-crossbow-bolts {
+  background-color: #616A6B;
+}
+
+.tag-warhammer {
+  background-color: #5d6d7e;
+}
+
+.tag-spear {
+  background-color: #cd7f32;
+}
+
+.tag-crossbow {
+  background-color: #6e2c00;
+}
+
+.tag-scimitar {
+  background-color: #5dade2;
+}
+
+.tag-rapier {
+  background-color: #9b59b6;
+}
+
+.tag-greatsword {
+  background-color: #2c3e50;
+}
+
+.tag-halberd {
+  background-color: #c0392b;
+}
+
+/*Defense Tags*/
+
+.tag-shield {
+  background-color: #cd7f32;
+}
+
+.tag-buckler {
+  background-color: #d5b895;
+}
+
+/*Armor Tags*/
+
+.tag-helmet {
+  background-color: #7f8c8d;
+}
+
+.tag-chestplate {
+  background-color: #95a5a6;
+}
+
+.tag-gaunlets {
+  background-color: #a04000;
+}
+
+.tag-greaves {
+  background-color: #bfc9ca;
+}
+
+.tag-boots {
+  background-color: #784212;
+}
+
+.tag-cloak {
+  background-color: #2e4053;
+}
+
+/*Rarity Tags*/
+
+.rarity-Common {
+  border: 2px solid #bfc9ca;
+}
+
+.tag-common {
+  background-color: #bfc9ca;
+}
+
+.rarity-Uncommon {
+  border: 2px solid #27AE60;
+}
+
+.tag-Uncommon {
+  background-color: #27AE60;
+}
+
+.rarity-Rare {
+  border: 2px solid #2980B9;
+}
+
+.tag-Rare {
+  background-color: #2980B9;
+}
+
+.rarity-Epic {
+  border: 2px solid #8E44AD;
+}
+
+.tag-Epic {
+  background-color: #8E44AD;
+}
+
+.rarity-Legendary {
+  border: 2px solid #F39C12;
+}
+
+.tag-Legendary {
+  background-color: #F39C12;
+}
+
+.rarity-Unique {
+  border: 2px solid #C0392B;
+}
+
+.tag-Unique {
+  background-color: #C0392B;
+}
+
+/*Quality Tags*/
+
+.tag-magical {
+  background-color: #8e44ad;
+}
+
+.tag-cursed {
+  background-color: #922b21;
+}
+
+.tag-enchanted {
+  background-color: #1d4d6d;
+}
+
+.tag-consumable {
+  background-color: #2196f3;
+}
+
+
+/*-------------------------*/
+/* LINK COLORS BY SECTION */
+/*-------------------------*/
+.nav-section a.player {
+  color: #60f560;
+  animation: pulse-player 3s infinite;
+}
+.nav-section a.calender {
+  color: #f8b12c;
+  animation: flicker-calendar 2.5s infinite;
+}
+.nav-section a.time {
+  color: #b1b0b0;
+  animation: shimmer-time 4s ease-in-out infinite;
+}
+.nav-section a.lore {
+  color: #35c0f7;
+}
+.nav-section a.spellbook {
+  color: #8a2be2;
+  animation: glow-spellbook 5s ease-in-out infinite;
+}
+.nav-section a.gods {
+  color: #f4f4f4;
+  animation: glow-gods 4s infinite;
+}
+.nav-section a.pillar {
+  color: #ffffff;
+  animation: shine-pillar 6s ease-in-out infinite;
+}
+.nav-section a.demon {
+  color: #d62b2b;
+  animation: pulse-demon 2.5s infinite;
+}
+.nav-section a.beastiary {
+  color: #159115;
+  animation: fog-beast 6s ease-in-out infinite;
+}
+.nav-section a.faction {
+  color: #0004ff;
+  animation: pulse-faction 4s infinite;
+}
+.nav-section a.gp {
+  color: #ffd700;
+  animation: sparkle-gp 3s ease-in-out infinite;
+}
+.nav-section a.shop {
+  color: #e746e7;
+  background: linear-gradient(to bottom, #1d1510, #110d0b);
+  animation: beat-shop 3s infinite;
+}
+.nav-section a.feedback {
+  color: #e2d8c3;
+  animation: flicker-feedback 5s infinite;
+}
+
+/* Potion Tags */
+
+.tag-healing {
+  background-color: #E74C3C;
+}
+
+.tag-positive {
+  background-color: #2ECC71;
+}
+
+.tag-utility {
+  background-color: #5DADE2;
+}
+
+.tag-recovery {
+  background-color: #27AE60;
+}
+
+.tag-exploration {
+  background-color: #2980B9;
+}
+
+.tag-vision {
+  background-color: #6C5CE7;
+}
+
+.tag-buff {
+  background-color: #8E44AD;
+}
+
+.tag-combat {
+  background-color: #C0392B;
+}
+
+.tag-movement {
+  background-color: #F39C12;
+}
+
+.tag-defensive {
+  background-color: #566573;
+}
+
+.tag-elemental {
+  background-color: #E67E22;
+}
+
+.tag-physical {
+  background-color: #7B7D7D;
+}
+
+.tag-offensive {
+  background-color: #A93226;
+}
+
+.tag-anti-poison {
+  background-color: #58D68D;
+}
+
+.tag-stealth {
+  background-color: #1C2833;
+}
+
+.tag-escape {
+  background-color: #D6DBDF;
+  color: black;
+}
+
+.tag-mental {
+  background-color: #BB8FCE;
+}
+
+.tag-risky {
+  background-color: #E91E63;
+}
+
+.tag-fey {
+  background-color: #1ABC9C;
+}
+
+.tag-anti-necrotic {
+  background-color: #512E5F;
+}
+
+.tag-wild-magic {
+  background-color: #D35400;
+}
+
+.tag-fun {
+  background-color: #F1948A;
+}
+
+.tag-rp {
+  background-color: #FADBD8;
+}
+
+.tag-debuff {
+  background-color: #76448A;
+}
+
+.tag-magic {
+  background-color: #85C1E9;
+}
+
+.tag-spellcasting {
+  background-color: #7FB3D5;
+}
+
+.tag-initiative {
+  background-color: #F1C40F;
+}
+
+/*----------------------*/
+/* RESPONSIVE STYLES    */
+/*----------------------*/
+@keyframes auroraGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes flicker-calendar {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  24%,
+  55% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes shimmer-time {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #ffffff44;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes glow-spellbook {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #8a2be2;
+  }
+  50% {
+    text-shadow: 0 0 15px #c09cff;
+  }
+}
+
+@keyframes glow-gods {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #ffffffaa;
+  }
+  50% {
+    text-shadow: 0 0 15px #ffffff88;
+  }
+}
+
+@keyframes shine-pillar {
+  0%,
+  100% {
+    text-shadow: 0 0 8px #ffffff55;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffffffaa;
+  }
+}
+
+@keyframes pulse-demon {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #d62b2b;
+  }
+  50% {
+    text-shadow: 0 0 15px #ff0000;
+  }
+}
+
+@keyframes fog-beast {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #15911544;
+  }
+  50% {
+    text-shadow: 0 0 20px #25ff25aa;
+  }
+}
+
+@keyframes pulse-faction {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #0004ff;
+  }
+  50% {
+    text-shadow: 0 0 15px #2c7fff;
+  }
+}
+
+@keyframes sparkle-gp {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #ffd700;
+  }
+  50% {
+    text-shadow: 0 0 20px #fff88a;
+  }
+}
+
+@keyframes beat-shop {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #e746e7;
+  }
+  50% {
+    text-shadow: 0 0 15px #ff91ff;
+  }
+}
+
+@keyframes flicker-feedback {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.7;
+  }
+}

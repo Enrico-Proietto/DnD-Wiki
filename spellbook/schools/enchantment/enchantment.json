@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Friends",
+        "spellLevel": "Cantrip",
+        "castingTime": "1 action",
+        "range": "Self",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Gain advantage on Charisma checks against one creature. After the spell ends, the creature knows you used magic to influence it.",
+        "classes": "Bard, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Charm Person",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "1 hour",
+        "description": "Charm a humanoid. It regards you as a friendly acquaintance.",
+        "classes": "Bard, Druid, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Command",
+        "spellLevel": "Level 1",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "1 round",
+        "description": "Speak a one-word command to a creature. If it fails a Wisdom save, it obeys.",
+        "classes": "Cleric, Paladin",
+        "damage": ""
+    },
+    {
+        "name": "Calm Emotions",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Suppress strong emotions in a group, ending charms or frightening effects.",
+        "classes": "Bard, Cleric",
+        "damage": ""
+    },
+    {
+        "name": "Crown of Madness",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Force a creature to attack a target of your choosing on its next turn.",
+        "classes": "Bard, Sorcerer, Warlock, Wizard",
+        "damage": "Indirect (forces hostile actions)"
+    },
+    {
+        "name": "Hold Person",
+        "spellLevel": "Level 2",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Paralyze a humanoid. It can't move or take actions.",
+        "classes": "Bard, Cleric, Druid, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Hypnotic Pattern",
+        "spellLevel": "Level 3",
+        "castingTime": "1 action",
+        "range": "120 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Dazzling lights charm and incapacitate creatures in a 30-foot cube.",
+        "classes": "Bard, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Compulsion",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Force affected creatures to move in a direction you choose.",
+        "classes": "Bard, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Confusion",
+        "spellLevel": "Level 4",
+        "castingTime": "1 action",
+        "range": "90 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Confuse creatures in a 10-foot radius; they act unpredictably.",
+        "classes": "Bard, Druid, Sorcerer, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Dominate Person",
+        "spellLevel": "Level 5",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Take control of a humanoid’s actions.",
+        "classes": "Bard, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Otto’s Irresistible Dance",
+        "spellLevel": "Level 6",
+        "castingTime": "1 action",
+        "range": "30 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "A creature begins dancing uncontrollably, unable to take reactions, with disadvantage on attacks and Dex saves.",
+        "classes": "Bard, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Power Word: Pain",
+        "spellLevel": "Level 7",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Cause intense pain in a creature with 100 HP or less. It suffers disadvantage on attacks and ability checks.",
+        "classes": "Bard, Warlock, Wizard",
+        "damage": "Ongoing effect (no initial damage)"
+    },
+    {
+        "name": "Dominate Monster",
+        "spellLevel": "Level 8",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Concentration, up to 1 hour",
+        "description": "Charm and control any creature (not just humanoids).",
+        "classes": "Bard, Sorcerer, Warlock, Wizard",
+        "damage": ""
+    },
+    {
+        "name": "Power Word: Heal",
+        "spellLevel": "Level 9",
+        "castingTime": "1 action",
+        "range": "60 feet",
+        "duration": "Instantaneous",
+        "description": "Instantly restore a creature to full HP and end blindness, deafness, and paralysis.",
+        "classes": "Bard",
+        "damage": ""
+    }
+]

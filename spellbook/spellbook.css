@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at center, #120f0b, #080604);
+  font-family: "Cinzel", serif;
+  color: #e2d8c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#backgroundCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.abjuration {
+  color: #e24a4a;
+  margin-bottom: 10px;
+}
+
+.conjuration {
+  color: #d47628;
+  margin-bottom: 10px;
+}
+
+.divination {
+  color: #861fa5;
+  margin-bottom: 10px;
+}
+
+.enchantment {
+  color: #267cc2;
+  margin-bottom: 10px;
+}
+
+.evocation {
+  color: #ff6b1f;
+  margin-bottom: 10px;
+}
+
+.illusion {
+  color: #b4ffec;
+  margin-bottom: 10px;
+}
+
+.necromancy {
+  color: #6effd0;
+  margin-bottom: 10px;
+}
+
+.transmutation {
+  color: #f147d5;
+  margin-bottom: 10px;
+}
+
+.school-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.hub-title {
+  font-size: 3rem;
+  color: #d6c293;
+  text-shadow: 0 0 8px rgba(255, 240, 200, 0.2);
+}
+
+.hub-subtitle {
+  font-size: 1.1rem;
+  color: #a79882;
+  margin-bottom: 40px;
+}
+
+.school-hub {
+  max-width: 1000px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.school-card {
+  background-color: #1e1914cc;
+  border: 1px solid #5a4a36;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 12px #dcd2b41a;
+  cursor: pointer;
+}
+
+.school-card.abjuration {
+  background: radial-gradient(ellipse at center, #3a1717, #000);
+}
+
+.school-card.conjuration {
+  background: radial-gradient(ellipse at center, #412f19, #000);
+}
+
+.school-card.divination {
+  background: radial-gradient(ellipse at center, #2f183f, #000);
+}
+
+.school-card.enchantment {
+  background: radial-gradient(ellipse at center, #1a1a42, #000);
+}
+
+.school-card.evocation {
+  background: radial-gradient(ellipse at center, #3f2618, #000);
+}
+
+.school-card.illusion {
+  background: radial-gradient(ellipse at center, #183f39, #000);
+}
+
+.school-card.necromancy {
+  background: radial-gradient(ellipse at center, #163823, #000);
+}
+
+.school-card.transmutation {
+  background: radial-gradient(ellipse at center, #431a44, #000);
+}
+
+.school-card:hover {
+  background-color: #32281ee6;
+  box-shadow: 0 0 15px #f0e6c84d;
+  transform: translateY(-4px);
+}
+
+.school-card p {
+  font-size: 0.9rem;
+  color: #cbbca6;
+}
+
+.back-button {
+  color: #9425c7;
+  text-decoration: none;
+  border: 1px solid #9425c7;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: 0.3s;
+  display: flex;
+  justify-self: center;
+}
+
+.back-button:hover {
+  background: #9425c7;
+  color: #1e1a14;
+}
+
+#introCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0d0c0a;
+  z-index: 9999;
+  animation: fadeOut 2s ease 10s forwards; /* fade after drawing */
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#page {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.spark-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.spark {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: sparkle 1s linear forwards;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+#exitCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+#transitionOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, #ffffff 0%, #000000 100%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#transitionOverlay.active {
+  opacity: 1;
+}
+
+.aurora-text {
+  font-size: 1em;
+  font-weight: bold;
+  background: linear-gradient(
+    120deg,
+    #a0f8ff,
+    #78ffe1,
+    #fcd5ff,
+    #91e0ff,
+    #c1fffa
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: auroraGlow 8s ease-in-out infinite;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(160, 255, 255, 0.3),
+    0 0 20px rgba(120, 255, 225, 0.3);
+}
+
+@keyframes auroraGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,155 @@
+{
+    "shimazu": [
+        {
+            "name": "Shimazu Tadakatsu",
+            "race": "Half-Orc Half-Dragonborn",
+            "class": "Fighter",
+            "alignment": "Chaotic-Neutral",
+            "hp": "38",
+            "ac": "14",
+            "gp": "302",
+            "level": "4",
+            "xp": "425",
+            "xpNeededForUpgrade": "1500",
+            "pageSrc": "/character/shimazu/shimazu.html",
+            "imageSrc": "/images/characters/shimazu.png",
+            "abilityScores": {
+                "strength": "17",
+                "dexterity": "13",
+                "constitution": "15",
+                "intelligence": "10",
+                "wisdom": "12",
+                "charisma": "8"
+            },
+            "skills": [
+                {
+                    "name": "Athletics",
+                    "amount": "+5"
+                },
+                {
+                    "name": "Intimidation",
+                    "amount": "+1"
+                },
+                {
+                    "name": "Perception",
+                    "amount": "+3"
+                },
+                {
+                    "name": "Survival",
+                    "amount": "+3"
+                },
+                {
+                    "name": "Insight",
+                    "amount": "+3"
+                }
+            ],
+            "gear": {
+                "leftGear": [
+                    {
+                        "name": "Head Gear Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Cape Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Chest Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Hand Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Shoe Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
+                ],
+                "meele": [
+                    {
+                        "name": "Shortsword",
+                        "description": "",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Shortsword",
+                        "description": "",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
+                ],
+                "range": [
+                    {
+                        "name": "Range Hand 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Range Hand 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
+                ],
+                "rightGear": [
+                    {
+                        "name": "Nechlace Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Ring 1 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    },
+                    {
+                        "name": "Ring 2 Slot",
+                        "description": "Currently this slot is empty.",
+                        "imageSrc": "",
+                        "imageAlt": "No image unavailable"
+                    }
+                ]
+            },
+            "items": {
+                "clanSymbol": {
+                    "name": "Sangrelis Clan Symbol",
+                    "imageSrc": "",
+                    "imageAlt": "Sangralis Clan Symbol",
+                    "description": "The clan symbol of Sangrelis. Left behind by Vyras Sangrelis after he was defeated.",
+                    "amount": "1"
+                }
+            },
+            "feats": [
+                {
+                    "name": "Armorless",
+                    "description": "You survived long without armor, this has hardend your scales harder and makes your natural ac +4. Also because you wear no body armor you can walk +10ft per round."
+                }
+            ],
+            "classAbilities": [
+                {
+                    "name": "Action Surge",
+                    "description": ""
+                },
+                {
+                    "name": "Second Wind",
+                    "description": "Heal 1d10 + your Fighter level"
+                }
+            ]
+        }
+    ]
+}
