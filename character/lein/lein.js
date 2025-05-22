@@ -2,7 +2,7 @@ let characterData;
 
 async function loadCharacter() {
   try {
-    const response = await fetch('lein.json');
+    const response = await fetch('/DnD-Wiki/character/lein/lein.json');
     const data = await response.json();
     characterData = data;
     const lein = data.lein[0];

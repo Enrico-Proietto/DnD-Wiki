@@ -1,5 +1,5 @@
 async function loadBeasts() {
-    const response = await fetch('beastiary.json');
+    const response = await fetch('/DnD-Wiki/beastiary/beastiary.json');
     const data = await response.json();
 
     const beastGrid = document.getElementById('category-grid');

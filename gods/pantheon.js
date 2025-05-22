@@ -1,26 +1,27 @@
 const firstborns = [
-  { name: "Aelos", image: "/images/gods/aelos.png", link: "/gods/aelos/aelos.html" },
-  { name: "Soryn", image: "/images/gods/soryn.png", link: "/gods/soryn/soryn.html" },
-  { name: "Draconis", image: "/images/gods/draconis.png", link: "gods/draconis.html" },
-  { name: "Thalyris", image: "/images/gods/thalyris.png", link: "/gods/thalyris/thalyris.html" },
-  { name: "Vorathor", image: "/images/gods/vorathor.png", link: "/gods/vorathor/vorathor.html" },
-  { name: "Thaloria", image: "/images/gods/thaloria.png", link: "" },
-  { name: "Somnara", image: "/images/gods/somnara.png", link: "" },
-  { name: "Thoron", image: "/images/gods/thoron.png", link: "" },
-  { name: "Isharion", image: "/images/gods/isharion.png", link: "" },
-  { name: "Vorakthos", image: "/images/gods/vorakthos.png", link: "" },
+  { name: "Aelos", image: "/DnD-Wiki/images/gods/aelos.png", link: "/DnD-Wiki/gods/aelos/aelos.html" },
+  { name: "Soryn", image: "/DnD-Wiki/images/gods/soryn.png", link: "/DnD-Wiki/gods/soryn/soryn.html" },
+  { name: "Draconis", image: "/DnD-Wiki/images/gods/draconis.png", link: "/DnD-Wiki/gods/draconis.html" },
+  { name: "Thalyris", image: "/DnD-Wiki/images/gods/thalyris.png", link: "/DnD-Wiki/gods/thalyris/thalyris.html" },
+  { name: "Vorathor", image: "/DnD-Wiki/images/gods/vorathor.png", link: "/DnD-Wiki/gods/vorathor/vorathor.html" },
+  { name: "Thaloria", image: "/DnD-Wiki/images/gods/thaloria.png", link: "" },
+  { name: "Somnara", image: "/DnD-Wiki/images/gods/somnara.png", link: "" },
+  { name: "Thoron", image: "/DnD-Wiki/images/gods/thoron.png", link: "" },
+  { name: "Isharion", image: "/DnD-Wiki/images/gods/isharion.png", link: "" },
+  { name: "Vorakthos", image: "/DnD-Wiki/images/gods/vorakthos.png", link: "" },
 ];
 
 const ascended = [
-  { name: "Elendor", image: "/images/gods/elendor.png", link: "/gods/elendor/elendor.html" },
-  { name: "Anos Voldigoad", image: "/images/gods/anos.png", link: "/gods/anos/anos.html" },
-  { name: "Zurathis", image: "/images/gods/zurathis.png", link: "/gods/zurathis/zurathis.html" },
-  { name: "Elorthas", image: "/images/gods/elorthas.png", link: "/gods/elorthas/elorthas.html" },
-  { name: "Tyrathar", image: "/images/gods/tyrathar.png", link: "" },
-  { name: "Zarrak", image: "/images/gods/zarrak.png", link: "" },
-  { name: "Eryndor", image: "/images/gods/eryndor.png", link: "" },
-  { name: "Zarethiel", image: "/images/gods/zarethiel.png", link: "" },
+  { name: "Elendor", image: "/DnD-Wiki/images/gods/elendor.png", link: "/DnD-Wiki/gods/elendor/elendor.html" },
+  { name: "Anos Voldigoad", image: "/DnD-Wiki/images/gods/anos.png", link: "/DnD-Wiki/gods/anos/anos.html" },
+  { name: "Zurathis", image: "/DnD-Wiki/images/gods/zurathis.png", link: "/DnD-Wiki/gods/zurathis/zurathis.html" },
+  { name: "Elorthas", image: "/DnD-Wiki/images/gods/elorthas.png", link: "/DnD-Wiki/gods/elorthas/elorthas.html" },
+  { name: "Tyrathar", image: "/DnD-Wiki/images/gods/tyrathar.png", link: "" },
+  { name: "Zarrak", image: "/DnD-Wiki/images/gods/zarrak.png", link: "" },
+  { name: "Eryndor", image: "/DnD-Wiki/images/gods/eryndor.png", link: "" },
+  { name: "Zarethiel", image: "/DnD-Wiki/images/gods/zarethiel.png", link: "" },
 ];
+
 function positionGods(containerId, gods, radius) {
   const container = document.getElementById(containerId);
   const angleStep = (2 * Math.PI) / gods.length;

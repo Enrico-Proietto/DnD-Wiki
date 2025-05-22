@@ -1,5 +1,5 @@
 async function loadLore() {
-    const response = await fetch('timeline.json');
+    const response = await fetch('/DnD-Wiki/timeline/timeline.json');
     const data = await response.json();
 
     const timelineGrid = document.getElementById('timeline');

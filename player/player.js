@@ -117,7 +117,7 @@ function createPlayerCard(player) {
 
 async function loadPlayers() {
   try {
-    const response = await fetch('/DnD-Wiki/player.json');
+    const response = await fetch('/DnD-Wiki/player/player.json');
     const data = await response.json();
 
     const container = document.getElementById('players-container');

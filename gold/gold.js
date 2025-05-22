@@ -3,7 +3,7 @@ const goldContainer = document.getElementById('mainView');
 function createCoin() {
   const coin = document.createElement('div');
   coin.classList.add('coin');
-  coin.innerHTML = '<img src="/images/gold.png" alt="coin" />';
+  coin.innerHTML = '<img src="/DnD-Wiki/images/gold.png" alt="coin" />';
   coin.style.position = 'absolute';
   coin.style.top = Math.random() * window.innerHeight + 'px';
   coin.style.left = Math.random() * window.innerWidth + 'px';

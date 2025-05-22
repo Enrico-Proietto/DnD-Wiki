@@ -4,7 +4,7 @@ let currentPage = 0;
 // Load the JSON file with pages
 async function loadPages() {
   try {
-    const response = await fetch('lore.json'); // Adjust the path if needed
+    const response = await fetch('/DnD-Wiki/lore/lore.json'); // Adjust the path if needed
     const data = await response.json();
     pages = data.pages;
 

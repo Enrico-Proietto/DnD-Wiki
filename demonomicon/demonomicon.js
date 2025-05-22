@@ -1,13 +1,13 @@
 const archdevils = [
-  { name: "████████", slug: "sealed", title: "The Iron Fist", image: "/images/archdevils/sigil_TheIronFist.png" },
-  { name: "██████", slug: "sealed", title: "The Ember King", image: "/images/archdevils/sigil_TheEmberKing.png" },
-  { name: "Karaxis", slug: "karaxis", title: "The Dread Seer", image: "/images/archdevils/karaxis.png" },
-  { name: "█████", slug: "sealed", title: "The Silent Scourge", image: "/images/archdevils/sigil_TheSilentScourge.png" },
-  { name: "Azarel", slug: "azarel", title: "The Bargain Maker", image: "/images/archdevils/azarel.png" },
-  { name: "████████", slug: "sealed", title: "The Soul Forger", image: "/images/archdevils/sigil_TheSoulForger.png" },
-  { name: "█████████", slug: "sealed", title: "The Veilkeeper", image: "/images/archdevils/sigil_TheVeilkeeper.png" },
-  { name: "██████", slug: "sealed", title: "The Whisperer of Manipulation", image: "/images/archdevils/sigil_TheWhispherOfManipulation.png" },
-  { name: "███████", slug: "sealed", title: "The Gatekeeper", image: "/images/archdevils/sigil_TheGatekeeper.png" }
+  { name: "████████", slug: "sealed", title: "The Iron Fist", image: "/DnD-Wiki/images/archdevils/sigil_TheIronFist.png" },
+  { name: "██████", slug: "sealed", title: "The Ember King", image: "/DnD-Wiki/images/archdevils/sigil_TheEmberKing.png" },
+  { name: "Karaxis", slug: "karaxis", title: "The Dread Seer", image: "/DnD-Wiki/images/archdevils/karaxis.png" },
+  { name: "█████", slug: "sealed", title: "The Silent Scourge", image: "/DnD-Wiki/images/archdevils/sigil_TheSilentScourge.png" },
+  { name: "Azarel", slug: "azarel", title: "The Bargain Maker", image: "/DnD-Wiki/images/archdevils/azarel.png" },
+  { name: "████████", slug: "sealed", title: "The Soul Forger", image: "/DnD-Wiki/images/archdevils/sigil_TheSoulForger.png" },
+  { name: "█████████", slug: "sealed", title: "The Veilkeeper", image: "/DnD-Wiki/images/archdevils/sigil_TheVeilkeeper.png" },
+  { name: "██████", slug: "sealed", title: "The Whisperer of Manipulation", image: "/DnD-Wiki/images/archdevils/sigil_TheWhispherOfManipulation.png" },
+  { name: "███████", slug: "sealed", title: "The Gatekeeper", image: "/DnD-Wiki/images/archdevils/sigil_TheGatekeeper.png" }
 ];
 
 const gallery = document.getElementById('gallery');
@@ -29,7 +29,7 @@ archdevils.forEach(devil => {
 
     // Optional: add chain-breaking sound or glow effect here
     setTimeout(() => {
-      window.location.href = `archdevils/${devil.slug}/${devil.slug}.html`;
+      window.location.href = `/DnD-Wiki/demonomicon/archdevils/${devil.slug}/${devil.slug}.html`;
     }, 2000); // match animation duration
   };
 

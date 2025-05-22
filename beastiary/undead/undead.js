@@ -1,6 +1,6 @@
 async function loadUndead() {
     try {
-        const response = await fetch('undead.json');
+        const response = await fetch('/DnD-Wiki/beastiary/undead/undead.json');
         const data = await response.json();
         const front = data.front;
         const range = data.range;

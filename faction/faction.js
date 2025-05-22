@@ -1,5 +1,5 @@
 async function loadFactions() {
-    const response = await fetch('faction.json');
+    const response = await fetch('/DnD-Wiki/faction/faction.json');
     const data = await response.json();
 
     const factionGrid = document.getElementById('faction-grid');

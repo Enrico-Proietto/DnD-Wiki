@@ -2,26 +2,26 @@
     "magicalCreatures": {
         "name": "Magical Creatures",
         "type": "magicalCreatures",
-        "pageSrc": "/beastiary/magicalCreatures/magicalCreatures.html"
+        "pageSrc": "/DnD-Wiki/beastiary/magicalCreatures/magicalCreatures.html"
     },
     "undead": {
         "name": "Undead",
         "type": "undead",
-        "pageSrc": "/beastiary/undead/undead.html"
+        "pageSrc": "/DnD-Wiki/beastiary/undead/undead.html"
     },
     "humanoids": {
         "name": "Humanoids",
         "type": "humanoids",
-        "pageSrc": "/beastiary/humanoids/humanoids.html"
+        "pageSrc": "/DnD-Wiki/beastiary/humanoids/humanoids.html"
     },
     "beasts": {
         "name": "Beasts",
         "type": "beasts",
-        "pageSrc": "/beastiary/beasts/beasts.html"
+        "pageSrc": "/DnD-Wiki/beastiary/beasts/beasts.html"
     },
     "shadows": {
         "name": "Shadows",
         "type": "shadows",
-        "pageSrc": "/beastiary/shadows/shadows.html"
+        "pageSrc": "/DnD-Wiki/beastiary/shadows/shadows.html"
     }
 }
