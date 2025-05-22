@@ -2,7 +2,7 @@ let characterData;
 
 async function loadCharacter() {
   try {
-    const response = await fetch('willump.json');
+    const response = await fetch('/DnD-Wiki/character/willump/willump.json');
     const data = await response.json();
     characterData = data;
     const willump = data.willump[0];

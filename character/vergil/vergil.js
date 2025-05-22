@@ -2,7 +2,7 @@ let characterData;
 
 async function loadCharacter() {
   try {
-    const response = await fetch('vergil.json');
+    const response = await fetch('/DnD-Wiki/character/vergil/vergil.json');
     const data = await response.json();
     characterData = data;
     const vergil = data.vergil[0];

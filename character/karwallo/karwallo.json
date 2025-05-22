@@ -12,7 +12,7 @@
             "xp": "1125",
             "xpNeededForUpgrade": "1500",
             "pageSrc": "/character/karwallo.png",
-            "imageSrc": "/images/characters/karwallo.png",
+            "imageSrc": "/DnD-Wiki/images/characters/karwallo.png",
             "spellslotLvl1": "2",
             "abilityScores": {
                 "strength": "16",
@@ -36,19 +36,19 @@
                 "divineSmite": {
                     "name": "Divine Smite",
                     "description": "You draw down holy power to smite your enemies. Only evil and neutral creatures are harmed by the spell; good creatures are unaffected. The spell deals 1d8 points of damage.",
-                    "imageSrc": "/images/spells/divine-smite.png",
+                    "imageSrc": "/DnD-Wiki/images/spells/divine-smite.png",
                     "imageAlt": "Picture of a divine smite."
                 },
                 "huntersMark": {
                     "name": "Hunter’s Mark",
                     "description": "You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature.",
-                    "imageSrc": "/images/spells/hunters-mark.png",
+                    "imageSrc": "/DnD-Wiki/images/spells/hunters-mark.png",
                     "imageAlt": "Picture of a hunter's mark."
                 },
                 "vowOfEnmity": {
                     "name": "Vow of Enmity",
                     "description": "Gain  Advantage on Attack Rolls against an enemy. This effect lingers for 10 turns.",
-                    "imageSrc": "/images/spells/vow-of-enmity.png",
+                    "imageSrc": "/DnD-Wiki/images/spells/vow-of-enmity.png",
                     "imageAlt": "Picture of a vow of enmity."
                 }
             },
@@ -81,7 +81,7 @@
                     {
                         "name": "Boots of Mudwalking",
                         "description": "These boots allow the wearer to walk across mud, snow, or sand without sinking, but they halve movement speed.",
-                        "imageSrc": "/images/gear/boots-of-mudwalking.png",
+                        "imageSrc": "/DnD-Wiki/images/gear/boots-of-mudwalking.png",
                         "imageAlt": "Boots of Mudwalking"
                     }
                 ],
@@ -89,7 +89,7 @@
                     {
                         "name": "Infernium Blade",
                         "description": "<h3>Infernal Smite</h3>Once per turn, when you hit a creature with this weapon and it was hit with The Infernal Ember, you can choose to deal an additional 1d6 fire damage. If the target is celestial or fey, this increases to 2d6 fire damage. <br> <h3>Hellborn Resilience</h3> When reduced to 0 HP, you can instead drop to 1 HP. This effect can only be used once per long rest. <br> <h3>Chains of the Damned</h3> Once per long rest, when you score a critical hit, spectral chains erupt from the sword, wrapping around the enemy. The target must make a DC 15 Strength saving throw or be restrained until the end of your next turn.",
-                        "imageSrc": "/images/gear/inferniumBlade.png",
+                        "imageSrc": "/DnD-Wiki/images/gear/inferniumBlade.png",
                         "imageAlt": "Infernium Blade"
                     },
                     {
@@ -117,7 +117,7 @@
                     {
                         "name": "Clan Nechlace",
                         "description": "A necklace given to Karwallo from his parents. With this necklace, Karwallo shows the world that his clan is still alive.",
-                        "imageSrc": "/images/gear/necklace.png",
+                        "imageSrc": "/DnD-Wiki/images/gear/necklace.png",
                         "imageAlt": "Karwallo's clan necklace"
                     },
                     {
@@ -144,7 +144,7 @@
                 },
                 "javelins": {
                     "name": "Javelins",
-                    "imageSrc": "/images/gear/javelins.png",
+                    "imageSrc": "/DnD-Wiki/images/gear/javelins.png",
                     "imageAlt": "Picture of a javelin.",
                     "description": "Javelins that can be thrown.",
                     "amount": "2"

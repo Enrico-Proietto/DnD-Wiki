@@ -11,8 +11,8 @@
             "level": "4",
             "xp": "225",
             "xpNeededForUpgrade": "1500",
-            "pageSrc": "/character/assgetsu.html",
-            "imageSrc": "/images/characters/assgetsu.png",
+            "pageSrc": "/DnD-Wiki/character/assgetsu/assgetsu.html",
+            "imageSrc": "/DnD-Wiki/images/characters/assgetsu.png",
             "ragePoints": "2",
             "abilityScores": {
                 "strength": "16",
@@ -55,7 +55,7 @@
                     {
                         "name": "Bloodfang Gauntlets",
                         "description": "Effects:<br> <ul> <li>Frenzied Bite: When raging, you can use a Bonus Action to make an unarmed strike. If it hits, you regain HP equal to half the damage dealt (rounded down).</li> <li>Primal Instinct: When reduced to 0 HP, you can instead drop to 1 HP. This effect can only be used once per long rest.</li> <li>Drawn to Bloodshed: If an enemy within 30 feet is below half HP, your movement speed increases by 20 feet toward them.</li> </ul> <br><i>Description: These crimson leather gauntlets have the fangs of a dire wolf embedded in the knuckles.</i>",
-                        "imageSrc": "/images/gear/bloodfangGauntlets.png",
+                        "imageSrc": "/DnD-Wiki/images/gear/bloodfangGauntlets.png",
                         "imageAlt": "No image unavailable"
                     },
                     {
@@ -69,7 +69,7 @@
                     {
                         "name": "Greataxe",
                         "description": "A mighty greataxe that deals 1d12 damage.",
-                        "imageSrc": "/images/gear/greataxe.png",
+                        "imageSrc": "/DnD-Wiki/images/gear/greataxe.png",
                         "imageAlt": "Picture of the Staff of Healing"
                     },
                     {
@@ -117,14 +117,14 @@
             "items": {
                 "javelins": {
                     "name": "Javelins",
-                    "imageSrc": "/images/gear/javelins.png",
+                    "imageSrc": "/DnD-Wiki/images/gear/javelins.png",
                     "imageAlt": "Picture of a javelin.",
                     "description": "Javelins that can be thrown. <br><br>1d6 + Strength modifier Piercing damage.",
                     "amount": "4"
                 },
                 "ashOfVampire": {
                     "name": "Ash of Vampire",
-                    "imageSrc": "/images/items/ashOfVampire.png",
+                    "imageSrc": "/DnD-Wiki/images/items/ashOfVampire.png",
                     "imageAlt": "Picture of the Ash of Vampire.",
                     "description": "Ash of a vampire that can be used to create a potion.",
                     "amount": "1"
