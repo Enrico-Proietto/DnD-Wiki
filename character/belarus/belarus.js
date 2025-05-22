@@ -2,7 +2,7 @@ let characterData;
 
 async function loadCharacter() {
   try {
-    const response = await fetch('belarus.json');
+    const response = await fetch('/DnD-Wiki/character/belarus/belarus.json');
     const data = await response.json();
     characterData = data;
     const belarus = data.belarus[0];
