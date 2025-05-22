@@ -5,7 +5,7 @@
 		"tags": "Healing, Positive, Common",
 		"stock": "10",
 		"price": "50 GP",
-		"image": "/images/potions/healingPotion.png"
+		"image": "/DnD-Wiki/images/potions/healingPotion.png"
 	},
 	{
         "name": "Greater Healing Potion",
@@ -13,7 +13,7 @@
         "tags": "Healing, Positive, Rare",
         "stock": "5",
         "price": "150 GP",
-        "image": "/images/potions/greaterHealingPotion.png"
+        "image": "/DnD-Wiki/images/potions/greaterHealingPotion.png"
 	},
 	{
 		"name": "Potion of Lesser Restoration",
@@ -21,7 +21,7 @@
 		"tags": "Healing, Utility, Recovery",
 		"stock": "2",
 		"price": "300 GP",
-		"image": "/images/potions/lesserRestoration.png"
+		"image": "/DnD-Wiki/images/potions/lesserRestoration.png"
 	},
 	{
 		"name": "Elixir of Night Vision",
@@ -29,7 +29,7 @@
 		"tags": "Utility, Exploration, Vision",
 		"stock": "3",
 		"price": "150 GP",
-		"image": "/images/potions/nightVisionPotion.png"
+		"image": "/DnD-Wiki/images/potions/nightVisionPotion.png"
 	},
 	{
 		"name": "Potion of Speed",
@@ -37,7 +37,7 @@
 		"tags": "Buff, Combat, Movement",
 		"stock": "1",
 		"price": "600 GP",
-		"image": "/images/potions/speedPotion.png"
+		"image": "/DnD-Wiki/images/potions/speedPotion.png"
 	},
 	{
 		"name": "Potion of Fire Resistance",
@@ -45,7 +45,7 @@
 		"tags": "Defensive, Elemental, Utility",
 		"stock": "2",
 		"price": "300 GP",
-		"image": "/images/potions/fireResistancePotion.png"
+		"image": "/DnD-Wiki/images/potions/fireResistancePotion.png"
 	},
 	{
 		"name": "Potion of Growth",
@@ -53,7 +53,7 @@
 		"tags": "Buff, Combat, Physical",
 		"stock": "2",
 		"price": "400 GP",
-		"image": "/images/potions/growthPotion.png"
+		"image": "/DnD-Wiki/images/potions/growthPotion.png"
 	},
 	{
 		"name": "Flametongue Draft",
@@ -61,7 +61,7 @@
 		"tags": "Buff, Offensive, Elemental",
 		"stock": "1",
 		"price": "500 GP",
-		"image": "/images/potions/flametongueDraft.png"
+		"image": "/DnD-Wiki/images/potions/flametongueDraft.png"
 	},
 	{
 		"name": "Plague Purge Tonic",
@@ -69,7 +69,7 @@
 		"tags": "Healing, Defensive, Anti-Poison",
 		"stock": "3",
 		"price": "300 GP",
-		"image": "/images/potions/plaguePurgeTonic.png"
+		"image": "/DnD-Wiki/images/potions/plaguePurgeTonic.png"
 	},
 	{
 		"name": "Potion of Invisibility",
@@ -77,7 +77,7 @@
 		"tags": "Utility, Stealth, Buff",
 		"stock": "2",
 		"price": "500 GP",
-		"image": "/images/potions/invisibility.png"
+		"image": "/DnD-Wiki/images/potions/invisibility.png"
 	},
 	{
 		"name": "Potion of Water Breathing",
@@ -85,7 +85,7 @@
 		"tags": "Utility, Exploration",
 		"stock": "3",
 		"price": "200 GP",
-		"image": "/images/potions/waterBreathing.png"
+		"image": "/DnD-Wiki/images/potions/waterBreathing.png"
 	},
 	{
 		"name": "Potion of Spider Climb",
@@ -93,7 +93,7 @@
 		"tags": "Utility, Exploration, Movement",
 		"stock": "2",
 		"price": "350 GP",
-		"image": "/images/potions/spiderClimb.png"
+		"image": "/DnD-Wiki/images/potions/spiderClimb.png"
 	},
 	{
 		"name": "Potion of Feather Fall",
@@ -101,7 +101,7 @@
 		"tags": "Utility, Defensive, Movement",
 		"stock": "3",
 		"price": "100 GP",
-		"image": "/images/potions/featherFall.png"
+		"image": "/DnD-Wiki/images/potions/featherFall.png"
 	},
 	{
 		"name": "Potion of Gravemist",
@@ -109,7 +109,7 @@
 		"tags": "Utility, Movement, Exploration",
 		"stock": "1",
 		"price": "600 GP",
-		"image": "/images/potions/gravemist.png"
+		"image": "/DnD-Wiki/images/potions/gravemist.png"
 	},
 	{
 		"name": "Potion of Mind Shielding",
@@ -117,7 +117,7 @@
 		"tags": "Defensive, Buff, Mental",
 		"stock": "2",
 		"price": "400 GP",
-		"image": "/images/potions/mindShielding.png"
+		"image": "/DnD-Wiki/images/potions/mindShielding.png"
 	},
 	{
 		"name": "Everclear Tonic",
@@ -125,7 +125,7 @@
 		"tags": "Defensive, Mental, Buff",
 		"stock": "2",
 		"price": "200 GP",
-		"image": "/images/potions/everclearTonic.png"
+		"image": "/DnD-Wiki/images/potions/everclearTonic.png"
 	},
 	{
 		"name": "Potion of Fey Luck",
@@ -133,7 +133,7 @@
 		"tags": "Buff, Defensive, Risky, Fey",
 		"stock": "2",
 		"price": "400 GP",
-		"image": "/images/potions/feyLuck.png"
+		"image": "/DnD-Wiki/images/potions/feyLuck.png"
 	},
 	{
 		"name": "Elixir of Undead Warding",
@@ -141,7 +141,7 @@
 		"tags": "Defensive, Elemental, Anti-Necrotic",
 		"stock": "2",
 		"price": "250 GP",
-		"image": "/images/potions/undeadWarding.png"
+		"image": "/DnD-Wiki/images/potions/undeadWarding.png"
 	},
 	{
 		"name": "Mystery Brew",
@@ -149,7 +149,7 @@
 		"tags": "Wild Magic, Risky, Fun",
 		"stock": "8",
 		"price": "100 GP",
-		"image": "/images/potions/mysteryBrew.png"
+		"image": "/DnD-Wiki/images/potions/mysteryBrew.png"
 	},
 	{
 		"name": "Love Draught",
@@ -157,7 +157,7 @@
 		"tags": "RP/Flavor, Debuff, Risky",
 		"stock": "1",
 		"price": "200 GP",
-		"image": "/images/potions/loveDraught.png"
+		"image": "/DnD-Wiki/images/potions/loveDraught.png"
 	},
 	{
 		"name": "Potion of Ethereal Drift",
@@ -165,7 +165,7 @@
 		"tags": "Utility, Escape, Stealth",
 		"stock": "2",
 		"price": "450 GP",
-		"image": "/images/potions/etherealDrift.png"
+		"image": "/DnD-Wiki/images/potions/etherealDrift.png"
 	},
 	{
 		"name": "Mana Infusion Flask",
@@ -173,7 +173,7 @@
 		"tags": "Utility, Spellcasting, Recovery",
 		"stock": "2",
 		"price": "400 GP",
-		"image": "/images/potions/manaInfusionFlask.png"
+		"image": "/DnD-Wiki/images/potions/manaInfusionFlask.png"
 	},
 	{
 		"name": "Nightshade Nectar",
@@ -181,7 +181,7 @@
 		"tags": "Debuff, Stealth, Magic",
 		"stock": "1",
 		"price": "200 GP",
-		"image": "/images/potions/nightshadeNectar.png"
+		"image": "/DnD-Wiki/images/potions/nightshadeNectar.png"
 	},
 	{
 		"name": "Berserker’s Brew",
@@ -189,7 +189,7 @@
 		"tags": "Buff, Offensive, Risky",
 		"stock": "1",
 		"price": "400 GP",
-		"image": "/images/potions/berserkersBrew.png"
+		"image": "/DnD-Wiki/images/potions/berserkersBrew.png"
 	},
 	{
 		"name": "Potion of Rage",
@@ -197,7 +197,7 @@
 		"tags": "Buff, Offensive, Risky",
 		"stock": "1",
 		"price": "550 GP",
-		"image": "/images/potions/potionOfRage.png"
+		"image": "/DnD-Wiki/images/potions/potionOfRage.png"
 	},
 	{
 		"name": "Fungal Elixir of Foresight",
@@ -205,6 +205,6 @@
 		"tags": "Buff, Combat, Initiative",
 		"stock": "2",
 		"price": "350 GP",
-		"image": "/images/potions/fungalElixirOfForesight.png"
+		"image": "/DnD-Wiki/images/potions/fungalElixirOfForesight.png"
 	}
 ]

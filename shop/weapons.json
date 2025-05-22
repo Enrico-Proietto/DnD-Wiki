@@ -6,7 +6,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "275 GP",
-        "image": "/images/gear/censerOfSerenity.png"
+        "image": "/DnD-Wiki/images/gear/censerOfSerenity.png"
     },
     {
         "name": "Bloodbite",
@@ -15,7 +15,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "400 GP",
-        "image": "/images/gear/bloodbite.png"
+        "image": "/DnD-Wiki/images/gear/bloodbite.png"
     },
     {
         "name": "Dagger of the Last Breath",
@@ -24,7 +24,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "250 GP",
-        "image": "/images/gear/daggerOfTheLastBreath.png"
+        "image": "/DnD-Wiki/images/gear/daggerOfTheLastBreath.png"
     },
     {
         "name": "Oathbound Shield",
@@ -33,7 +33,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "350 GP",
-        "image": "/images/gear/oathboundShield.png"
+        "image": "/DnD-Wiki/images/gear/oathboundShield.png"
     },
     {
         "name": "Rime-Touched Sword",
@@ -42,7 +42,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "300 GP",
-        "image": "/images/gear/rimeTouchedSword.png"
+        "image": "/DnD-Wiki/images/gear/rimeTouchedSword.png"
     },
     {
         "name": "Ghoststep Boots",
@@ -51,7 +51,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "275 GP",
-        "image": "/images/gear/ghoststepBoots.png"
+        "image": "/DnD-Wiki/images/gear/ghoststepBoots.png"
     },
     {
         "name": "Thunderjaw Maul",
@@ -60,7 +60,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "400 GP",
-        "image": "/images/gear/thunderjawMaul.png"
+        "image": "/DnD-Wiki/images/gear/thunderjawMaul.png"
     },
     {
         "name": "Chainmail of the Stalwart",
@@ -69,7 +69,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "325 GP",
-        "image": "/images/gear/chainmailOfTheStalwart.png"
+        "image": "/DnD-Wiki/images/gear/chainmailOfTheStalwart.png"
     },
     {
         "name": "Twinfang Blades",
@@ -78,7 +78,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "350 GP",
-        "image": "/images/gear/twinfangBlades.png"
+        "image": "/DnD-Wiki/images/gear/twinfangBlades.png"
     },
     {
         "name": "Verdant Thornbow",
@@ -87,7 +87,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "375 GP",
-        "image": "/images/gear/verdantThornbow.png"
+        "image": "/DnD-Wiki/images/gear/verdantThornbow.png"
     },
     {
         "name": "Helm of Clear Thought",
@@ -96,7 +96,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "200 GP",
-        "image": "/images/gear/helmOfClearThought.png"
+        "image": "/DnD-Wiki/images/gear/helmOfClearThought.png"
     },
     {
         "name": "Spitefang Spear",
@@ -105,7 +105,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "300 GP",
-        "image": "/images/gear/spitefangSpear.png"
+        "image": "/DnD-Wiki/images/gear/spitefangSpear.png"
     },
     {
         "name": "The Gambler’s Dagger",
@@ -114,7 +114,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "300 GP",
-        "image": "/images/gear/theGamblersDagger.png"
+        "image": "/DnD-Wiki/images/gear/theGamblersDagger.png"
     },
     {
         "name": "Stormfang Bolts (Bundle of 5)",
@@ -123,7 +123,7 @@
         "rarity": "Uncommon",
         "stock": "25",
         "price": "125 GP",
-        "image": "/images/gear/stormfangBolts.png"
+        "image": "/DnD-Wiki/images/gear/stormfangBolts.png"
     },
     {
         "name": "The Barkskin Cloak",
@@ -132,7 +132,7 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "350 GP",
-        "image": "/images/gear/barkskinCloak.png"
+        "image": "/DnD-Wiki/images/gear/barkskinCloak.png"
     },
     {
         "name": "Shield of Echoing Steel",
@@ -141,6 +141,6 @@
         "rarity": "Uncommon",
         "stock": "1",
         "price": "250 GP",
-        "image": "/images/gear/shieldOfEchoingSteel.png"
+        "image": "/DnD-Wiki/images/gear/shieldOfEchoingSteel.png"
     }
 ]
