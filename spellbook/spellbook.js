@@ -545,7 +545,7 @@ document.querySelectorAll('.school-card').forEach(card => {
     card.addEventListener('click', () => {
         const school = [...card.classList].find(cls => sparkColors[cls]);
         if (school) {
-            navigateTo(`/DnD-Wiki/${school}/${school}.html`, school);
+            navigateTo(`${school}/${school}.html`, school);
         }
     });
 });

@@ -78,7 +78,7 @@ function createSpellCard(spell) {
 }
 
 async function populateSpells() {
-    const response = await fetch('conjuration.json');
+    const response = await fetch('/DnD-Wiki/spellbook/schools/conjuration/conjuration.json');
     const spells = await response.json();
 
     const container = document.getElementById('cardContainer');
@@ -194,6 +194,6 @@ function triggerFlash(callback, color) {
 function navigateTo(school) {
     const color = sparkColors[school] || '#fff';
     animateExitPentagram(color, () => {
-        window.location.href = `/spellbook/spellbook.html`;
+        window.location.href = `/DnD-Wiki/spellbook/spellbook.html`;
     });
 }
