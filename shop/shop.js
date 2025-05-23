@@ -49,11 +49,11 @@ async function loadShop(filename, theme) {
 function addToCart(name, button) {
   const key = name.replace(/\s+/g, '-').toLowerCase();
   const stockEl = document.getElementById(`stock-${key}`);
-  
+
   if (!stockEl) return;
 
   let currentStock = stockMemory[key];
-  
+
   if (currentStock <= 0) {
     alert('Out of stock!');
     return;
@@ -97,7 +97,7 @@ function renderCart() {
 
 function removeFromCart(name) {
   const key = name.replace(/\s+/g, '-').toLowerCase();
-  
+
   if (cart[name]) {
     cart[name]--;
     if (cart[name] <= 0) delete cart[name];
@@ -131,15 +131,13 @@ async function sendCart() {
 
   message += `\n**Total:** 💰 ${totalPrice} GP`;
 
-  const webhookUrl = "https://discord.com/api/webhooks/1366786932905873620/LSrUT4oYXynTTfOFhVt1pR0HYouBuWdC4XwRvh46soRgex_7rpBL2MTThNR0cYuNqWf6"; // replace this!
+  const formData = new FormData();
+  formData.append("message", message);
 
   try {
-    const response = await fetch(webhookUrl, {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbzZ9RL9K2i3nuGBEkcDPfQYH5XTQ_WclpKA-j5nFPZ5pCBTG5nf59vfOpSfgOZigZC2MA/exec', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        content: message
-      })
+      body: formData
     });
 
     if (response.ok) {
@@ -160,6 +158,6 @@ function clearCart() {
 }
 
 function toggleSidenav() {
-    document.querySelector(".sidenav").classList.toggle("collapsed");
-    document.querySelector(".main").classList.toggle("expanded");
+  document.querySelector(".sidenav").classList.toggle("collapsed");
+  document.querySelector(".main").classList.toggle("expanded");
 }

@@ -1,4 +1,3 @@
-
 // Add this so the cards use the transition
 document.querySelectorAll('.school-card').forEach(card => {
     card.addEventListener('click', () => {
@@ -8,6 +7,7 @@ document.querySelectorAll('.school-card').forEach(card => {
         }
     });
 });
+
 
 if (!sessionStorage.getItem("introPlayed")) {
 
@@ -39,15 +39,15 @@ if (!sessionStorage.getItem("introPlayed")) {
             ctx.fillStyle = gradient;
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            for (let i = 0; i < 100; i++) {
-                const x = Math.random() * canvas.width;
-                const y = Math.random() * canvas.height;
-                const radius = Math.random() * 1.5;
-                ctx.beginPath();
-                ctx.fillStyle = "#ffffff";
-                ctx.arc(x, y, radius, 0, 2 * Math.PI);
-                ctx.fill();
-            }
+                for (let i = 0; i < 100; i++) {
+                    const x = Math.random() * canvas.width;
+                    const y = Math.random() * canvas.height;
+                    const radius = Math.random() * 1.5;
+                    ctx.beginPath();
+                    ctx.fillStyle = "#ffffff";
+                    ctx.arc(x, y, radius, 0, 2 * Math.PI);
+                    ctx.fill();
+                }
 
             // Redraw completed pentagram lines
             completedLines.forEach(([from, to]) => {
@@ -181,6 +181,31 @@ if (!sessionStorage.getItem("introPlayed")) {
             }
 
             requestAnimationFrame(animate);
+        }
+
+        function drawStaticStarfield() {
+            const bgCanvas = document.getElementById("backgroundCanvas");
+            const bgCtx = bgCanvas.getContext("2d");
+            const centerX = bgCanvas.width / 2;
+            const centerY = bgCanvas.height / 2;
+
+            const gradient = bgCtx.createRadialGradient(centerX, centerY, 0, centerX, centerY, bgCanvas.width);
+            gradient.addColorStop(0, "#1c0e28");
+            gradient.addColorStop(0.5, "#0d0816");
+            gradient.addColorStop(1, "#050505");
+
+            bgCtx.fillStyle = gradient;
+            bgCtx.fillRect(0, 0, bgCanvas.width, bgCanvas.height);
+
+            for (let i = 0; i < 100; i++) {
+                const x = Math.random() * bgCanvas.width;
+                const y = Math.random() * bgCanvas.height;
+                const radius = Math.random() * 1.5;
+                bgCtx.beginPath();
+                bgCtx.fillStyle = "#ffffff";
+                bgCtx.arc(x, y, radius, 0, 2 * Math.PI);
+                bgCtx.fill();
+            }
         }
 
         function animateCircle(callback) {

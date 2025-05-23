@@ -166,17 +166,95 @@
     const form = document.getElementById('feedbackForm');
     const responseMsg = document.getElementById('responseMsg');
 
+    // form.addEventListener('submit', async (e) => {
+    //   e.preventDefault();
+
+    //   const feedbackItems = [];
+
+    //   // Loop through all labels, get their associated input/textarea
+    //   const labels = form.querySelectorAll('label');
+    //   labels.forEach(label => {
+    //     const forAttr = label.getAttribute('for');
+    //     if (!forAttr) return;
+
+    //     const input = form.querySelector(`#${forAttr}, [name="${forAttr}"]`);
+    //     if (!input) return;
+
+    //     let value = "";
+    //     if (input.type === "range") {
+    //       const output = document.getElementById(input.id + "val");
+    //       value = output ? output.textContent : input.value;
+    //     } else {
+    //       value = input.value;
+    //     }
+
+    //     if (value !== "") {
+    //       feedbackItems.push(`**${label.textContent.trim()}**\n${value}`);
+    //     }
+    //   });
+
+    //   const content = feedbackItems.join('\n\n');
+
+    //   const formData = new FormData();
+    //   formData.append("message", `📬 New Feedback:\n\n${content}`);
+
+    //   const res = await fetch('https://script.google.com/macros/s/AKfycbzRa5tx9SJGExtB1y1kTx8OmUezDjdPDIMdiX58n2xZQSr67pBc_197uaxB52N3yO1s/exec', {
+    //     method: 'POST',
+    //     body: formData
+    //   });
+
+    //   if (res.ok) {
+    //     responseMsg.textContent = "Thank you for your feedback!";
+    //     form.reset();
+    //   } else {
+    //     responseMsg.textContent = "Something went wrong. Please try again later.";
+    //   }
+    // });
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const data = new FormData(form);
-      const entries = Array.from(data.entries());
 
-      const content = entries.map(([key, value]) => `**${key.replace(/^q/, 'Q')}:** ${value}`).join('\n\n');
+      const feedbackItems = [];
 
-      const res = await fetch('https://discord.com/api/webhooks/1370127818377396284/Op1oF03rJBpVQK_eytGV5Tuq8Lxqa8Mu6KTZwM-t5QD3ERnmyYDEojlQlM8QjT9naoIc', {
+      const inputs = form.querySelectorAll('input[type="range"], input[type="text"], textarea');
+      inputs.forEach(input => {
+        let question = "";
+
+        // First try to find label using 'for' attribute
+        if (input.id) {
+          const label = form.querySelector(`label[for="${input.id}"]`);
+          if (label) question = label.textContent.trim();
+        }
+
+        // Fallback: find the nearest label before the input in the DOM
+        if (!question) {
+          let previous = input.previousElementSibling;
+          while (previous && previous.tagName !== 'LABEL') {
+            previous = previous.previousElementSibling;
+          }
+          if (previous) question = previous.textContent.trim();
+        }
+
+        // For sliders, get the visible output value
+        let value = input.value;
+        if (input.type === "range") {
+          const output = document.getElementById(input.id + "val");
+          if (output) value = output.textContent;
+        }
+
+        if (question && value !== "") {
+          feedbackItems.push(`**${question}**\n${value}`);
+        }
+      });
+
+      const content = feedbackItems.join('\n\n');
+
+      const formData = new FormData();
+      formData.append("message", `📬 New Feedback:\n\n${content}`);
+
+      const res = await fetch('https://script.google.com/macros/s/AKfycbzRa5tx9SJGExtB1y1kTx8OmUezDjdPDIMdiX58n2xZQSr67pBc_197uaxB52N3yO1s/exec', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ content: `📬 New Feedback:\n\n${content}` })
+        body: formData
       });
 
       if (res.ok) {
@@ -199,7 +277,7 @@
       output.style.color = `rgb(${red}, ${green}, 100)`;
     }
   </script>
-  <script src="feedback.js"></script>
+  <script src="/DnD-Wiki/feedback/feedback.js"></script>
 </body>
 
 </html>
