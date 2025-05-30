@@ -1,5 +1,5 @@
 const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbzKsO-qxCx0gtpf0U5__pOXxF46jLPVQXzO9xJWG_RIyFzMNNe06XZzP6Bqf9pwhOb5yg/exec';
-const playerGold = {};
+const playerStats = {};
 
 document.addEventListener('DOMContentLoaded', () => {
   loadPlayers();
@@ -124,10 +124,12 @@ function createPlayerCard(player) {
   const slots = createSpellSlotsMarkup(player);
   const statistics = createStatisticsMarkup(player);
 
-  let gold = getGoldOfPlayer(player.name);
+  console.log(`Creating card for player: ${player.name}`);
+  console.log(`Player data:`, player);
 
+  let gold = player.gp;
   if (gold === undefined || gold === null) {
-    gold = 0; // Default to 0 if gold is not available
+    gold = 0;
   }
 
   card.innerHTML = `
@@ -158,10 +160,6 @@ function createPlayerCard(player) {
   return card;
 }
 
-function getGoldOfPlayer(name) {
-  return playerGold[name] || 0;
-}
-
 
 async function loadPlayers() {
   try {
@@ -170,7 +168,7 @@ async function loadPlayers() {
     const playerList = Object.values(data).flat();
 
     showSkeletonCards();
-    await fetchAllPlayerGold(playerList); // 💰 Load all gold values first
+    await fetchAllPlayerStats(playerList); // 💰 Load all gold values first
 
     const container = document.getElementById('players-container');
     container.innerHTML = '';
@@ -186,14 +184,25 @@ async function loadPlayers() {
   }
 }
 
-async function fetchAllPlayerGold(playerList) {
+async function fetchAllPlayerStats(playerList) {
   const queryNames = playerList.map(p => p.name.includes(' ') ? p.name.split(' ')[0] : p.name).join(',');
   const response = await fetch(`${googleScriptUrl}?names=${encodeURIComponent(queryNames)}`);
-  const goldMap = await response.json();
+  const statMap = await response.json();
 
   playerList.forEach(player => {
     const key = player.name.includes(' ') ? player.name.split(' ')[0] : player.name;
-    playerGold[player.name] = goldMap[key] || 0;
+    const stats = statMap[key];
+    if (stats) {
+      player.hp = stats.hp;
+      player.ac = stats.ac;
+      player.gp = stats.gp;
+      player.level = stats.level;
+      player.xp = stats.xp;
+      player.xpNeededForUpgrade = stats.xpToLevel;
+      player.statistics[0].amount = stats.hits;
+      player.statistics[1].amount = stats.damage;
+      player.statistics[2].amount = stats.faints;
+    }
   });
 }
 
