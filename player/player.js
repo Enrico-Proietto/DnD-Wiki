@@ -1,3 +1,6 @@
+const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbzKsO-qxCx0gtpf0U5__pOXxF46jLPVQXzO9xJWG_RIyFzMNNe06XZzP6Bqf9pwhOb5yg/exec';
+const playerGold = {};
+
 document.addEventListener('DOMContentLoaded', () => {
   loadPlayers();
 });
@@ -17,6 +20,36 @@ function updateXPBlock(block) {
 
 function updateXPBlocks() {
   document.querySelectorAll('.xp-block').forEach(updateXPBlock);
+}
+
+function showSkeletonCards(count = 6) {
+  const container = document.getElementById('players-container');
+  container.innerHTML = '';
+  for (let i = 0; i < count; i++) {
+    const skeleton = document.createElement('div');
+    skeleton.className = 'player-card skeleton';
+    skeleton.innerHTML = `
+      <div class="skeleton-img"></div>
+      <div class="player-info">
+        <h2 class="skeleton-text long"></h2>
+        <div class="skeleton-text short"></div>
+        <div class="skeleton-text short"></div>
+        <div class="status-bars">
+          <div class="skeleton-bar small"></div>
+          <div class="skeleton-bar small"></div>
+          <div class="skeleton-bar small"></div>
+        </div>
+        <div class="level-bar">
+          <div class="level-label skeleton-text medium"></div>
+          <div class="progress-container">
+            <div class="progress-bar skeleton-progress"></div>
+          </div>
+          <div class="xp-label skeleton-text short"></div>
+        </div>
+      </div>
+    `;
+    container.appendChild(skeleton);
+  }
 }
 
 function createRaceMarkup(race) {
@@ -82,10 +115,20 @@ function createPlayerCard(player) {
   const card = document.createElement('div');
   card.className = 'player-card';
 
+  if (!player.serving) {
+    card.classList.add('grayscale');
+  }
+
   const raceHTML = createRaceMarkup(player.race);
   const alignmentHTML = createAlignmentMarkup(player.alignment);
   const slots = createSpellSlotsMarkup(player);
   const statistics = createStatisticsMarkup(player);
+
+  let gold = getGoldOfPlayer(player.name);
+
+  if (gold === undefined || gold === null) {
+    gold = 0; // Default to 0 if gold is not available
+  }
 
   card.innerHTML = `
     <a href="${player.pageSrc}">
@@ -99,7 +142,7 @@ function createPlayerCard(player) {
       <div class="status-bars">
         <div class="status hp"><span class="emoji">❤️</span> HP: <span>${player.hp}</span></div>
         <div class="status ac"><span class="emoji">🛡️</span> AC: <span>${player.ac}</span></div>
-        <div class="status gp"><span class="emoji">💰</span> GP: <span>${player.gp}</span></div>
+        <div class="status gp"><span class="emoji">💰</span> GP: <span>${gold}</span></div>
       </div>
       <div class="xp-block" data-current="${player.xp}" data-needed="${player.xpNeededForUpgrade}" data-level="${player.level}">
         <div class="level-label">Level <span class="levelValue"></span></div>
@@ -115,15 +158,24 @@ function createPlayerCard(player) {
   return card;
 }
 
+function getGoldOfPlayer(name) {
+  return playerGold[name] || 0;
+}
+
+
 async function loadPlayers() {
   try {
     const response = await fetch('/DnD-Wiki/player/player.json');
     const data = await response.json();
+    const playerList = Object.values(data).flat();
+
+    showSkeletonCards();
+    await fetchAllPlayerGold(playerList); // 💰 Load all gold values first
 
     const container = document.getElementById('players-container');
     container.innerHTML = '';
 
-    Object.values(data).flat().forEach(player => {
+    playerList.forEach(player => {
       const card = createPlayerCard(player);
       container.appendChild(card);
     });
@@ -132,6 +184,17 @@ async function loadPlayers() {
   } catch (err) {
     console.error('Failed to load characters:', err);
   }
+}
+
+async function fetchAllPlayerGold(playerList) {
+  const queryNames = playerList.map(p => p.name.includes(' ') ? p.name.split(' ')[0] : p.name).join(',');
+  const response = await fetch(`${googleScriptUrl}?names=${encodeURIComponent(queryNames)}`);
+  const goldMap = await response.json();
+
+  playerList.forEach(player => {
+    const key = player.name.includes(' ') ? player.name.split(' ')[0] : player.name;
+    playerGold[player.name] = goldMap[key] || 0;
+  });
 }
 
 function toggleSidenav() {

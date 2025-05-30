@@ -45,7 +45,8 @@
                     "name": "Faints",
                     "amount": 0
                 }
-            ]
+            ],
+            "serving": false
         }
     ],
     "belarus": [
@@ -103,7 +104,8 @@
                     "name": "Faints",
                     "amount": 0
                 }
-            ]
+            ],
+            "serving": true
         }
     ],
     "karwallo": [
@@ -146,7 +148,8 @@
                     "name": "Faints",
                     "amount": 0
                 }
-            ]
+            ],
+            "serving": true
         }
     ],
     "lein": [
@@ -190,7 +193,8 @@
                     "name": "Faints",
                     "amount": 0
                 }
-            ]
+            ],
+            "serving": true
         }
     ],
     "willump": [
@@ -236,7 +240,8 @@
                     "name": "Faints",
                     "amount": 0
                 }
-            ]
+            ],
+            "serving": true
         }
     ],
     "vergil": [
@@ -280,7 +285,8 @@
                     "name": "Faints",
                     "amount": 0
                 }
-            ]
+            ],
+            "serving": true
         }
     ],
     "shimazu": [
@@ -325,7 +331,8 @@
                     "name": "Faints",
                     "amount": 0
                 }
-            ]
+            ],
+            "serving": true
         }
     ]
 }
