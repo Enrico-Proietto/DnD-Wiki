@@ -78,10 +78,10 @@
                 ],
                 "meele": [
                     {
-                        "name": "Shortsword",
-                        "description": "",
-                        "imageSrc": "",
-                        "imageAlt": "No image unavailable"
+                        "name": "Drakesoul Blade",
+                        "description": "A masterfully crafted longsword with a blade infused with draconic essence, glowing faintly with purple energy.",
+                        "imageSrc": "/DnD-Wiki/images/gear/drakesoilBlade.png",
+                        "imageAlt": "A beautiful Longsword."
                     },
                     {
                         "name": "Shortsword",
