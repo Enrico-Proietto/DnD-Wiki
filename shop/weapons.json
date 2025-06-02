@@ -22,7 +22,7 @@
         "description": "A thin, blackened blade forged with cold iron. Its edge seems to disappear when held still.",
         "tags": "Dagger",
         "rarity": "Uncommon",
-        "stock": "1",
+        "stock": "0",
         "price": "250 GP",
         "image": "/DnD-Wiki/images/gear/daggerOfTheLastBreath.png"
     },
@@ -49,7 +49,7 @@
         "description": "Boots made of gray leather and stitched with spectral sinew.",
         "tags": "Boots",
         "rarity": "Uncommon",
-        "stock": "1",
+        "stock": "0",
         "price": "275 GP",
         "image": "/DnD-Wiki/images/gear/ghoststepBoots.png"
     },
@@ -67,7 +67,7 @@
         "description": "Forged by dwarves, reinforced with adamantine rivets.",
         "tags": "Chestplate",
         "rarity": "Uncommon",
-        "stock": "1",
+        "stock": "0",
         "price": "325 GP",
         "image": "/DnD-Wiki/images/gear/chainmailOfTheStalwart.png"
     },
@@ -76,7 +76,7 @@
         "description": "Forged to be used together. When both blades hit the same target, they empower each other.",
         "tags": "Shortswords",
         "rarity": "Uncommon",
-        "stock": "1",
+        "stock": "0",
         "price": "350 GP",
         "image": "/DnD-Wiki/images/gear/twinfangBlades.png"
     },
@@ -94,7 +94,7 @@
         "description": "A steel helm inlaid with blue crystals. It feels cool against the head.",
         "tags": "Helmet",
         "rarity": "Uncommon",
-        "stock": "1",
+        "stock": "0",
         "price": "200 GP",
         "image": "/DnD-Wiki/images/gear/helmOfClearThought.png"
     },
@@ -112,7 +112,7 @@
         "description": "A sleek blade engraved with dice and cards. Slightly curved, made for duels and bluffs.",
         "tags": "Dagger, Magical",
         "rarity": "Uncommon",
-        "stock": "1",
+        "stock": "0",
         "price": "300 GP",
         "image": "/DnD-Wiki/images/gear/theGamblersDagger.png"
     },

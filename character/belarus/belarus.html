@@ -4,40 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./belarus.css">
+  <link rel="stylesheet" href="../../../sidenav.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
   <title>Belarus Equipment - Whispers from the Void</title>
 </head>
 
 <body>
   <div class="layout">
-
-    <div class="sidenav">
-      <button class="toggle-btn" onclick="toggleSidenav()" aria-label="Toggle Navigation Menu">☰</button>
-
-      <h2 role="heading" aria-level="1"><span class="aurora-text">Whispers from the Void</span></h2>
-
-      <div class="nav-section">
-        <a class="player" href="/DnD-Wiki/player/player.html">👥 Players</a>
-        <a class="calender" href="/DnD-Wiki/calender/calender.html">📅 Calendar</a>
-        <a class="time" href="/DnD-Wiki/timeline/timeline.html">🕰️ Timeline</a>
-      </div>
-
-      <div class="nav-section">
-        <a class="lore" href="/DnD-Wiki/lore/lore.html">📜 Chronical</a>
-        <a href="/DnD-Wiki/spellbook/spellbook.html">📖 <span class="aurora-text">Spellbook</span></a>
-        <a class="gods" href="/DnD-Wiki/gods/pantheon.html">⛪ Pantheon</a>
-        <a class="pillar" href="/DnD-Wiki/pillars/pillars.html">💠 Mythical Powers</a>
-        <a class="demon" href="/DnD-Wiki/demonomicon/demonomicon.html">🩸 Demonomicon</a>
-        <a class="beastiary" href="/DnD-Wiki/beastiary/beastiary.html">🐉 Beastiary</a>
-        <a class="faction" href="/DnD-Wiki/faction/faction.html">⚔️ Factions</a>
-      </div>
-
-      <div class="nav-section">
-        <a class="gp" href="/DnD-Wiki/gold/gold.html">💰 Gold</a>
-        <a class="shop" href="/DnD-Wiki/shop/shop.html">🛒 Shop</a>
-        <a class="feedback" href="/DnD-Wiki/feedback/feedback.html">📝 Feedback</a>
-      </div>
-    </div>
 
     <div class="header">
       <div class="name" id="characterName"></div>
@@ -48,12 +21,17 @@
       </div>
     </div>
     <div class="center">
-      <div class="section-toggle">
+      <div id="sectionToggle" class="section-toggle" style="display: none;">
         <button onclick="switchTo('equipment')">Equipment</button>
         <button onclick="switchTo('abilities')">Power</button>
       </div>
 
-      <div id="equipmentSection">
+      <div id="skeletonSection" class="skeleton-section-toggle">
+        <div class="equipment-skeleton"></div>
+        <div class="abilities-skeleton"></div>
+      </div>
+
+      <div id="equipmentSection" style="display: none;">
         <div class="middle-row">
           <div class="leftGear-column" id="leftGear"></div>
           <div class="character-image">
@@ -67,7 +45,37 @@
         </div>
       </div>
       <div id="abilitiesSection" style="display: none;"></div>
+
+
+      <div id="equipmentSkeleton">
+        <div class="middle-row">
+          <div class="leftGear-column">
+            <div class="leftGear-slot-skeleton"></div>
+            <div class="leftGear-slot-skeleton"></div>
+            <div class="leftGear-slot-skeleton"></div>
+            <div class="leftGear-slot-skeleton"></div>
+            <div class="leftGear-slot-skeleton"></div>
+          </div>
+          <div class="character-image-skeleton"></div>
+          <div class="rightGear-column">
+            <div class="rightGear-slot-skeleton"></div>
+            <div class="rightGear-slot-skeleton"></div>
+            <div class="rightGear-slot-skeleton"></div>
+          </div>
+        </div>
+        <div class="gear-row">
+          <div class="meele-row">
+            <div class="meele-slot-skeleton"></div>
+            <div class="meele-slot-skeleton"></div>
+          </div>
+          <div class="range-row">
+            <div class="range-slot-skeleton"></div>
+            <div class="range-slot-skeleton"></div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="footer">
       <div style="display: flex; gap: 40px; font-size: 16px;">
         <div class="abilities" id="abilitiesBlock"></div>
@@ -76,8 +84,10 @@
       </div>
     </div>
     <div class="inventory"></div>
+
   </div>
 
+  <script src="../../../sidenav.js"></script>
   <script src="/DnD-Wiki/character/belarus/belarus.js"></script>
   <script src="/DnD-Wiki/character/toggleTooltip.js"></script>
 </body>

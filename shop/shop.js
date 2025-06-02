@@ -22,6 +22,9 @@ async function loadShop(filename, theme) {
 
       const card = document.createElement('div');
       card.className = `item-card rarity-${item.rarity}`;
+      if (stockMemory[safeName] === 0) {
+        card.classList.add('out-of-stock');
+      }
 
       const tags = item.tags.split(',').map(tag => {
         const trimmed = tag.trim();
@@ -36,7 +39,7 @@ async function loadShop(filename, theme) {
       <p class="description">${item.description}</p>
       <p class="stock" id="stock-${safeName}">Stock: ${stockMemory[safeName]}</p>
       <div class="price">💰 ${item.price}</div>
-      <button class="add-button" onclick="addToCart('${item.name}', this)">🛒 Add to Cart</button>
+      <button class="add-button" onclick="addToCart('${item.name}', this)" ${stockMemory[safeName] === 0 ? 'disabled' : ''}>🛒 Add to Cart</button>
       `;
 
       container.appendChild(card);

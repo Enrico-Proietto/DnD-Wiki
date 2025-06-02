@@ -46,9 +46,9 @@
             "gear": {
                 "leftGear": [
                     {
-                        "name": "Head Gear Slot",
-                        "description": "Currently this slot is empty.",
-                        "imageSrc": "",
+                        "name": "Helm of Clear Thought",
+                        "description": "While worn, +1 to Intelligence saving throws. You can’t be surprised while conscious and you always know the direction of true north.<br><br> <i>A steel helm inlaid with blue crystals. It feels cool against the head.</i>",
+                        "imageSrc": "/DnD-Wiki/images/gear/helmOfClearThought.png",
                         "imageAlt": "No image unavailable"
                     },
                     {
@@ -78,15 +78,15 @@
                 ],
                 "meele": [
                     {
-                        "name": "Drakesoul Blade",
-                        "description": "A masterfully crafted longsword with a blade infused with draconic essence, glowing faintly with purple energy.",
-                        "imageSrc": "/DnD-Wiki/images/gear/drakesoulBlade.png",
+                        "name": "Twinfang Blades",
+                        "description": "Each blade makes 1d10 + 1d6 piercing damage. If both blades hit the same target in one round, deal +1d4 bonus damage. <br><br>A <span class='fire'>fire</span> rune is imbedded in this sword. Each hit deals extra 1d4 <span class='fire'>fire</span> damage. <br><br><i>Forged to be used together. When both blades hit the same target, they empower each other.</i>",
+                        "imageSrc": "/DnD-Wiki/images/gear/twinfangBlades.png",
                         "imageAlt": "A beautiful Longsword."
                     },
                     {
-                        "name": "Shortsword",
-                        "description": "",
-                        "imageSrc": "",
+                        "name": "Twinfang Blades",
+                        "description": "Each blade makes 1d10 + 1d6 piercing damage. If both blades hit the same target in one round, deal +1d4 bonus damage. <br><br>A <span class='lightning'>lightning</span> rune is imbedded in this sword. Each hit deals extra 1d4 <span class='lightning'>lightning</span> damage. <br><br><i>Forged to be used together. When both blades hit the same target, they empower each other.</i>",
+                        "imageSrc": "/DnD-Wiki/images/gear/twinfangBlades.png",
                         "imageAlt": "No image unavailable"
                     }
                 ],

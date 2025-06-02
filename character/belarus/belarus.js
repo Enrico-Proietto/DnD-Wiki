@@ -2,29 +2,32 @@ let characterData;
 
 async function loadCharacter() {
   try {
-    const response = await fetch('/DnD-Wiki/character/belarus/belarus.json');
+    const characterName = 'Belarus Radowani';
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbxGcNVD9QIAtzQzDOL1ZPo-gk7jzvbkHOV6yPiFddDDOWaHKdPNhqeqTKXnGxDMIY2zRg/exec';
+
+    const response = await fetch(`${scriptUrl}?name=${encodeURIComponent(characterName)}`);
     const data = await response.json();
     characterData = data;
-    const belarus = data.belarus[0];
+    const belarus = Object.values(data)[0][0];
 
     // Update name
-    document.getElementById('characterName').textContent = belarus.name;
+    document.getElementById('characterName').textContent = belarus.Name;
 
     // Update HP, AC
-    document.getElementById('hpValue').textContent = belarus.hp;
-    document.getElementById('acValue').textContent = belarus.ac;
-    document.getElementById('gpValue').textContent = belarus.gp;
+    document.getElementById('hpValue').textContent = belarus.HP;
+    document.getElementById('acValue').textContent = belarus.AC;
+    document.getElementById('gpValue').textContent = belarus.GP;
 
     // Update Abilities
     const abilitiesHTML = `
-        <strong>Abilities:</strong><br>
-        STR: ${belarus.abilityScores.strength} | 
-        DEX: ${belarus.abilityScores.dexterity} | 
-        CON: ${belarus.abilityScores.constitution}<br>
-        INT: ${belarus.abilityScores.intelligence} | 
-        WIS: ${belarus.abilityScores.wisdom} | 
-        CHA: ${belarus.abilityScores.charisma}
-      `;
+    <strong>Abilities:</strong><br>
+    STR: ${belarus.abilityScores.STR} |
+    DEX: ${belarus.abilityScores.DEX} |
+    CON: ${belarus.abilityScores.CON}<br>
+    INT: ${belarus.abilityScores.INT} |
+    WIS: ${belarus.abilityScores.WIS} |
+    CHA: ${belarus.abilityScores.CHA}
+    `;
     document.getElementById('abilitiesBlock').innerHTML = abilitiesHTML;
 
     // Update Skills
@@ -128,7 +131,7 @@ async function loadCharacter() {
     const inventoryDiv = document.querySelector('.inventory');
     inventoryDiv.innerHTML = '<h2>Inventory</h2>';
 
-    Object.values(belarus.items).forEach(item => {
+    belarus.items.forEach(item => {
       const inventoryItem = document.createElement('div');
       inventoryItem.classList.add('inventory-item');
       inventoryItem.innerHTML = `
@@ -141,6 +144,18 @@ async function loadCharacter() {
       `;
       inventoryDiv.appendChild(inventoryItem);
     });
+
+    const skeleton = document.getElementById('equipmentSkeleton');
+    if (skeleton) skeleton.remove();
+
+    const skeletonSection = document.getElementById('skeletonSection');
+    if (skeletonSection) skeletonSection.remove();
+
+    const equipment = document.getElementById('equipmentSection');
+    if (equipment) equipment.style.display = 'block';
+
+    const section = document.getElementById('sectionToggle');
+    if (section) section.style.display = 'block';
 
   } catch (err) {
     console.error('Failed to load character data:', err);
@@ -184,7 +199,10 @@ function switchTo(section) {
 }
 
 function renderAbilities() {
-  const belarus = characterData.belarus[0];
+  console.log('Rendering abilities...');
+  console.log(characterData);
+
+  const belarus = characterData.belarusRadowani[0];
   const section = document.getElementById('abilitiesSection');
   if (section.innerHTML.trim()) return;
 
@@ -206,8 +224,16 @@ function renderAbilities() {
     return block;
   };
 
-  html += renderCategory('Feats', belarus.feats);
-  html += renderCategory('Powers', belarus.power, true);
+  html += renderCategory('Feats', belarus.feats.map(f => ({
+    name: f["Feat Name"],
+    description: f.Description
+  })));
+
+  html += renderCategory('Powers', belarus.power.map(p => ({
+    name: p["Power Name"],
+    description: p.Description,
+    cooldown: p.Cooldown
+  })), true);
   html += renderCategory('Class Abilities', belarus.classAbilities);
   html += renderCategory('Race Abilities', belarus.raceAbilities);
 

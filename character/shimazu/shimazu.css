@@ -289,7 +289,6 @@ body {
 .rightGear-slot {
   width: 80px;
   height: 80px;
-  padding: 10px 15px;
   border-radius: 8px;
 }
 
@@ -763,4 +762,12 @@ body {
 .range-slot:hover .tooltip,
 .spell-slot:hover .tooltip {
   display: block;
+}
+
+.fire {
+  color: rgb(211, 78, 78)
+}
+
+.lightning {
+  color: rgb(95, 95, 219);
 }
