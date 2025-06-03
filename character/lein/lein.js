@@ -2,28 +2,31 @@ let characterData;
 
 async function loadCharacter() {
   try {
-    const response = await fetch('/DnD-Wiki/character/lein/lein.json');
+    const characterName = 'Lein';
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbxGcNVD9QIAtzQzDOL1ZPo-gk7jzvbkHOV6yPiFddDDOWaHKdPNhqeqTKXnGxDMIY2zRg/exec';
+
+    const response = await fetch(`${scriptUrl}?name=${encodeURIComponent(characterName)}`);
     const data = await response.json();
     characterData = data;
-    const lein = data.lein[0];
+    const lein = Object.values(data)[0][0];
 
     // Update name
-    document.getElementById('characterName').textContent = lein.name;
+    document.getElementById('characterName').textContent = lein.Name;
 
     // Update HP, AC
-    document.getElementById('hpValue').textContent = lein.hp;
-    document.getElementById('acValue').textContent = lein.ac;
-    document.getElementById('gpValue').textContent = lein.gp;
+    document.getElementById('hpValue').textContent = lein.HP;
+    document.getElementById('acValue').textContent = lein.AC;
+    document.getElementById('gpValue').textContent = lein.GP;
 
     // Update Abilities
     const abilitiesHTML = `
         <strong>Abilities:</strong><br>
-        STR: ${lein.abilityScores.strength} | 
-        DEX: ${lein.abilityScores.dexterity} | 
-        CON: ${lein.abilityScores.constitution}<br>
-        INT: ${lein.abilityScores.intelligence} | 
-        WIS: ${lein.abilityScores.wisdom} | 
-        CHA: ${lein.abilityScores.charisma}
+        STR: ${lein.abilityScores.STR} | 
+        DEX: ${lein.abilityScores.DEX} | 
+        CON: ${lein.abilityScores.CON}<br>
+        INT: ${lein.abilityScores.INT} | 
+        WIS: ${lein.abilityScores.WIS} | 
+        CHA: ${lein.abilityScores.CHA}
       `;
     document.getElementById('abilitiesBlock').innerHTML = abilitiesHTML;
 
@@ -75,7 +78,7 @@ async function loadCharacter() {
       meeleSlot.setAttribute('onClick', 'toggleTooltipMeele(this)');
 
       meeleSlot.innerHTML = `
-      <img class="meeleImg" src="${meele.imageSrc}" alt="${meele.imageAlt}">
+      <img class="meeleImg" src="${meele.imageSrc}">
         <div class="meele-tooltip tooltip tooltip-bottom">
           <strong>${meele.name}</strong><br>
           ${meele.description}
@@ -95,7 +98,7 @@ async function loadCharacter() {
       rangeSlot.setAttribute('onClick', 'toggleTooltipRange(this)');
 
       rangeSlot.innerHTML = `
-      <img class="rangeImg" src="${range.imageSrc}" alt="${range.imageAlt}">
+      <img class="rangeImg" src="${range.imageSrc}">
         <div class="range-tooltip tooltip tooltip-bottom">
           <strong>${range.name}</strong><br>
           ${range.description}
@@ -142,6 +145,18 @@ async function loadCharacter() {
       `;
       inventoryDiv.appendChild(inventoryItem);
     });
+
+    const skeleton = document.getElementById('equipmentSkeleton');
+    if (skeleton) skeleton.remove();
+
+    const skeletonSection = document.getElementById('skeletonSection');
+    if (skeletonSection) skeletonSection.remove();
+
+    const equipment = document.getElementById('equipmentSection');
+    if (equipment) equipment.style.display = 'block';
+
+    const section = document.getElementById('sectionToggle');
+    if (section) section.style.display = 'block';
 
   } catch (err) {
     console.error('Failed to load character data:', err);
@@ -210,8 +225,16 @@ function renderAbilities() {
     return block;
   };
 
-  html += renderCategory('Feats', lein.feats);
-  html += renderCategory('Powers', lein.power, true);
+  html += renderCategory('Feats', lein.feats.map(f => ({
+    name: f["Feat Name"],
+    description: f.Description
+  })));
+
+  html += renderCategory('Powers', lein.power.map(p => ({
+    name: p["Power Name"],
+    description: p.Description,
+    cooldown: p.Cooldown
+  })), true);
   html += renderCategory('Class Abilities', lein.classAbilities);
   html += renderCategory('Race Abilities', lein.raceAbilities);
 
