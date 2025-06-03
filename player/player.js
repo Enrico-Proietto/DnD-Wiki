@@ -124,9 +124,6 @@ function createPlayerCard(player) {
   const slots = createSpellSlotsMarkup(player);
   const statistics = createStatisticsMarkup(player);
 
-  console.log(`Creating card for player: ${player.name}`);
-  console.log(`Player data:`, player);
-
   let gold = player.gp;
   if (gold === undefined || gold === null) {
     gold = 0;
@@ -202,6 +199,21 @@ async function fetchAllPlayerStats(playerList) {
       player.statistics[0].amount = stats.hits;
       player.statistics[1].amount = stats.damage;
       player.statistics[2].amount = stats.faints;
+      if(player.ragePoints) {
+        player.ragePoints = stats.rageSlots;
+      }
+      if(player.spellslotLvl1) {
+        player.spellslotLvl1 = stats.lvl1SpellSlot;
+      }
+      if(player.spellslotLvl2) {
+        player.spellslotLvl2 = stats.lvl2SpellSlot;
+      }
+      if(player.spellslotLvl3) {
+        player.spellslotLvl3 = stats.lvl3SpellSlot;
+      }
+      if(player.kiSlots) {
+        player.kiSlots = stats.kiSlots;
+      }
     }
   });
 }
