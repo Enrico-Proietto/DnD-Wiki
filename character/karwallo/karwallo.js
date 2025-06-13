@@ -10,7 +10,7 @@ async function loadCharacter() {
     characterData = data;
     const karwallo = Object.values(data)[0][0];
 
-    document.getElementById('characterName').textContent = karwallo.name;
+    document.getElementById('characterName').textContent = karwallo.Name;
 
     document.getElementById('hpValue').textContent = karwallo.HP;
     document.getElementById('acValue').textContent = karwallo.AC;
@@ -107,7 +107,7 @@ async function loadCharacter() {
       inventoryItem.innerHTML = `
         ${item.name} (x${item.amount})
         <div class="item-tooltip">
-          ${item.name}
+          <strong>${item.name}</strong>
           <img src="${item.imageSrc}" style="max-width: 200px;"><br>
           ${item.description}
         </div>

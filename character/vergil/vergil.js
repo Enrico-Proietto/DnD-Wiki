@@ -88,7 +88,7 @@ async function loadCharacter() {
       gearSlot.setAttribute('onClick', 'toggleTooltipRightGear(this)')
 
       gearSlot.innerHTML = `
-            <img class="rightGearImg" src="${gear.imageSrc}">
+            <img class="leftGearImg" src="${gear.imageSrc}">
             <div class="rightGear-tooltip tooltip tooltip-right">
              <strong>${gear.name}</strong><br>
              ${gear.description}
@@ -108,8 +108,8 @@ async function loadCharacter() {
       inventoryItem.innerHTML = `
         ${item.name} (x${item.amount})
         <div class="item-tooltip">
-          ${item.name}
-          <img src="${item.imageSrc}" alt="${item.imageAlt}" style="max-width: 200px;"><br>
+          <strong>${item.name}</strong>
+          <img src="${item.imageSrc}" alt="${item.imageAlt}" style="max-width: 200px;">
           ${item.description}
         </div>
       `;

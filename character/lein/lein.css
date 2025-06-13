@@ -19,7 +19,7 @@ body {
     "sidenav header inventory"
     "sidenav center inventory"
     "sidenav center inventory";
-  grid-template-columns: 200px 1fr 350px;
+  grid-template-columns: 200px 1fr 450px;
   grid-template-rows: 80px 1fr 100px;
   height: 100vh;
 }
@@ -190,13 +190,13 @@ body {
 }
 .item-tooltip {
   position: absolute;
-  transform: translateX(20%);
+  transform: translateX(15%);
   z-index: 1000;
   background-color: #3a2e24;
   color: #f8e4b4;
   border: 1px solid #7a6246;
   padding: 10px;
-  max-width: 250px;
+  max-width: 350px;
   border-radius: 6px;
   display: none;
   white-space: normal;
@@ -207,6 +207,7 @@ body {
 .inventory-item:hover .item-tooltip {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .spell-tooltip {
@@ -1121,4 +1122,56 @@ details[open].spell-level-group {
 
 .spellLevel {
   color: #ef9dff;
+}
+
+/*---------------*/
+/*  Rarity Tags  */
+/*---------------*/
+
+.common {
+  color: #bfc9ca;
+}
+
+.uncommon {
+  color: #27AE60;
+}
+
+.rare {
+  color: #29a6fa;
+}
+
+.epic {
+  color: #8E44AD;
+}
+
+.legendary {
+  color: #F39C12;
+}
+
+.unique {
+  color: #C0392B;
+}
+
+/*------------------*/
+/*  Item Type Tags  */
+/*------------------*/
+
+.wondrousItems {
+  color: #ffd700;
+}
+
+.weapon {
+  color: #91a0af;
+}
+
+.armor {
+  color: #a77229;
+}
+
+.staff {
+  color: #228B22;
+}
+
+.scroll {
+  color: #F5DEB3;
 }

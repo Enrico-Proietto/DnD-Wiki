@@ -108,8 +108,8 @@ async function loadCharacter() {
       inventoryItem.innerHTML = `
           ${item.name} (x${item.amount})
           <div class="item-tooltip">
-            ${item.name}
-            <img src="${item.imageSrc}" alt="${item.imageAlt}" style="max-width: 200px;"><br>
+            <strong>${item.name}</strong>
+            <img src="${item.imageSrc}" alt="${item.imageAlt}" style="max-width: 200px;">
             ${item.description}
           </div>
         `;
