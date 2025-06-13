@@ -2,43 +2,21 @@ let characterData;
 
 async function loadCharacter() {
   try {
-    const response = await fetch('/DnD-Wiki/character/vergil/vergil.json');
+    const characterName = 'Vergil Aoden';
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbxGcNVD9QIAtzQzDOL1ZPo-gk7jzvbkHOV6yPiFddDDOWaHKdPNhqeqTKXnGxDMIY2zRg/exec';
+
+    const response = await fetch(`${scriptUrl}?name=${encodeURIComponent(characterName)}`);
     const data = await response.json();
     characterData = data;
-    const vergil = data.vergil[0];
+    const vergil = Object.values(data)[0][0];
 
     // Update name
-    document.getElementById('characterName').textContent = vergil.name;
+    document.getElementById('characterName').textContent = vergil.Name;
 
     // Update HP, AC
-    document.getElementById('hpValue').textContent = vergil.hp;
-    document.getElementById('acValue').textContent = vergil.ac;
-    document.getElementById('gpValue').textContent = vergil.gp;
-
-    // Update Abilities
-    const abilitiesHTML = `
-        <strong>Abilities:</strong><br>
-        STR: ${vergil.abilityScores.strength} | 
-        DEX: ${vergil.abilityScores.dexterity} | 
-        CON: ${vergil.abilityScores.constitution}<br>
-        INT: ${vergil.abilityScores.intelligence} | 
-        WIS: ${vergil.abilityScores.wisdom} | 
-        CHA: ${vergil.abilityScores.charisma}
-      `;
-    document.getElementById('abilitiesBlock').innerHTML = abilitiesHTML;
-
-    // Update Skills
-    let number = 0;
-    let skillsHTML = `<strong>Skills:</strong><br>`;
-    Object.values(vergil.skills).forEach(skill => {
-      number = number + 1;
-      skillsHTML = skillsHTML + (`${skill.name} ${skill.amount} `)
-      if (number % 2 === 0) {
-        skillsHTML = skillsHTML + (`<br>`)
-      }
-    })
-    document.getElementById('skillsBlock').innerHTML = skillsHTML;
-
+    document.getElementById('hpValue').textContent = vergil.HP;
+    document.getElementById('acValue').textContent = vergil.AC;
+    document.getElementById('gpValue').textContent = vergil.GP;
 
     // Left Gear Column
     const gearLeftColumn = document.getElementById('leftGear');
@@ -69,7 +47,7 @@ async function loadCharacter() {
       meeleSlot.setAttribute('onClick', 'toggleTooltipMeele(this)');
 
       meeleSlot.innerHTML = `
-      <img class="meeleImg" src="${meele.imageSrc}" alt="${meele.imageAlt}">
+      <img class="meeleImg" src="${meele.imageSrc}">
         <div class="meele-tooltip tooltip tooltip-bottom">
           <strong>${meele.name}</strong><br>
           ${meele.description}
@@ -89,7 +67,7 @@ async function loadCharacter() {
       rangeSlot.setAttribute('onClick', 'toggleTooltipRange(this)');
 
       rangeSlot.innerHTML = `
-      <img class="rangeImg" src="${range.imageSrc}" alt="${range.imageAlt}">
+      <img class="rangeImg" src="${range.imageSrc}">
         <div class="range-tooltip tooltip tooltip-bottom">
           <strong>${range.name}</strong><br>
           ${range.description}
@@ -136,6 +114,18 @@ async function loadCharacter() {
       inventoryDiv.appendChild(inventoryItem);
     });
 
+    const skeleton = document.getElementById('equipmentSkeleton');
+    if (skeleton) skeleton.remove();
+
+    const skeletonSection = document.getElementById('skeletonSection');
+    if (skeletonSection) skeletonSection.remove();
+
+    const equipment = document.getElementById('equipmentSection');
+    if (equipment) equipment.style.display = 'block';
+
+    const section = document.getElementById('sectionToggle');
+    if (section) section.style.display = 'block';
+
   } catch (err) {
     console.error('Failed to load character data:', err);
   }
@@ -167,109 +157,376 @@ function toggleSidenav() {
 
 function switchTo(section) {
   const equip = document.getElementById('equipmentSection');
+  const spells = document.getElementById('spellSection');
   const abilities = document.getElementById('abilitiesSection');
+  const classAbilities = document.getElementById('classAbilitiesSection');
+  const raceAbilities = document.getElementById('raceAbilitiesSection');
+  const feats = document.getElementById('featsSection');
+  const mythicalPower = document.getElementById('mythicalPowerSection');
   const blessing = document.getElementById('blessingSection');
 
   if (section === 'equipment') {
     equip.style.display = 'block';
+    spells.style.display = 'none';
     abilities.style.display = 'none';
+    classAbilities.style.display = 'none';
+    raceAbilities.style.display = 'none';
+    feats.style.display = 'none';
+    mythicalPower.style.display = 'none';
     blessing.style.display = 'none';
+  }
+
+  if (section === 'spells') {
+    equip.style.display = 'none';
+    spells.style.display = 'block';
+    abilities.style.display = 'none';
+    classAbilities.style.display = 'none';
+    raceAbilities.style.display = 'none';
+    feats.style.display = 'none';
+    mythicalPower.style.display = 'none';
+    blessing.style.display = 'none';
+    renderSpells();
   }
 
   if (section === 'abilities') {
     equip.style.display = 'none';
+    spells.style.display = 'none';
     abilities.style.display = 'block';
+    classAbilities.style.display = 'none';
+    raceAbilities.style.display = 'none';
+    feats.style.display = 'none';
+    mythicalPower.style.display = 'none';
     blessing.style.display = 'none';
     renderAbilities();
   }
 
+  if (section === 'classAbilities') {
+    equip.style.display = 'none';
+    spells.style.display = 'none';
+    abilities.style.display = 'none';
+    classAbilities.style.display = 'block';
+    raceAbilities.style.display = 'none';
+    feats.style.display = 'none';
+    mythicalPower.style.display = 'none';
+    blessing.style.display = 'none';
+    renderClassAbilities();
+  }
+
+  if (section === 'raceAbilities') {
+    equip.style.display = 'none';
+    spells.style.display = 'none';
+    abilities.style.display = 'none';
+    classAbilities.style.display = 'none';
+    raceAbilities.style.display = 'block';
+    feats.style.display = 'none';
+    mythicalPower.style.display = 'none';
+    blessing.style.display = 'none';
+    renderRaceAbilities();
+  }
+
+  if (section === 'feats') {
+    equip.style.display = 'none';
+    spells.style.display = 'none';
+    abilities.style.display = 'none';
+    classAbilities.style.display = 'none';
+    raceAbilities.style.display = 'none';
+    feats.style.display = 'block';
+    mythicalPower.style.display = 'none';
+    blessing.style.display = 'none';
+    renderFeats();
+  }
+
+  if (section === 'mythicalPower') {
+    equip.style.display = 'none';
+    spells.style.display = 'none';
+    abilities.style.display = 'none';
+    classAbilities.style.display = 'none';
+    raceAbilities.style.display = 'none';
+    feats.style.display = 'none';
+    mythicalPower.style.display = 'block';
+    blessing.style.display = 'none';
+    renderPower();
+  }
+
   if (section === 'blessing') {
     equip.style.display = 'none';
+    spells.style.display = 'none';
     abilities.style.display = 'none';
+    classAbilities.style.display = 'none';
+    raceAbilities.style.display = 'none';
+    feats.style.display = 'none';
+    mythicalPower.style.display = 'none';
     blessing.style.display = 'block';
     renderBlessing();
   }
 
 }
 
+function getAbilityModifierString(score) {
+  const mod = Math.floor((score - 10) / 2);
+  return (mod >= 0 ? '+' : '') + mod;
+}
+
 function renderAbilities() {
-  const vergil = characterData.vergil[0];
+  const vergil = characterData.vergilAoden[0];
   const section = document.getElementById('abilitiesSection');
-  if (section.innerHTML.trim()) return;
+  const { abilityScores, skills } = vergil;
 
-  let html = '';
+  let html = '<div class="abilities-wrapper">';
 
-  const renderCategory = (title, items, isPower = false) => {
-    if (!items || items.length === 0) return '';
-    let block = `<h3 class="ability-section-title">${title}</h3><div class="ability-grid">`;
-    items.forEach(entry => {
-      block += `
-        <div class="ability-card">
-          <h4>${entry.name}</h4>
-          ${isPower ? `<div class="cooldown">${entry.cooldown}</div>` : ''}
-          <div>${entry.description}</div>
-        </div>
-      `;
-    });
-    block += '</div>';
-    return block;
-  };
+  // Define order and full names for abilities
+  const abilityOrder = [
+    { key: "STR", name: "Strength" },
+    { key: "DEX", name: "Dexterity" },
+    { key: "CON", name: "Constitution" },
+    { key: "INT", name: "Intelligence" },
+    { key: "WIS", name: "Wisdom" },
+    { key: "CHA", name: "Charisma" }
+  ];
 
-  html += renderCategory('Feats', vergil.feats);
-  html += renderCategory('Powers', vergil.power, true);
-  html += renderCategory('Class Abilities', vergil.classAbilities);
-  html += renderCategory('Race Abilities', vergil.raceAbilities);
+  // Render ability scores
+  html += `<h2 class="title">Ability Scores</h2><div class="abilityScore-grid">`;
 
+  abilityOrder.forEach(({ key, name }) => {
+    const score = abilityScores[key];
+    html += `
+      <div class="abilityScore-div ${name.toLowerCase()}">
+        <h4>${name}</h4>
+        <span class="abilityScore-span">${score} (${getAbilityModifierString(score)})</span>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+
+  // Render skills
+  html += `<h2 class="title">Skills</h2><div class="abilityScore-grid">`;
+
+  skills.forEach(skill => {
+    const bonus = skill.amount >= 0 ? `+${skill.amount}` : skill.amount;
+    html += `
+      <div class="skill-div ${skill.name.toLowerCase().replace(/\s/g, '-')}">
+        <span class="skill-name">${skill.name}</span>
+        <span class="skill-bonus">${bonus}</span>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+  html += `</div>`;
+
+  section.innerHTML = html;
+}
+
+function renderSpells() {
+  const vergil = characterData.vergilAoden[0];
+  const section = document.getElementById('spellSection');
   const spells = vergil.spells;
-  if (spells && Object.keys(spells).length > 0) {
-    html += renderSpells(vergil.spells);
+
+  let slotBlock = renderSpellSlots(vergil);
+  let knownSpellBlock = renderKnownSpells(spells);
+  let preparedSpellBlock = renderPreparedSpellsGrouped(spells)
+
+  section.innerHTML = slotBlock + knownSpellBlock + preparedSpellBlock;
+}
+
+function renderSpellSlots(slots) {
+  let html = `<div class="spell-slots-container">`;
+  html += `<div class="spell-slots-header">Spell Slots</div><div class="spell-slots-grid">`;
+
+  for (let level = 1; level <= 9; level++) {
+    const count = slots[`spellslotLvl${level}`];
+    if (!count || count == 0) continue;
+
+    html += `
+      <div class="spell-slot-block">
+        <span class="slot-label">Level ${level}</span>
+        <span class="slot-count">${count} Slot${count > 1 ? 's' : ''}</span>
+      </div>
+    `;
   }
 
-  section.innerHTML = html;
+  html += `</div></div>`;
+  return html;
 }
 
-function renderBlessing() {
-  const vergil = characterData.vergil[0];
-  const section = document.getElementById('blessingSection');
-  if (section.innerHTML.trim()) return;
+function renderKnownSpells(spells) {
+  let html = `
+    <div class="spell-section-wrapper">
+      <div class="spell-section-title">Known Spells</div>
+      <div class="spell-row">
+  `;
 
-  let html = '';
-
-  const renderCategory = (title, items, isPower = false) => {
-    if (!items || items.length === 0) return '';
-    let block = `<h3 class="ability-section-title">${title}</h3><div class="ability-grid">`;
-    items.forEach(entry => {
-      block += `
-        <div class="ability-card">
-          <h4>${entry.name}</h4>
-          ${isPower ? `<div class="cooldown">${entry.cooldown}</div>` : ''}
-          <div>${entry.description}</div>
-        </div>
-      `;
-    });
-    block += '</div>';
-    return block;
-  };
-
-  html += renderCategory('Vampiric Blessings', vergil.blessing);
-  html += renderCategory('Vampiric Curses', vergil.curse);
-
-  section.innerHTML = html;
-}
-
-function renderSpells(spells) {
-  let html = `<h3 class="ability-section-title">Spells</h3><div class="spell-row">`;
   Object.values(spells).forEach(spell => {
     html += `
       <div class="spell-slot" onclick="toggleTooltip(this)">
-        <img src="${spell.imageSrc}" alt="${spell.imageAlt}" style="max-width: 75px;">
+        <img src="${spell.imageSrc}" style="max-width: 75px;">
         <div class="spell-tooltip">
           <strong>${spell.name}</strong><br>
+           <span class="spellLevel">${spell.spellLevel}</span><br>
           ${spell.description}
         </div>
       </div>
     `;
   });
+
+  html += `</div></div>`;
+  return html;
+}
+
+function renderPreparedSpellsGrouped(spells) {
+  const grouped = {};
+
+  Object.values(spells).forEach(spell => {
+    if (spell.preparedOrKnown !== "Prepared") return;
+
+    const level = spell.spellLevel || "Unknown";
+    if (!grouped[level]) grouped[level] = [];
+    grouped[level].push(spell);
+  });
+
+  const levelOrder = ["Cantrip", "Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6", "Level 7", "Level 8", "Level 9", "Unknown"];
+
+  let html = `<div class="spell-section-wrapper"><div class="spell-section-title">Prepared Spells</div>`;
+
+  levelOrder.forEach(level => {
+    if (!grouped[level]) return;
+
+    html += `<details class="spell-level-group"><summary class="spell-level-title">${level}</summary><div class="spell-row">`;
+
+    grouped[level].forEach(spell => {
+      const imgSrc = spell.imageSrc || "/DnD-Wiki/images/spells/default-spell.png";
+      const imgAlt = spell.imageAlt || "Spell image";
+      const description = spell.description || "<em>No description available.</em>";
+
+      html += `
+        <div class="spell-slot" onclick="toggleTooltip(this)">
+          <img src="${imgSrc}" alt="${imgAlt}" style="max-width: 75px;">
+          <div class="spell-tooltip">
+            <strong>${spell.name}</strong><br>
+            ${description}
+          </div>
+        </div>
+      `;
+    });
+
+    html += `</div></details>`;
+  });
+
   html += `</div>`;
-  return html; // store in the pagination system
+  return html;
+}
+
+function renderClassAbilities() {
+  const vergil = characterData.vergilAoden[0];
+  const section = document.getElementById('classAbilitiesSection');
+  const classAbilities = vergil.classAbilities;
+
+  let html = '<div class="ability-section"><h3 class="title">Class Abilities</h3><div class="classAbilities-grid">';
+
+  classAbilities.forEach(classAbility => {
+    html += `
+      <div class="classAbility-card">
+      <h4>${classAbility.AbilitieName}</h4>
+      <div>${classAbility.Description}</div>
+      </div>
+    `
+  });
+
+  html += '</div></div>'
+  section.innerHTML = html;
+}
+
+function renderRaceAbilities() {
+  const vergil = characterData.vergilAoden[0];
+  const section = document.getElementById('raceAbilitiesSection');
+  const raceAbilities = vergil.raceAbilities;
+
+  let html = '<div class="ability-section"><h3 class="title">Race Abilities</h3><div class="classAbilities-grid">';
+
+  raceAbilities.forEach(raceAbility => {
+    html += `
+      <div class="classAbility-card">
+      <h4>${raceAbility.AbilityName}</h4>
+      <div>${raceAbility.Description}</div>
+      </div>
+    `
+  });
+
+  html += '</div></div>'
+  section.innerHTML = html;
+}
+
+function renderFeats() {
+  const vergil = characterData.vergilAoden[0];
+  const section = document.getElementById('featsSection');
+  const feats = vergil.feats;
+
+  let html = '<div class="ability-section"><h3 class="title">Feats</h3><div class="card-grid">'
+
+  feats.forEach(feat => {
+    html += `
+    <div class="card">
+    <h4>${feat.FeatName}</h4>
+    <div>${feat.Description}</div>
+    </div>
+    `;
+  });
+
+  html += `</div></div>`;
+  section.innerHTML = html;
+}
+
+function renderPower() {
+  const vergil = characterData.vergilAoden[0];
+  const section = document.getElementById('mythicalPowerSection');
+  const powers = vergil.power;
+
+  let html = '<div class="ability-section"><h3 class="title">Power</h3><div class="card-grid">'
+
+  powers.forEach(power => {
+    html += `
+    <div class="card">
+    <h4>${power.PowerName}</h4>
+    <div class="cooldown">${power.Cooldown}</div>
+    <div>${power.Description}</div>
+    </div>
+    `;
+  });
+
+  html += `</div></div>`;
+  section.innerHTML = html;
+}
+
+function renderBlessing() {
+  const vergil = characterData.vergilAoden[0];
+  const section = document.getElementById('blessingSection');
+  const blessings = vergil.blessings;
+  const curses = vergil.curses;
+
+  if (section.innerHTML.trim()) return;
+
+  let html = '<h3 class="ability-section-title">Vampiric Blessings</h3><div class="ability-grid">';
+  blessings.forEach(blessing => {
+    html += `
+      <div class="ability-card">
+      <h4>${blessing.BlessingName}</h4>
+      <div>${blessing.Description}</div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+  html += `<h3 class="ability-section-title">Vampiric Curses</h3><div class="ability-grid">`;
+
+    curses.forEach(curse => {
+    html += `
+      <div class="ability-card">
+      <h4>${curse.CurseName}</h4>
+      <div>${curse.Description}</div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+
+  section.innerHTML = html;
 }
