@@ -28,6 +28,7 @@ async function loadCharacter() {
       gearSlot.setAttribute('onClick', 'toggleTooltipLeftGear(this)')
 
       gearSlot.innerHTML = `
+                <img class="leftGearImg" src="${gear.imageSrc}">
                 <div class="leftGear-tooltip tooltip tooltip-left">
                   <strong>${gear.name}</strong><br>
                   ${gear.description}
@@ -87,6 +88,7 @@ async function loadCharacter() {
       gearSlot.setAttribute('onClick', 'toggleTooltipRightGear(this)')
 
       gearSlot.innerHTML = `
+            <img class="rightGearImg" src="${gear.imageSrc}">
             <div class="rightGear-tooltip tooltip tooltip-right">
              <strong>${gear.name}</strong><br>
              ${gear.description}
