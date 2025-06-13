@@ -49,7 +49,7 @@ async function loadCharacter() {
 
       meeleSlot.innerHTML = `
       <img class="meeleImg" src="${meele.imageSrc}">
-        <div class="meele-tooltip tooltip tooltip-bottom">
+        <div class="meele-tooltip tooltip">
           <strong>${meele.name}</strong><br>
           ${meele.description}
         </div>
@@ -69,7 +69,7 @@ async function loadCharacter() {
 
       rangeSlot.innerHTML = `
       <img class="rangeImg" src="${range.imageSrc}">
-        <div class="range-tooltip tooltip tooltip-bottom">
+        <div class="range-tooltip tooltip">
           <strong>${range.name}</strong><br>
           ${range.description}
         </div>

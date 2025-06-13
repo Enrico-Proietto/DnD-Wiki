@@ -185,6 +185,9 @@ body {
   justify-content: center;
 }
 
+.meele-row {
+  margin-right: 100px;
+}
 .item-tooltip {
   position: absolute;
   transform: translateX(20%);
@@ -814,7 +817,7 @@ body {
 }
 
 .history {
-  background-color: #5DADE2;
+  background-color: #5dade2;
   color: #1a1410;
 }
 
